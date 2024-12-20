@@ -48,7 +48,7 @@ const { title , description } = Astro.props as Props;
 
 <body>
 	<header class="layout-header">
-		<img class="layout-header__image" src="public/logo.svg">
+		<img class="layout-header__image" src="../../public/logo.svg">
 		<nav>
 			<ul class="layout-header__nav">
 				<li><a href="">Inicio</a></li>
@@ -60,7 +60,7 @@ const { title , description } = Astro.props as Props;
 	</header>
 	<slot />
 	<footer class="layout-footer">
-		<img class="layout-footer__image" src="public/logo-footer.svg" alt="Logo de Gafas y lentes VR 3D" />
+		<img class="layout-footer__image" src="../../public/logo-footer.svg" alt="Logo de Gafas y lentes VR 3D" />
 		<nav>
 			<ul class="layout-footer__nav">
 				<li><a href="">Inicio</a></li>
@@ -78,24 +78,24 @@ const { title , description } = Astro.props as Props;
 
 	@font-face {
 		font-family: 'Orbitron';
-		src: url('public/fonts/Orbitron.ttf');
+		src: url('../../public/fonts/Orbitron.ttf');
 	}
 
 	@font-face {
 		font-family: 'Rajdhani';
-		src: url('public/fonts/Rajdhani-Bold.ttf');
+		src: url('../../public/fonts/Rajdhani-Bold.ttf');
 		font-weight: bold;
 	}
 
 	@font-face {
 		font-family: 'Rajdhani';
-		src: url('public/fonts/Rajdhani-Regular.ttf');
+		src: url('../../public/fonts/Rajdhani-Regular.ttf');
 		font-weight: normal;
 	}
 
 	@font-face {
 		font-family: 'Allerta Stencil';
-		src: url('public/fonts/Allerta.ttf');
+		src: url('../../public/fonts/Allerta.ttf');
 	}
 
 	* {
