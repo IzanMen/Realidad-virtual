@@ -1,22 +1,183 @@
+---
+
+import Logo from '../components/logos/logo.svg';
+
+export interface Props {
+	title: string;
+	description: string;
+}
+
+const { title , description } = Astro.props as Props;
+
+---
+
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+	<meta name="description" content={description}>
+	<title>{title}</title>
+	<meta name="author" content="Izan Sánchez Ginés">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Facebook -->
+		
+	<meta property="og:title" content={title}>
+	<meta property="og:description" content={description}>
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Realidad virtual">
+	<meta property="og:locale" content="es_ES">
+
+	<!-- Twitter -->
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content={title}>
+	<meta name="twitter:description" content={description}>
+	<meta name="twitter:image" content="">
+	<meta name="twitter:url" content="">
+
+	<meta name="generator" content={Astro.generator} />
+</head>
+
+<body>
+	<header class="layout-header">
+		<img class="layout-header__image" src="public/logo.svg">
+		<nav>
+			<ul class="layout-header__nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Tipos</a></li>
+				<li><a href="">Marcas</a></li>
+				<li><a href="">Box</a></li>
+			</ul>
+		</nav>
+	</header>
+	<slot />
+	<footer class="layout-footer">
+		<img class="layout-footer__image" src="public/logo-footer.svg" alt="Logo de Gafas y lentes VR 3D" />
+		<nav>
+			<ul class="layout-footer__nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Tipos</a></li>
+				<li><a href="">Marcas</a></li>
+				<li><a href="">Box</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
 </html>
 
 <style>
-	html,
-	body {
+
+	@font-face {
+		font-family: 'Orbitron';
+		src: url('public/fonts/Orbitron.ttf');
+	}
+
+	@font-face {
+		font-family: 'Rajdhani';
+		src: url('public/fonts/Rajdhani-Bold.ttf');
+		font-weight: bold;
+	}
+
+	@font-face {
+		font-family: 'Rajdhani';
+		src: url('public/fonts/Rajdhani-Regular.ttf');
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: 'Allerta Stencil';
+		src: url('public/fonts/Allerta.ttf');
+	}
+
+	* {
 		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.layout-header {
 		width: 100%;
+		height: 100px;
+		background-color: #ddd;
+		box-shadow: 0 0 20px 10px #aaa;
+		padding: 0 100px;
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+		transition: height 0.3s ease, padding 0.3s ease;
+	}
+
+	.layout-header.shrink {
+		height: 65px;
+		padding: 0 80px;
+	}
+
+
+	.layout-header__image {
+		width: 150px;
+		transition: transform 0.3s ease;
+	}
+
+	.layout-header__image.shrink {
+		transform: translateY(-100px);
+	}
+
+	.layout-header__nav, .layout-footer__nav {
+		width: 300px;
 		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+	}
+
+	.layout-header__nav a, .layout-footer__nav a {
+		color: #000;
+		text-decoration: none;
+		font-family: 'Orbitron';
+	}
+
+	.layout-footer__nav a {
+		color: #fff;
+	}
+
+	.layout-footer {
+		height: 200px;
+		padding: 0 80px;
+		background-color: #000;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		border-radius: 50px 50px 0 0 ;
+		margin-top: 100px;
 	}
 </style>
+
+<script>
+	window.addEventListener('scroll', function () {
+		const header = document.querySelector('.layout-header') as HTMLElement;
+		const logo = document.querySelector('.layout-header__image') as HTMLElement;
+
+		if (header && logo) {
+			if (window.scrollY > 100) {
+				header.classList.add('shrink');
+				logo.classList.add('shrink');
+			} else {
+				header.classList.remove('shrink');
+				logo.classList.remove('shrink');
+			}
+		}
+	});
+</script>

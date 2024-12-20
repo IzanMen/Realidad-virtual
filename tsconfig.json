@@ -1,5 +1,12 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
-}
+    "compilerOptions": {
+      "resolveJsonModule": true, // Permite importar archivos JSON
+      "esModuleInterop": true,  // Habilita importaciones de módulos comunes como JSON
+      "strict": true,           // (Opcional) Mantén las validaciones estrictas
+      "module": "ESNext",
+      "moduleResolution": "Node"
+    },
+    "include": [".astro/types.d.ts", "**/*"],
+    "exclude": ["dist"]
+  }
+  

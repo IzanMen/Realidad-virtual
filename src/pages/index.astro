@@ -1,11 +1,143 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from '../layouts/Layout.astro';
+import ArticlesList from '../components/ArticlesList.astro';
+import ProductElement from '../components/ProductElement.astro';
+
 ---
 
-<Layout>
-	<Welcome />
+<Layout 
+	title="Realidad virtual, aumentada y mixta | Gafas y lentes VR 3D"
+	description="🔥 Encuentra las mejores gafas de realidad virtual 🎮 al mejor precio 💰. Descubre ofertas, comparativas y los dispositivos más avanzados para el metaverso 🌐. ¡Compra hoy y vive la experiencia! 🚀"
+>
+
+<main class="main">
+	<header class="main-header">
+		<p class="main-header__title">Descubre el Futuro de la Tecnología</p>
+		<h1 class="main-header__subtitle">Gafas de realidad virtual, aumentada y mixta: Encuentra las mejores gafas 3D VR para el metaverso.</h1>
+		<ArticlesList />
+		<p class="main-header__text">Las gafas de realidad virtual y aumentada son más que un accesorio tecnológico; son la llave a nuevas dimensiones de entretenimiento, productividad y conexión. Desde que probé mi primer par de gafas VR, entendí su potencial para transformar nuestra percepción del mundo. En esta página, te ayudaré a encontrar las mejores opciones del mercado, basándome en años de experiencia y en los análisis más actualizados.</p>	
+	</header>
+	<section class="main-section">
+		<h2 class="main-section__title">¿Qué son las gafas de realidad virtual?</h2>
+		<p class="main-section__text">Las gafas de realidad virtual (VR), aumentada (AR) y mixta (MR) son dispositivos que transportan al usuario a entornos digitales inmersivos o integran elementos virtuales en el mundo real. Ya sea para explorar el metaverso, disfrutar de juegos interactivos o asistir a reuniones virtuales, estas gafas están revolucionando la manera en que trabajamos, jugamos y nos comunicamos.</p>
+		<ArticlesList />
+	</section>
+	<section class="main-section">
+		<h2 class="main-section__title">Las mejores gafas de realidad virtual del mercado</h2>
+		<p class="main-section__text">Descubre las gafas de realidad virtual que están marcando tendencia. Te presentamos las mejores opciones con análisis de calidad, precios y características para que encuentres el dispositivo perfecto. Vive experiencias inmersivas como nunca antes y elige la tecnología que transforma tu forma de jugar, trabajar o explorar nuevos mundos. Haz clic <a href="">aquí para ver nuestro análisis sobre las mejores gafas de realidad virtual.</a></p>
+
+		<div class="main-section__products">
+			<ProductElement id={1} />
+			<ProductElement id={2} />
+			<ProductElement id={3} />
+			<ProductElement id={1} />
+		</div>
+	</section>
+	<section class="main-section">
+		<h2 class="main-section__title">Tipos de gafas 3D</h2>
+		<h3 class="main-section__subtitle">GAFAS DE REALIDAD VIRTUAL (VR)</h3>
+		<p class="main-section__text">Ideales para experiencias inmersivas, las gafas VR bloquean el mundo real para sumergirte completamente en un entorno digital. Modelos como las Meta Quest 3 ofrecen experiencias autónomas, mientras que dispositivos como PSVR 2 brindan gráficos de alta calidad para consolas específicas. <a href="">Haz clic aquí para conocer las gafas de realidad virtual.</a></p>
+		<div class="main-section__products">
+			<ProductElement id={1} />
+			<ProductElement id={2} />
+			<ProductElement id={3} />
+			<ProductElement id={1} />
+		</div>
+		<h3 class="main-section__subtitle">GAFAS DE REALIDAD AUMENTADA (AR)</h3>
+		<p class="main-section__text">Estas lentes superponen información y gráficos digitales al mundo real. Propuestas como las Snapchat Spectacles y los proyectos de empresas como Microsoft están optimizando su funcionalidad tanto para profesionales como para consumidores. <a href="">Haz clic aquí para conocer las gafas de realidad aumentada.</a></p>
+		<div class="main-section__products">
+			<ProductElement id={1} />
+			<ProductElement id={2} />
+			<ProductElement id={3} />
+			<ProductElement id={1} />
+		</div>
+		<h3 class="main-section__subtitle">GAFAS DE REALIDAD MIXTA (MR)</h3>
+		<p class="main-section__text">Combinan lo mejor de la realidad virtual y aumentada, permitiendo interactuar simultáneamente con elementos físicos y virtuales. Tecnologías emergentes como las desarrolladas por CREAL muestran el avance en displays de campo de luz para mejorar la calidad visual y la precisión. <a href="">Haz clic aquí para conocer las gafas de realidad mixta.</a></p>
+		<div class="main-section__products">
+			<ProductElement id={1} />
+			<ProductElement id={2} />
+			<ProductElement id={3} />
+			<ProductElement id={1} />
+		</div>
+	</section>
+	<section class="main-section">
+		<h2 class="main-section__title">Tendencias y futuro de las gafas VR</h2>
+		<p class="main-section__text">El desarrollo de tecnologías como pantallas de alta resolución y guantes hápticos apunta a experiencias aún más realistas en los próximos años. La integración con el metaverso y la adopción masiva por parte de sectores como la salud y la educación aseguran un futuro prometedor para esta tecnología.</p>
+	</section>
+	<section class="main-section">
+		<h2 class="main-section__title">Nuestros últimos artículos sobre gafas de realidad virtual</h2>
+		<ArticlesList />
+		<ArticlesList />
+		<ArticlesList />
+	</section>
+</main>
+
 </Layout>
+
+<style>
+
+	.main {
+		margin-top: 200px;
+		max-width: 1500px;
+		padding: 0 100px;
+	}
+
+	.main-header__title {
+		font-size: 3.2rem;
+		font-family: 'Rajdhani';
+		margin-bottom: 0;
+	}
+
+	.main-header__subtitle {
+		font-size: 1.3rem;
+		font-family: 'Rajdhani';
+		font-weight: normal;
+		margin-top: 0;
+	}
+
+	.main-header__text {
+		font-family: 'Rajdhani';
+		font-size: 1.3rem;
+	}
+
+	.main-section {
+		margin-top: 50px;
+	}
+
+	.main-section__title {
+		font-size: 1.7rem;
+		font-family: 'Allerta Stencil';
+		font-weight: 100;
+	}
+
+	.main-section__text {
+		font-family: 'Rajdhani';
+		font-size: 1.3rem;
+	}
+
+	.main-section__products {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+
+	.main-section__subtitle {
+		font-size: 1.8rem;
+		font-family: 'Rajdhani';
+		font-weight: 100;
+		margin: 0;
+	}
+
+	.main-section__text {
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	.--modelo-perfecto {
+		margin: 0;
+		margin-bottom: 7px;
+	}
+</style>

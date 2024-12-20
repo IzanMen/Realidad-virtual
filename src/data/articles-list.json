@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "Descubre las mejores gafas de realidad virtual buenas y baratas.",
+      "link": "",
+      "image" : {
+        "src": "/images/articles/article-1.webp",
+        "alt": "Mejores gafas de realidad virtual buenas y baratas"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Descubre las mejores gafas de realidad virtual buenas y baratas.",
+      "link": "",
+      "image" : {
+        "src": "/images/articles/article-1.webp",
+        "alt": "Mejores gafas de realidad virtual buenas y baratas"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Descubre las mejores gafas de realidad virtual buenas y baratas.",
+      "link": "",
+      "image" : {
+        "src": "/images/articles/article-1.webp",
+        "alt": "Mejores gafas de realidad virtual buenas y baratas"
+      }
+    }
+  ]
+  
