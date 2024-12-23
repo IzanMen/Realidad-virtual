@@ -31,9 +31,10 @@ const product = Products.find(product => product.id === id);
 <style>
 
     .product-element {
-        width: calc(100% / 4 - 70px);
+        width: calc(100% / 4 - 55px);
         padding: 20px;
         border: 1px solid #0002;
+        margin-bottom: 20px;
 
         display: flex;
         flex-direction: column;
@@ -66,6 +67,25 @@ const product = Products.find(product => product.id === id);
 
     .product-element__link:hover {
         background-color: #ee8800;
+    }
+
+    @media screen and (max-width: 1225px) {
+        .product-element {
+            width: calc(100% / 3 - 55px);
+        }
+    }
+
+    @media screen and (max-width: 809px) {
+        .product-element {
+            width: calc(100% / 2 - 45px);
+        }
+    }
+
+    @media screen and (max-width: 533px) {
+        .product-element {
+            width: calc(100%);
+        }
+        
     }
 
 </style>
