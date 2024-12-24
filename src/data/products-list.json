@@ -1,30 +1,108 @@
 [
     {
       "id": 1,
-      "name": "Meta Quest 3 512 GB — Las gafas Quest más potentes...",
+      "name": "Meta Quest 3",
       "link": "",
+      "calificacion": 9,
       "image" : {
         "link": "https://m.media-amazon.com/images/I/611PjWsGFRL.__AC_SX300_SY300_QL70_ML2_.jpg",
-        "alt": "Meta Quest 3 512 GB"
-      }
+        "alt": "Meta Quest 3"
+      },
+      "ventajas" : [
+        "Autonomia total (Sin necesidad de otro dispositivo).",
+        "Más compacto y ligero que las Meta Quest 2.",
+        "Incluye realidad mixta.",
+        "Catlálogo de juegos muy amplio."
+      ],
+      "desventajas" : [
+        "Requiere de una cuenta Meta (es gratis).",
+        "Experiencia de realidad mixta limitada.",
+        "Precio más elevado que las Meta Quest 2."
+      ]
     },
     {
       "id": 2,
-      "name": "Gafas Realidad Virtual Niños + Juego Educativo Idiomas...",
+      "name": "PlayStation - Realidad Virtual VR2",
       "link": "",
+      "calificacion": 8.4,
       "image" : {
-        "link": "https://m.media-amazon.com/images/I/71dEt8e+NvL._AC_SX300_SY300_.jpg",
-        "alt": "Gafas VR HeroMask"
-      }
+        "link": "https://m.media-amazon.com/images/I/41Lx7odhhGL.__AC_SY300_SX300_QL70_ML2_.jpg",
+        "alt": "PlayStation - Realidad Virtual VR2"
+      },
+      "ventajas" : [
+        "Gráficos de alta calidad y inmersión mejorada.",
+        "Controles avanzados.",
+        "Compatibilidad con audio 3D.",
+        "Conexión a PS5 por un solo cable USB-C."
+      ],
+      "desventajas" : [
+        "Precio elevado y falta de retrocompatibilidad.",
+        "Depende completamente de la PS5.",
+        "Limitaciones de movimiento debido al cable USB-C."
+      ]
     },
     {
       "id": 3,
-      "name": "Gafas VR, Compatible con Phone y Android Phone...",
+      "name": "Google Carboard",
       "link": "",
+      "calificacion": 6.6,
       "image" : {
-        "link": "https://m.media-amazon.com/images/I/51d1xo+MUYL._AC_SY300_SX300_.jpg",
-        "alt": "Gafas VR Cutebe"
-      }
+        "link": "https://m.media-amazon.com/images/I/614RTZR8AjL.__AC_SY300_SX300_QL70_ML2_.jpg",
+        "alt": "Google Carboard"
+      },
+      "ventajas" : [
+        "Precio extremadamente accesible (desde $10).",
+        "Configuración sencilla y rápida.",
+        "Compatible con iOS y Android.",
+        "Ideal para experimentar aplicaciones ligeras."
+      ],
+      "desventajas" : [
+        "Materiales poco duraderos.",
+        "Experiencia limitada comparada con dispositivos más avanzados.",
+        "Sin soporte para interacciónes complejas o juegos avanzados."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pico 4 Ultra 256GB",
+      "link": "",
+      "calificacion": 8.4,
+      "image" : {
+        "link": "https://m.media-amazon.com/images/I/61QA4ipCRbL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "alt": "Pico 4 Ultra 256GB"
+      },
+      "ventajas" : [
+        "Diseño ultraligero que reduce la fatiga.",
+        "Resolución de alta gama.",
+        "Experiencia visual inmersiva.",
+        "Amplia compatibilidad con aplicaciones de fitness y entretenimiento."
+      ],
+      "desventajas" : [
+        "Ecosistema menos robusto que el de Oculus o PlayStation.",
+        "Mayor enfoque en contenido no gaming.",
+        "Precio elevado."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Meta Quest 2",
+      "link": "",
+      "calificacion": 9.4,
+      "image" : {
+        "link": "https://m.media-amazon.com/images/I/618PlE1DM8L._AC_SX466_.jpg",
+        "alt": "Meta Quest 2"
+      },
+      "ventajas" : [
+        "Funciona sin cables gracias a su autonomía.",
+        "Compatibilidad con PC para juegos más avanzados.",
+        "Excelente calidad de imágen para su precio.",
+        "Fácil configuración y acceso a una biblioteca amplia."
+      ],
+      "desventajas" : [
+        "La duración de la bateria es limitada (2-3 horas).",
+        "La correa estándar no es tan cómoda como las opciones mejoradas.",
+        "Algunas aplicaciones de alto rendimiento requieren un costo adicional."
+      ]
     }
   ]
   

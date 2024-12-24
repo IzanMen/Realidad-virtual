@@ -1,6 +1,7 @@
 ---
 
 import Products from '../data/products-list.json';
+import AmazonButton from './AmazonButton.astro';
 
 export interface Props {
 	id: number;
@@ -25,7 +26,7 @@ const product = Products.find(product => product.id === id);
 <div class="product-element">
     <img class="product-element__image" src={product?.image.link} alt={product?.image.alt}>
     <h3 class="product-element__title">{product?.name}</h3>
-    <a href={product?.link} class="product-element__link">Comprar en Amazon</a>
+    <AmazonButton text="Comprar en Amazon" href={product?.link} />
 </div>
 
 <style>
@@ -52,21 +53,6 @@ const product = Products.find(product => product.id === id);
         font-family: 'Allerta Stencil';
         font-weight: 100;
         margin-top: 10px;
-    }
-
-    .product-element__link {
-        font-family: 'Rajdhani';
-        padding: 5px 10px;
-        background-color: #FF9900;
-        width: fit-content;
-        text-decoration: none;
-        color: #000;
-        border-radius: 3px;
-        transition: background-color 0.2s;
-    }
-
-    .product-element__link:hover {
-        background-color: #ee8800;
     }
 
     @media screen and (max-width: 1225px) {

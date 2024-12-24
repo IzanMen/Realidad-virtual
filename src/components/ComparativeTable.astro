@@ -1,0 +1,83 @@
+---
+
+import Products from '../data/products-list.json';
+import AmazonButton from './AmazonButton.astro';
+
+const { ids } = Astro.props;
+
+const productos = Products.filter(product => ids.includes(product.id));
+
+---
+
+<table class="table">
+    <thead class="table-head">
+        <tr>
+            <th class="table-head__item">Imagen</th>
+            <th class="table-head__item">Nombre</th>
+            <th class="table-head__item">Calificación</th>
+            <th class="table-head__item">Precio</th>
+        </tr>
+    </thead>
+    <tbody class="table-body">
+        {productos.map((producto) => (
+            <tr>
+                <td class="table-body__item --image">
+                    <img src={producto.image.link} alt={producto.image.alt} />
+                </td>
+                <td class="table-body__item --name">{producto.name}</td>
+                <td class="table-body__item --cal">{producto.calificacion}</td>
+                <td class="table-body__item --link">
+                    <AmazonButton text="Ver precio en Amazon" link={producto.link} />
+                </td>
+            </tr>
+        ))}
+    </tbody>
+</table>
+
+<style>
+
+    .table {
+        padding: 10px 30px;
+        border-collapse: collapse;
+
+        font-family: 'Rajdhani';
+        font-weight: 200;
+        font-size: 1.3rem;
+    }
+
+    table, th, td {
+        border: 1px solid #000;
+    }
+
+    .table-head__item {
+        padding: 10px ;
+    }
+
+    .--image {
+        width: 100px;
+        text-align: center; 
+        vertical-align: middle; 
+        padding: 10px;
+    }
+
+    .--image img {
+        height: 60px;
+        margin: auto;
+    }
+
+    .--name {
+        padding: 0 20px;
+        width: 250px;
+    }
+
+    .--cal {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .--link {
+        width: 250px;
+        text-align: center;
+    }
+
+</style>
