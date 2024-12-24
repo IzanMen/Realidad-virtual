@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Descubre las mejores gafas de realidad virtual buenas y baratas.",
-      "link": "",
+      "link": "https://gafasvr.vercel.app/articulos/gafas-vr-buenas-baratas",
       "image" : {
         "src": "/images/articles/article-1.webp",
         "alt": "Mejores gafas de realidad virtual buenas y baratas"
