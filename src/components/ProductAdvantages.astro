@@ -8,73 +8,100 @@ const product = Products.find(product => product.id === id);
 
 ---
 
-<table>
-    <thead>
-        <tr>
-            <th class="--none"></th>
-            <th>Ventajas</th>
-            <th>Desventajas</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="--img">
-                <img src={product?.image.link} alt={product?.image.alt} />
-            </td>
-            <td class="list">
-                <ul>
-                    {product?.ventajas.map((ventaja) => (
-                        <li>{ventaja}</li>
-                    ))}
-                </ul>
-            </td>
-            <td class="list">
-                <ul>
-                    {product?.desventajas.map((ventaja) => (
-                        <li>{ventaja}</li>
-                    ))}
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="grid-container">
+    <div class="grid-item --img">
+        <img src={product?.image.link} alt={product?.image.alt} />
+    </div>
+    <h3 class="grid-item --ventajas">Ventajas</h3>
+    <ul class="grid-item --ventajas-content">
+        {product?.ventajas.map((ventaja) => (
+            <li>{ventaja}</li>
+        ))}
+    </ul>
+    <h3 class="grid-item --desventajas">Desventajas</h3>
+    <ul class="grid-item --desventajas-content">
+        {product?.desventajas.map((ventaja) => (
+            <li>{ventaja}</li>
+        ))}
+    </ul>
+</div>
+
 
 <style>
-    table {
-        border-collapse: collapse;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+   
+   .grid-container {
+        display: grid;
+        grid-template-columns: 3fr 4fr 4fr; 
+        grid-template-rows: auto 1fr; 
+        grid-template-areas:
+            "--img --ventajas --desventajas"
+            "--img --ventajas-content --desventajas-content";
+        text-align: center;
+        border: 1px solid #555;
+        margin-bottom: 20px;
+        margin-top: 20px;
         font-family: 'Rajdhani';
         font-size: 1.2rem;
-        margin-bottom: 20px;
-    }
-
-    th, td {
-        border: 1px solid #000;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .--none {
-        border-bottom: none;
     }
 
     .--img {
-        border-top: none;
+        grid-area: --img;
+        padding: 10px;
+        border: 1px solid #555;
+    }
+
+    .--ventajas {
+        grid-area: --ventajas;
+        height: 40px;
+        border: 1px solid #555;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .--ventajas-content {
+        grid-area: --ventajas-content;
+        border: 1px solid #555;
+        text-align: left;
+        padding: 10px 40px;
+    }
+
+    .--desventajas {
+        grid-area: --desventajas;
+        height: 40px;
+        border: 1px solid #555;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .--desventajas-content {
+        grid-area: --desventajas-content;
+        border: 1px solid #555;
+        text-align: left;
+        padding: 10px 40px;
     }
 
     img {
-        margin-top: -20px;
         height: 200px;
     }
 
-    .list {
-        text-align: left;
-        vertical-align: top;
-        width: 350px;
-        max-width: 100%;
-        padding: 0 30px 0 0;
+    @media screen and (max-width: 1100px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "--img"
+                "--ventajas"
+                "--ventajas-content"
+                "--desventajas"
+                "--desventajas-content";
+        }
+        
     }
 
-    .list li {
-        margin-bottom: 5px;
-    }
 </style>
