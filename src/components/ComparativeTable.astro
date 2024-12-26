@@ -22,9 +22,9 @@ const productos = Products.filter(product => ids.includes(product.id));
         {productos.map((producto) => (
             <tr>
                 <td class="table-body__item --image">
-                    <img src={producto.image.link} alt={producto.image.alt} />
+                    <img src={producto.imagen.link} alt={producto.imagen.alt} />
                 </td>
-                <td class="table-body__item --name">{producto.name}</td>
+                <td class="table-body__item --name">{producto.nombre}</td>
                 <td class="table-body__item --cal">{producto.calificacion}</td>
                 <td class="table-body__item --link">
                     <AmazonButton text="Ver precio en Amazon" link={producto.link} />

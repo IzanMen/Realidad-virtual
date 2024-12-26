@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://gafasvr.vercel.app/sitemap-index.xml

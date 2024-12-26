@@ -5,6 +5,7 @@ import ComparativeTable from "../../components/ComparativeTable.astro"
 import ProductAdvantages from "../../components/ProductAdvantages.astro"
 import AmazonButton from "../../components/AmazonButton.astro"
 import ProductElement from "../../components/ProductElement.astro"
+import ArticlesList from "../../components/ArticlesList.astro"
 
 ---
 
@@ -26,62 +27,66 @@ import ProductElement from "../../components/ProductElement.astro"
         </div>
     </section>
     <section class="main-section">
-        <p class="main-section__title --margin-0">La opción más asequible, </p>
-        <h2 class="main-section__title --margin-0">Google Carboard</h2>
-        <ProductAdvantages id={3}/>
-        <p class="main-section__text">La <b>realidad virtual económica</b> está al alcance de todos con las <b>gafas de cartón para móviles</b>. Este tipo de gafas permiten integrar tu teléfono móvil para disfrutar de una experiencia inmersiva, todo por un precio accesible. En Amazon, encontrarás una amplia variedad de kits de cartón que se distinguen principalmente por su diseño, acabados y comodidad, ya que la calidad de la experiencia depende en gran medida del teléfono móvil que utilices.</p>
-        <p class="main-section__text">Entre las opciones más destacadas se encuentran las <b>gafas de cartón</b> compatibles con <b>Google Cardboard</b>, un modelo muy popular que se puede usar con móviles de 4 a 6 pulgadas. Estas gafas cuentan con un montaje sencillo, NFC Tag para facilitar la conexión y velcro ajustable para asegurar un buen ajuste en la cabeza. Su precio es de realmente bajo, lo que las convierte en una opción asequible para quienes desean adentrarse en el mundo de la <b>realidad virtual sin gastar mucho dinero</b>.</p>
-        <AmazonButton text="Ver en Amazon" link=""/>
-    </section>
-    <section class="main-section">
-        <p class="main-section__title --margin-0">El mejor para juegos immersivos, </p>
-        <h2 class="main-section__title --margin-0">PlayStation VR2</h2>
-        <ProductAdvantages id={2}/>
-        <p class="main-section__text">Si eres un jugador de PlayStation 5, el <b>PS VR2</b> es la mejor opción. Con una impresionante resolución OLED de 2000 x 2040 píxeles por ojo y soporte para HDR, la calidad visual es sobresaliente, ofreciendo colores vivos y negros profundos. Además, la <b>integración con la PS5</b> y la presencia de juegos exclusivos para VR elevan su atractivo. Si quieres lo mejor para juegos de consola, este modelo es el más potente dentro de su categoría.</p>
-        <AmazonButton text="Ver en Amazon" link=""/>
-    </section>
-    <section class="main-section">
-        <p class="main-section__title --margin-0">El más potente en resolución y desempeño autónomo, </p>
-        <h2 class="main-section__title --margin-0">Meta Quest 3</h2>
+        <p class="main-section__title --margin-0">La opción más potente, </p>
+        <h2 class="main-section__title --margin-0">Meta Quest 3S</h2>
         <ProductAdvantages id={1}/>
-        <p class="main-section__text">El <b>Meta Quest 3</b> es la opción más potente en el mercado de dispositivos autónomos. Con una resolución de 1832 x 1920 píxeles por ojo y un rendimiento mejorado gracias al Snapdragon XR2 Gen 2, ofrece una experiencia visual fluida y nítida. Además, no necesitas ningún PC ni consola, lo que lo convierte en un dispositivo muy versátil. Puedes jugar, trabajar y disfrutar de experiencias de RV sin cables. Su catálogo de juegos y aplicaciones es muy amplio, y su capacidad para realizar tareas de RV mixta (<b>mezcla de realidad aumentada y virtual</b>) lo pone por encima de otros dispositivos de su clase.</p>
+        <p class="main-section__text">Las <b>Meta Quest 3S</b> ofrecen una experiencia de <b>realidad virtual autónoma</b>, sin necesidad de conectar un teléfono móvil, y aunque son más caras que otros dispositivos, presentan un rendimiento y características destacables. Estas gafas cuentan con una resolución de 1832 x 1920 píxeles por ojo, similar a las Meta Quest 2, pero con un campo de visión más reducido (96° horizontal y 90° vertical).</p>
+        <p class="main-section__text">A nivel de diseño, las <b>Quest 3S</b> son un poco más grandes y tienen una disposición diferente de los sensores, aunque no incluyen un sensor de profundidad. Una de las características interesantes es el "Botón de llamada a la acción", que activa el modo de Enfoque exterior, permitiendo ver el entorno sin quitarse las gafas. Además, la duración de la batería mejora ligeramente, alcanzando unas 2,5 horas de uso por carga. A pesar de su precio más alto, las <b>Meta Quest 3S</b> ofrecen un rendimiento superior en comparación con las gafas más económicas que requieren un teléfono móvil, lo que las convierte en una opción atractiva para quienes buscan una experiencia de <b>realidad virtual</b> de calidad.</p>
         <AmazonButton text="Ver en Amazon" link=""/>
     </section>
     <section class="main-section">
-        <p class="main-section__title --margin-0">El mejor equilibrio calidad-precio, </p>
-        <h2 class="main-section__title --margin-0">Meta Quest 2</h2>
-        <ProductAdvantages id={5}/>
-        <p class="main-section__text">El <b>Meta Quest 2</b> ofrece un excelente equilibrio entre precio y características. Su resolución de 1832 x 1920 píxeles por ojo es muy buena para su rango de precio, y el rendimiento, aunque inferior al de modelos como el <b>Meta Quest 3</b>, sigue siendo sólido. Es completamente autónomo, lo que lo hace una opción muy atractiva para quienes no quieren cables o una consola adicional. La amplia biblioteca de juegos y apps disponibles y su soporte para experiencias de RV inmersiva lo convierten en una opción excepcional para usuarios que no quieren gastar tanto como en modelos más caros.</p>
+        <p class="main-section__title --margin-0">La opción más asequible, </p>
+        <h2 class="main-section__title --margin-0">Gafas de realidad virtual 3D VR de LuBanSir</h2>
+        <ProductAdvantages id={2}/>
+        <p class="main-section__text">Las <b>gafas de realidad virtual 3D VR con controlador</b> Bluetooth son una opción asequible para quienes desean disfrutar de una experiencia inmersiva usando su teléfono móvil. Son compatibles con teléfonos inteligentes que tienen pantallas de entre 4,7 y 7,2 pulgadas, tanto con sistemas iOS como Android. Gracias a su <b>tecnología 3D</b> optimizada, permiten disfrutar de juegos, películas, y otros contenidos en 3D directamente desde aplicaciones como YouTube o en tiendas de apps. La calidad visual depende de la resolución del teléfono y la calidad del contenido, pero el diseño de las gafas incluye lentes ajustables para la distancia focal y la pupila, lo que mejora la experiencia.</p>
+        <p class="main-section__text">Estas gafas también incluyen un controlador Bluetooth que permite interactuar con algunos juegos o utilizarlo como un ratón inalámbrico, aunque la compatibilidad con iOS es limitada en comparación con Android. La calidad de construcción es buena, utilizando materiales como ABS y PC, y tienen un campo de visión de entre 95° y 100°. Con un peso de 430 gramos, son cómodas para sesiones de uso moderado, aunque pueden no ser tan avanzadas como otras opciones más caras como las Meta Quest 2. A pesar de ser una opción económica, estas gafas brindan una experiencia de <b>realidad virtual</b> bastante satisfactoria para quienes buscan una entrada asequible al mundo VR.</p>
         <AmazonButton text="Ver en Amazon" link=""/>
     </section>
     <section class="main-section">
-        <p class="main-section__title --margin-0">La mejor calidad de pantalla, </p>
-        <h2 class="main-section__title --margin-0">Pico 4 ultra</h2>
+        <h2 class="main-section__title --margin-0">Gafas VR 3D FIYAPOO</h2>
+        <ProductAdvantages id={3}/>
+        <p class="main-section__text">Las <b>gafas FIYAPOO VR 3D</b> con auriculares son una opción interesante para aquellos que buscan una experiencia de <b>realidad virtual completa y económica</b>. Son compatibles con smartphones de entre 4,7 y 6,6 pulgadas, tanto Android como iOS, lo que las hace accesibles para una amplia gama de dispositivos. Estas gafas cuentan con lentes de alta calidad que ofrecen un campo de visión gran angular cercano a los 180 grados y son ajustables para adaptarse a diferentes distancias pupilares, lo que mejora la inmersión en juegos y películas.</p>
+        <p class="main-section__text">Una de las características destacadas de las <b>FIYAPOO VR</b> es la integración de auriculares estéreo HD con tecnología de <b>sonido envolvente 3D</b>, proporcionando una experiencia auditiva envolvente. El diseño ligero y cómodo, con una diadema ajustable y forro suave, permite un uso prolongado sin molestias, ideal para largas sesiones de juego o visualización de películas.</p>
+        <p class="main-section__text">Aunque las gafas no requieren una configuración complicada, la calidad visual dependerá de la resolución del teléfono y el contenido 3D. Para obtener la mejor experiencia, se recomienda utilizar un teléfono con alta definición y ajustar correctamente las perillas de ajuste de la distancia ocular y la focal. Si bien no son tan avanzadas como opciones más caras, las <b>FIYAPOO VR 3D</b> ofrecen una experiencia inmersiva sólida para quienes buscan una alternativa asequible en el mundo de la realidad virtual.</p>
+        <AmazonButton text="Ver en Amazon" link=""/>
+    </section>
+    <section class="main-section">
+        <p class="main-section__title --margin-0">La opción educativa, </p>
+        <h2 class="main-section__title --margin-0">Gafas de realidad virtual para niños de Heromask</h2>
         <ProductAdvantages id={4}/>
-        <p class="main-section__text">El <b>Pico 4 Ultra</b> sobresale por su impresionante resolución de 2160 x 2160 píxeles por ojo, ofreciendo una calidad visual superior a la de muchos dispositivos de su clase. Aunque su catálogo de juegos y contenido es algo más limitado que el de Meta Quest, su calidad de imagen, combinado con su diseño ligero y ergonómico, lo hace una opción muy atractiva para aquellos que valoran la experiencia visual por encima de todo. El <b>Pico 4</b> también ofrece una experiencia completamente autónoma y soporta un amplio rango de <b>aplicaciones en RV</b>.</p>
+        <p class="main-section__text">Las <b>gafas de realidad virtual Heromask</b> son una opción educativa y divertida para niños de 5 a 12 años. Están diseñadas para ofrecer una <b>experiencia inmersiva en 3D</b> y permitir el aprendizaje de varios idiomas, incluyendo inglés, francés, alemán, español, italiano y chino, a través del videojuego educativo "<b>Heromask Idiomas</b>". Estas gafas son compatibles con teléfonos Android a partir de la versión 7.0 y iPhones 5S o modelos posteriores. Tienen un tamaño adecuado para dispositivos con pantallas de hasta 6,5 pulgadas.</p>
+        <p class="main-section__text">El modelo cuenta con un botón mecánico incorporado que no requiere pilas y se utiliza para interactuar con el contenido educativo, como juegos y videos. Las gafas incluyen un visor ajustable para mejorar la comodidad de uso, tanto para niños como para adultos, y un ajuste interpupilar personalizable para una experiencia visual más precisa. Son ligeras, con un peso de 330 gramos, lo que las hace adecuadas para sesiones prolongadas. Este dispositivo es ideal como regalo original para cumpleaños, Navidad o Reyes Magos, ofreciendo a los niños una forma divertida y dinámica de aprender nuevos idiomas mientras disfrutan de los juegos en <b>realidad virtual</b>.</p>
+        <AmazonButton text="Ver en Amazon" link=""/>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title --margin-0">Gafas 3D VR FIYAPOO</h2>
+        <ProductAdvantages id={5}/>
+        <p class="main-section__text">Las <b>gafas FIYAPOO 3D VR</b> ofrecen una experiencia inmersiva en <b>realidad virtual</b> ideal tanto para niños como para adultos. Son compatibles con teléfonos inteligentes de entre 4,7 y 6,6 pulgadas, lo que las hace aptas para una amplia variedad de dispositivos Android e iPhone. Su diseño ergonómico incluye una correa ajustable y una cubierta facial de cuero PU transpirable, lo que las hace cómodas para sesiones de uso prolongado, y la cubierta facial es desmontable y fácil de limpiar.</p>
+        <p class="main-section__text">Equipadas con lentes ópticas de alta definición importadas de Japón, las gafas proporcionan un campo de visión de 100 grados, ofreciendo imágenes claras y realistas. Las <b>lentes</b> son ajustables para personas con miopía, lo que elimina la necesidad de gafas adicionales durante el uso. Además, su experiencia visual se complementa con efectos de sonido excepcionales, creando una verdadera atmósfera de cine en casa.</p>
+        <p class="main-section__text">Estas gafas son ideales tanto para ver videos en 3D como para jugar <b>juegos VR,</b>, proporcionando una experiencia audiovisual envolvente. Con una resolución de 1920 x 1080p (hasta 3840 x 2160 en máxima calidad), ofrecen una visualización nítida y detallada.</p>
         <AmazonButton text="Ver en Amazon" link=""/>
     </section>
     <section class="main-section">
         <h2 class="main-section__title">¿Cuáles gafas 3d son ideales para ti?</h2>
-        <p class="main-section__text">La elección perfecta dependerá de tus intereses, presupuesto y nivel de experiencia:</p>
+        <p class="main-section__text">Elegir las <b>gafas 3D</b> adecuadas depende en gran medida de tus necesidades, presupuesto y el tipo de contenido que planeas disfrutar. A continuación, te ofrecemos algunas pautas para ayudarte a tomar la mejor decisión, basándonos en las características de cada modelo que hemos analizado.</p>
         <ul class="main-section__text">
-            <li>Si buscas una experiencia gaming avanzada: La <b>PlayStation VR2</b> ofrece gráficos impresionantes y mandos hápticos que elevan la inmersión a otro nivel. Es ideal si ya posees una PS5 y quieres disfrutar de títulos exclusivos de alta calidad.</li>
-            <li>Para una introducción sencilla y económica: El <b>Google Cardboard</b> es la opción más accesible, perfecta para quienes desean explorar la <b>realidad virtual</b> de forma casual.</li>
-            <li>Para el mejor equilibrio entre precio y funcionalidad: La <b>Meta Quest 2</b> se mantiene como una de las opciones más completas, con compatibilidad independiente y conexión a PC para juegos más exigentes.</li>
-            <li>Si prefieres contenido multimedia o fitness: La <b>Pico 4</b> destaca por su comodidad, diseño ligero y alta resolución, ideal para aplicaciones no relacionadas exclusivamente con videojuegos.</li>
-            <li>Para usuarios experimentados: Las <p>Meta Quest 3</p> ofrecen las mejores características, pero a un precio más elevado que las anteriores.</li>
+            <li><b>Si buscas una experiencia avanzada de realidad virtual:</b>Las <b>Meta Quest 3S</b> son la opción ideal. Ofrecen una experiencia de <b>realidad mixta</b> y un rendimiento superior, con una resolución impresionante y un campo de visión amplio. Son perfectas para quienes buscan sumergirse completamente en mundos virtuales y no quieren depender de un teléfono móvil. Aunque su precio es más elevado, la calidad de la experiencia compensa la inversión.</li>
+            <li><b>Si prefieres una opción económica para iniciarte en VR:</b> Las <b>Gafas VR 3D de LuBanSir</b> son perfectas para quienes quieren una opción asequible. Son compatibles con casi todos los teléfonos y ofrecen un gran campo de visión y una experiencia inmersiva en 3D. Aunque la calidad visual dependerá de la pantalla de tu móvil, su precio y funcionalidad las convierten en una excelente elección para novatos.</li>
+            <li><b>Si te interesa el audio espacial y la inmersión completa:</b> Las <b>FIYAPOO Gafas VR 3D</b> con auriculares integrados ofrecen una experiencia más completa gracias al sonido envolvente 3D. Si además de la calidad visual, te importa el audio de alta calidad, estas gafas son una excelente opción. Son cómodas, ligeras y compatibles con una amplia variedad de smartphones.</li>
+            <li><b>Si buscas unas gafas para niños o para un uso educativo:</b> Las <b>Gafas Heromask VR</b> son ideales si quieres introducir a los más pequeños en el mundo de la <b>realidad virtual</b>, combinando entretenimiento y educación. Su diseño es perfecto para niños y vienen con juegos educativos que pueden enseñar varios idiomas, lo que las convierte en una opción original y educativa para regalos.</li>
+            <li>Las <b>FIYAPOO gafas 3D VR</b> son una excelente opción para quienes buscan comodidad durante largas sesiones de uso. Con un diseño ergonómico y lentes ajustables, son cómodas para usuarios de todas las edades, y son compatibles con muchos dispositivos. Si además de juegos, te gusta ver películas en 3D, estas gafas te proporcionarán una excelente calidad de imagen.</li>
         </ul>
     </section>
     <section class="main-section">
-        <h2 class="main-section__title">Realidad virtual, aumentada y mixta para todos los pressupuestos</h2>
-        <p class="main-section__text">La variedad de opciones en el mercado actual garantiza que siempre habrá un modelo que se ajuste a tus necesidades. Desde alternativas <b>económicas</b> como el <b>Google Cardboard</b> hasta dispositivos premium como la <b>PS VR2</b>, cada visor tiene algo único que ofrecer. No importa si buscas entretenimiento, aprendizaje, o simplemente explorar este emocionante mundo tecnológico: hay <b>gafas de realidad virtual buenas y baratas</b> para todos.</p>
+        <h2 class="main-section__title">Consejos adicionales para elegir tus gafas 3D VR</h2>
+        <ul class="main-section__text">
+            <li><b>Compatibilidad con tu dispositivo:</b> Asegúrate de que las gafas sean compatibles con el tamaño y tipo de tu teléfono móvil, ya que algunos modelos tienen limitaciones en cuanto al tamaño de pantalla.</li>
+            <li><b>Comodidad:</b> Si planeas usar las gafas durante mucho tiempo, busca modelos con correas ajustables y materiales transpirables que te garanticen confort durante largas sesiones.</li>
+            <li><b>Características adicionales:</b> Considera si prefieres opciones con auriculares integrados, como las FIYAPOO, o si el diseño debe ser ligero para facilitar su uso.</li>
+        </ul>    
     </section>
     <section class="main-section">
-        <h2 class="main-section__title">Da el primer paso y descubre las gafas, lentes y visores 3d del mercado</h2>
-        <p class="main-section__text">La <b>realidad virtual</b> está revolucionando industrias como el entretenimiento, la educación, la salud y más. Al elegir el <b>visor</b> adecuado, puedes comenzar tu viaje en este universo digital sin comprometer tu presupuesto. ¡Descubre nuevas experiencias, transforma tu manera de jugar o aprender, y aprovecha las infinitas posibilidades que la <b>realidad virtual</b> tiene para ofrecer! ¡Elige tus <b>gafas VR</b> ideales y atrévete a explorar un mundo lleno de posibilidades!</p>
-    </section>
-    <section class="main-section">
-        <h2 class="main-section__title">Aquí tienes muchas más opciones entre las que elegir, siempre va bien un buen catálogo... 😉</h2>
+        <h2 class="main-section__title">Aquí tienes más gafas 3d que te podrian interesar...</h2>
         <div class="main-section__products">
             <ProductElement id={1}/>
             <ProductElement id={2}/>
@@ -95,6 +100,12 @@ import ProductElement from "../../components/ProductElement.astro"
             <ProductElement id={5}/>
             <ProductElement id={1}/>
             <ProductElement id={2}/>
+        </div>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Nuestros últimos artículos sobre gafas de realidad virtual</h2>
+        <div class="main-section__products">
+            <ArticlesList/>
         </div>
     </section>
 </main>

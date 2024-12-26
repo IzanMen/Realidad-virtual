@@ -1,108 +1,409 @@
 [
-    {
-      "id": 1,
-      "name": "Meta Quest 3",
-      "link": "",
-      "calificacion": 9,
-      "image" : {
-        "link": "https://m.media-amazon.com/images/I/611PjWsGFRL.__AC_SX300_SY300_QL70_ML2_.jpg",
-        "alt": "Meta Quest 3"
-      },
-      "ventajas" : [
-        "Autonomia total (Sin necesidad de otro dispositivo).",
-        "Más compacto y ligero que las Meta Quest 2.",
-        "Incluye realidad mixta.",
-        "Catlálogo de juegos muy amplio."
-      ],
-      "desventajas" : [
-        "Requiere de una cuenta Meta (es gratis).",
-        "Experiencia de realidad mixta limitada.",
-        "Precio más elevado que las Meta Quest 2."
-      ]
+  {
+    "id": 1,
+    "nombre": "Meta Quest 3S",
+    "marca": "Meta",
+    "link": "",
+    "calificacion": 9.8,
+    "tipo": ["Realidad Mixta", "Realidad Virtual"],
+    "precio": 329.99,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/51ELPPChMfL._AC_SX466_.jpg",
+      "alt": "Meta Quest 3S"
     },
-    {
-      "id": 2,
-      "name": "PlayStation - Realidad Virtual VR2",
-      "link": "",
-      "calificacion": 8.4,
-      "image" : {
-        "link": "https://m.media-amazon.com/images/I/41Lx7odhhGL.__AC_SY300_SX300_QL70_ML2_.jpg",
-        "alt": "PlayStation - Realidad Virtual VR2"
-      },
-      "ventajas" : [
-        "Gráficos de alta calidad y inmersión mejorada.",
-        "Controles avanzados.",
-        "Compatibilidad con audio 3D.",
-        "Conexión a PS5 por un solo cable USB-C."
-      ],
-      "desventajas" : [
-        "Precio elevado y falta de retrocompatibilidad.",
-        "Depende completamente de la PS5.",
-        "Limitaciones de movimiento debido al cable USB-C."
-      ]
+    "caracteristicas": {
+      "pantalla": "4K + Infinite Display, 182 x 1920 píxeles por ojo",
+      "seguimiento ocular": "No",
+      "procesador": "Qualcomm Snapdragon XR2 Gen 2",
+      "memoria ram": "8 GB",
+      "almacenamiento": "128 GB / 256 GB",
+      "audio": "Soporte para audio 3D",
+      "camaras": "Cámaras de alta resolución incluyendo cámaras frontales, de seguimiento y de profundidad",
+      "controlador": "Controladores Touch Plus",
+      "autonomia": "2,5 horas",
+      "tiempo de carga": "De e a 2,5 horas",
+      "conectividad": "Inalámbrica"
     },
-    {
-      "id": 3,
-      "name": "Google Carboard",
-      "link": "",
-      "calificacion": 6.6,
-      "image" : {
-        "link": "https://m.media-amazon.com/images/I/614RTZR8AjL.__AC_SY300_SX300_QL70_ML2_.jpg",
-        "alt": "Google Carboard"
-      },
-      "ventajas" : [
-        "Precio extremadamente accesible (desde $10).",
-        "Configuración sencilla y rápida.",
-        "Compatible con iOS y Android.",
-        "Ideal para experimentar aplicaciones ligeras."
-      ],
-      "desventajas" : [
-        "Materiales poco duraderos.",
-        "Experiencia limitada comparada con dispositivos más avanzados.",
-        "Sin soporte para interacciónes complejas o juegos avanzados."
-      ]
+    "ventajas": [
+      "Realidad mixta avanzada.",
+      "Experiencia de realidad virtual potente.",
+      "Diseño cómodo y ergonómico.",
+      "Ofrece un gran equilibrio entre precio y prestaciones."
+    ],
+    "desventajas": [
+      "No cuenta con seguimiento ocular.",
+      "Tiempo de carga relativamente largo.",
+      "Algunos complementos pueden resultar caros."
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Gafas VR 3D con controlador Bluetooth",
+    "marca": "LuBanSir",
+    "link": "",
+    "calificacion": 9.4,
+    "tipo": ["Realidad Virtual"],
+    "precio": 37.99,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/51UEPNERmPL._AC_SX569_.jpg",
+      "alt": "3D VR Gafas de realidad virtual"
     },
-    {
-      "id": 4,
-      "name": "Pico 4 Ultra 256GB",
-      "link": "",
-      "calificacion": 8.4,
-      "image" : {
-        "link": "https://m.media-amazon.com/images/I/61QA4ipCRbL.__AC_SX300_SY300_QL70_ML2_.jpg",
-        "alt": "Pico 4 Ultra 256GB"
-      },
-      "ventajas" : [
-        "Diseño ultraligero que reduce la fatiga.",
-        "Resolución de alta gama.",
-        "Experiencia visual inmersiva.",
-        "Amplia compatibilidad con aplicaciones de fitness y entretenimiento."
-      ],
-      "desventajas" : [
-        "Ecosistema menos robusto que el de Oculus o PlayStation.",
-        "Mayor enfoque en contenido no gaming.",
-        "Precio elevado."
-      ]
+    "caracteristicas": {
+      "pantalla": "N/A - Se requiere de tu propio teléfono móvil",
+      "seguimiento ocular": "No",
+      "procesador": "N/A",
+      "memoria ram": "N/A",
+      "almacenamiento": "N/A",
+      "audio": "Audio espacial 3D con diadema ajustable",
+      "camaras": "N/A",
+      "controlador": "Controlador incluido con botones de control",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "Inalámbrica"
     },
-    {
-      "id": 5,
-      "name": "Meta Quest 2",
-      "link": "",
-      "calificacion": 9.4,
-      "image" : {
-        "link": "https://m.media-amazon.com/images/I/618PlE1DM8L._AC_SX466_.jpg",
-        "alt": "Meta Quest 2"
-      },
-      "ventajas" : [
-        "Funciona sin cables gracias a su autonomía.",
-        "Compatibilidad con PC para juegos más avanzados.",
-        "Excelente calidad de imágen para su precio.",
-        "Fácil configuración y acceso a una biblioteca amplia."
-      ],
-      "desventajas" : [
-        "La duración de la bateria es limitada (2-3 horas).",
-        "La correa estándar no es tan cómoda como las opciones mejoradas.",
-        "Algunas aplicaciones de alto rendimiento requieren un costo adicional."
-      ]
-    }
-  ]
-  
+    "ventajas": [
+      "Compatible con todos los teléfonos móviles.",
+      "Gran variedad de juegos y aplicaciones 3D",
+      "Precio muy asequible.",
+      "Diseño muy ajustable y cómodo."
+    ],
+    "desventajas": [
+      "Depende de la calidad de la pantalla de tu teléfono móvil.",
+      "El controlador solo es adecuado para algunos juegos.",
+      "Marca poco conocida."
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "FIYAPOO Gafas 3D VR",
+    "marca": "FIYAPOO",
+    "link": "",
+    "calificacion": 9.6,
+    "tipo": ["Realidad Virtual"],
+    "precio": 59.98,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/61l9QysbYVL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "alt": "FIYAPOO Gafas VR 3D"
+    },
+    "caracteristicas": {
+      "pantalla": "N/A - Se requiere de tu propio teléfono móvil, sistema de protección ocular.",
+      "seguimiento ocular": "No",
+      "procesador": "N/A",
+      "memoria ram": "N/A",
+      "almacenamiento": "N/A",
+      "audio": "Altavoz de diafragma de audio estéreo HI-FI",
+      "camaras": "N/A",
+      "controlador": "No",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "Inalámbrica"
+    },
+    "ventajas": [
+      "Audio espacial muy bueno.",
+      "Gran variedad de juegos y aplicaciones 3D",
+      "Auriculares estéreo integrados de alta calidad.",
+      "Diseño liviano y cómodo, con diadema ajustable."
+    ],
+    "desventajas": [
+      "Depende de la calidad de la pantalla de tu teléfono móvil.",
+      "No incluye controlador.",
+      "Solo admite teléfonos móviles de 4 a 6,53 pulgadas."
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Heromask Gafas VR con juego educativo de idiomas",
+    "marca": "Heromask",
+    "link": "",
+    "calificacion": 9.5,
+    "tipo": ["Realidad Virtual"],
+    "precio": 54.95,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/71dEt8e+NvL._AC_SX569_.jpg",
+      "alt": "Gafas realidad virtual niños HEROMASK"
+    },
+    "caracteristicas": {
+      "pantalla": "LCD",
+      "seguimiento ocular": "No",
+      "procesador": "N/A",
+      "memoria ram": "N/A",
+      "almacenamiento": "N/A",
+      "audio": "N/A",
+      "camaras": "N/A",
+      "controlador": "Inclye botones en las gafas",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "Inalámbrica"
+    },
+    "ventajas": [
+      "Las gafas están diseñadas para poder disfrutar de su propio juego educativo, aunque también son compatibles con otros juegos.",
+      "Inclyen botones en las gafas para poder interactuar con el juego.",
+      "Juego educativo ideal para tus hijos.",
+      "Diseño liviano y cómodo, con diadema ajustable."
+    ],
+    "desventajas": [
+      "Las gafas están diseñadas para un juego específico.",
+      "No se han diseñado para ser utilizadas por adultos.",
+      "No cuenta con su propia pantalla, es necesario un teléfono móvil."
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "FIYAPOO gafas 3D VR realidad virtual",
+    "marca": "FIYAPOO",
+    "link": "",
+    "calificacion": 9.3,
+    "tipo": ["Realidad Virtual"],
+    "precio": 39.98,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/61+vi087P-S._AC_SX569_.jpg",
+      "alt": "FIYAPOO gafas 3D VR realidad virtual"
+    },
+    "caracteristicas": {
+      "pantalla": "Lentes ópticas de alta definición.",
+      "seguimiento ocular": "No",
+      "procesador": "N/A",
+      "memoria ram": "N/A",
+      "almacenamiento": "N/A",
+      "audio": "N/A",
+      "camaras": "N/A",
+      "controlador": "No",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "Inalámbrica"
+    },
+    "ventajas": [
+      "Calidad de imágen muy buena.",
+      "Ligeras y ajustables para garantizar la comodidad.",
+      "Admite la visualización a simple vista de usuarios miopes por debajo de 600º",
+      "Incluye una máscara transpirable y desmontable."
+    ],
+    "desventajas": [
+      "Dependes de la calidad de la pantalla de tu teléfono móvil.",
+      "No es compatible con dispositivos que no sean de 4 a 6.53 pulgadas.",
+      "Podrian ser más livianas."
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "HTC Vive Pro",
+    "marca": "HTC",
+    "link": "",
+    "calificacion": 9.8,
+    "tipo": ["Realidad Virtual"],
+    "precio": 1251.66,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/51J4ySO+C6L._AC_SX679_.jpg",
+      "alt": "HTC Vive Pro"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantallas Dual-OLED con una resolución líder en el sector de 2880 x 1600 píxeles y una frecuencia de refresco de 90Hz.",
+      "seguimiento ocular": "No",
+      "procesador": "No tienen procesador propio, se conectan a un PC.",
+      "memoria ram": "No tienen memoria RAM propia.",
+      "almacenamiento": "No tienen almacenamiento interno.",
+      "audio": "Equipadas con auriculares over-ear que ofrecen sonido envolvente 3D.",
+      "camaras": "Cámaras frontales para el seguimiento y la interacción en la realidad virtual.",
+      "controlador": "Controladores con seguimiento de movimiento, botones, panel táctil y retroalimentación háptica.",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "USB-C 3.0, DisplayPort 1.2, Bluetooth"
+    },
+    "ventajas": [
+      "Tiene una alta calidad visual.",
+      "Su seguimiento de movimiento es extremadamente preciso, para una experiencia inmersiva y natural.",
+      "Son compatibles con una amplia gama de contenido.",
+      "Estas gafas son compatibles con accesorios como el vive Tracker y el vive Pro Eye para el seguimiento ocular, lo que agrega funcionalidades avanzadas."
+    ],
+    "desventajas": [
+      "Dependencia de un PC potente para funcionar.",
+      "El cable que conecta las gafas al PC puede ser molesto.",
+      "Tienen un costo elevado."
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "PlayStation VR2",
+    "marca": "PlayStation",
+    "link": "",
+    "calificacion": 9.7,
+    "tipo": ["Realidad Virtual"],
+    "precio": 749.90,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/614KJZb9-IL._AC_SX679_.jpg",
+      "alt": "PlayStation VR2"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantallas OLED con una resolución de 2000 x 2040 píxeles por ojo.",
+      "seguimiento ocular": "Sí",
+      "procesador": "Cuentan con un procesador integrado que trabaja junto con las PS5",
+      "memoria ram": "No tienen memoria RAM propia.",
+      "almacenamiento": "No tienen almacenamiento interno.",
+      "audio": "Sistema de audio 3D con tecnología de audio espacial que simula sonidos en 360 grados.",
+      "camaras": "Cuentan con 4 cámaras integradas para el seguimiento de la posición de la cabeza, los controles, el seguimiento ocular y el modo passthrough.",
+      "controlador": "Incluyen los Sense Controllers",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "USB-C"
+    },
+    "ventajas": [
+      "Tienen seguimiento ocular permitiendo una experiencia más inmersiva.",
+      "Cómoda y ligera con un diseño ergonómico.",
+      "Los Sense Controllers tienen retroalimentación háptica y gatillos adaptativos, para mejorar la interacción y la inmersión en los juegos.",
+      "A través de seguimiento ocular, solo se procesa alta resolución en el área donde miras, lo que mejora el rendimiento."
+    ],
+    "desventajas": [
+      "Necesitan la PS5 para funcionar.",
+      "El cable que conecta las gafas a la PS5 puede resultar incómodo limitando el movimiento.",
+      "Aunque son más cómodas que las PS VR originales, durante largas sesiones de juego pueden resultar pesadas."
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "VITURE Gafas Pro XR/AR",
+    "marca": "VITURE",
+    "link": "",
+    "calificacion": 9.8,
+    "tipo": ["Realidad Aumentada", "Realidad Mixta"],
+    "precio": 599,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/61z7PcVX-JL._AC_SX679_.jpg",
+      "alt": "VITURE Gafas Pro XR/AR"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantallas Micro-OLED de Sony, resolución de 1080p y un tamaño de pantalla virtual de hasta 135 pulgadas.",
+      "seguimiento ocular": "No",
+      "procesador": "Procesador personalizado diseñado específicamente para soportar experiencias de realidad aumentada.",
+      "memoria ram": "8 GB",
+      "almacenamiento": "128 GB",
+      "audio": "Altavoces Harman unicados en las patillas.",
+      "camaras": "Están equipadas con cámaras de paso (passtrough).",
+      "controlador": "No",
+      "autonomia": "8 horas",
+      "tiempo de carga": "2 horas",
+      "conectividad": "USB-C, WI-FI y Bluetooth"
+    },
+    "ventajas": [
+      "Tienen una alta compatibilidad con smartphones, PCs y consolas.",
+      "Diseño cómodo y ligero, ideal para uso prolongado.",
+      "Brillo de hasta 4000 nits, para su uso tanto en interiores como en exteriores.",
+      "Ajuste personalizado de enfoque para cada ojo, facilitando su utilización a personas con miopía."
+    ],
+    "desventajas": [
+      "No tienen seguimiento ocular ni gestual.",
+      "Campo de visión limitado a 46 grados.",
+      "El audio integrado es limitado en volumen."
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "Rokid Joy Max",
+    "marca": "Rokid",
+    "link": "",
+    "calificacion": 9.5,
+    "tipo": ["Realidad Aumentada"],
+    "precio": 559,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/413IlKO2ZUL._AC_.jpg",
+      "alt": "Gafas AR Rokid Joy Max"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantallas Micro-OLED 360 pulgadas con 50º de campo de visión y luminancia de 600 nits.",
+      "seguimiento ocular": "Si",
+      "procesador": "Qualcomm Snapdragon XR2",
+      "memoria ram": "6 GB",
+      "almacenamiento": "128 GB",
+      "audio": "Altavoces integrados con tecnología de audio espacial.",
+      "camaras": "Cámaras integradas para el seguimiento del entorno y la interacción con el usuario.",
+      "controlador": "No",
+      "autonomia": "De 4 a 6 horas.",
+      "tiempo de carga": "2 horas",
+      "conectividad": "USB-C, WI-FI y Bluetooth"
+    },
+    "ventajas": [
+      "Tienen un procesador muy potente para ofrecer una experiencia fluida y de alta calidad.",
+      "Incluye tecnología de seguimiento ocular para una interacción más natural.",
+      "Pantalla de alta calidad con una resolución de 1080p",
+      "Sonido espacial integrado, eliminando la necesidad de auriculares externos."
+    ],
+    "desventajas": [
+      "Aunque ofrecen una autonomía de 4 a 6 horas, este tiempo puede ser insuficiente.",
+      "Aunque ofrece 128 GB de almacenamiento, este no es ampliable.",
+      "Estas gafas pueden tener un precio más alto que otros dispositivos similares."
+    ]
+  },
+  {
+    "id": 9,
+    "nombre": "XREAL Air AR Glasses",
+    "marca": "XREAL",
+    "link": "",
+    "calificacion": 9.4,
+    "tipo": ["Realidad Aumentada"],
+    "precio": 337,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/61c6LKpxCLL._AC_SX679_.jpg",
+      "alt": "XREAL Air AR Glasses"
+    },
+    "caracteristicas": {
+      "pantalla": "Paneles Micro-OLED de Sony con una resolución de 1080p (Full HD) en cada lente.",
+      "seguimiento ocular": "No",
+      "procesador": "N/A - Depende del dispositivo al que se conecten.",
+      "memoria ram": "N/A",
+      "almacenamiento": "N/A",
+      "audio": "Altavoces direccionales ubicados en las patillas.",
+      "camaras": "No tiene cámaras integradas.",
+      "controlador": "No",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "USB-C, WI-FI y Bluetooth"
+    },
+    "ventajas": [
+      "Portabiliddad y diseño ligero.",
+      "Consumen poca energía del dispositivo conectado.",
+      "Funcionalidad de realidad aumentada básica con múltiples pantallas virtuales.",
+      "Precio accesible siendo más baratas que otras gafas de realidad aumentada."
+    ],
+    "desventajas": [
+      "Dependencia de dispositivos externos.",
+      "Si usas iPhone necesitarás múltiples adaptadores, y las funciones AR están limitadas.",
+      "Al ser más económicas que otras de su mismo tipo, carecen de algunas funciones más comlejas."
+    ]
+  },
+  {
+    "id": 10,
+    "nombre": "Meta Quest 3",
+    "marca": "Meta",
+    "link": "",
+    "calificacion": 9.8,
+    "tipo": ["Realidad Mixta", "Realidad Virtual"],
+    "precio": 699.99,
+    "imagen": {
+      "link": "https://m.media-amazon.com/images/I/611PjWsGFRL._AC_SX466_.jpg",
+      "alt": "Meta Quest 3"
+    },
+    "caracteristicas": {
+      "pantalla": "4K + Infinite Display, 2064 x 2208 píxeles por ojo",
+      "seguimiento ocular": "No",
+      "procesador": "Qualcomm Snapdragon XR2 Gen 2",
+      "memoria ram": "12 GB",
+      "almacenamiento": "128 / 512 GB",
+      "audio": "Equipadas con altavoces espaciales 3D",
+      "camaras": "Cuenta con varias externas para el seguimiento de movimiento y para la funcionalidad de passthrough (realidad mixta).",
+      "controlador": "Controladores con retroalimentación háptica y seguimiento de movimiento.",
+      "autonomia": "De 2 a 3 horas",
+      "tiempo de carga": "2 horas",
+      "conectividad": "USB-C, WI-FI 6 y Bluetooth"
+    },
+    "ventajas": [
+      "Gran rendimiento en realidad virtual y realidad mixta.",
+      "No obstante estar enfocadas en la realidad virtual, ofrecen una realidad mixta muy avanzada.",
+      "Incluye unos controladores avanzados mejorando la experiencia táctil en VR.",
+      "Tienen un diseño cómodo y ergonómico."
+    ],
+    "desventajas": [
+      "Aunque la batería es buena, la duración de esta es de entre 2 y 3 horas, lo que puede no ser suficiente para sesiones largas.",
+      "No incluye seguimiento ocular.",
+      "Tienen un precio elevado, y puede no ser asequible para muchas personas."
+    ]
+  }
+]
