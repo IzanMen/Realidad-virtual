@@ -236,7 +236,7 @@
     "caracteristicas": {
       "pantalla": "Pantallas OLED con una resolución de 2000 x 2040 píxeles por ojo.",
       "seguimiento ocular": "Sí",
-      "procesador": "Cuentan con un procesador integrado que trabaja junto con las PS5",
+      "procesador": "Cuentan con un procesador integrado que trabaja junto con las PS5.",
       "memoria ram": "No tienen memoria RAM propia.",
       "almacenamiento": "No tienen almacenamiento interno.",
       "audio": "Sistema de audio 3D con tecnología de audio espacial que simula sonidos en 360 grados.",
@@ -296,7 +296,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 9,
     "nombre": "Rokid Joy Max",
     "marca": "Rokid",
     "link": "",
@@ -333,7 +333,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "nombre": "XREAL Air AR Glasses",
     "marca": "XREAL",
     "link": "",
@@ -370,7 +370,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 11,
     "nombre": "Meta Quest 3",
     "marca": "Meta",
     "link": "",
