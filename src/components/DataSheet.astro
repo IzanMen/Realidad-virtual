@@ -1,0 +1,99 @@
+---
+
+import Products from '../data/products-list.json';
+
+const { id } = Astro.props;
+
+const product = Products.find(product => product.id === id);
+
+---
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Ficha técnica de las {product?.nombre}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-titles">Pantalla</td>
+                <td>{product?.caracteristicas.pantalla}</td>
+            </tr>
+            <tr>
+                <td class="table-titles">Seguimiento ocular</td>
+                <td>{product?.caracteristicas['seguimiento ocular']}</td>
+            </tr>
+            <tr>
+                <td class="table-titles">Procesador</td>
+                <td>{product?.caracteristicas.procesador}</td>
+            </tr>
+            <tr>
+                <td>Memoria RAM</td>
+                <td>{product?.caracteristicas['memoria ram']}</td>
+            </tr>
+            <tr>
+                <td>Almacenamiento</td>
+                <td>{product?.caracteristicas.almacenamiento}</td>
+            </tr>
+            <tr>
+                <td>Audio</td>
+                <td>{product?.caracteristicas.audio}</td>
+            </tr>
+            <tr>
+                <td class="table-titles">Cámaras</td>
+                <td>{product?.caracteristicas.camaras}</td>
+            </tr>
+            <tr>
+                <td class="table-titles">Controladores</td>
+                <td>{product?.caracteristicas.controlador}</td>
+            </tr>
+            <tr>
+                <td class="table-titles">Autonomía</td>
+                <td>{product?.caracteristicas.autonomia}</td>
+            </tr>
+            <tr>
+                <td class="table-titles">Tiempo de carga</td>
+                <td>{product?.caracteristicas['tiempo de carga']}</td>
+            </tr>
+            <tr>
+                <td class="table-titles">Conectividad</td>
+                <td>{product?.caracteristicas.conectividad}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<style>
+
+    .container {
+        width: 100%;
+        overflow: auto;
+        margin-bottom: 10px;
+    }
+
+    table {
+		font-family: 'Rajdhani';
+        font-size: 1.2rem;
+        border: 3px solid #555;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        min-width: 800px;
+    }
+
+    tr {
+        border: 3px solid #555;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 5px 10px;
+    }
+
+    .table-titles {
+        width: 300px;
+    }
+
+</style>

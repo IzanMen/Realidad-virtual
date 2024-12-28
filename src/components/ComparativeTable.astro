@@ -9,32 +9,41 @@ const productos = Products.filter(product => ids.includes(product.id));
 
 ---
 
-<table class="table">
-    <thead class="table-head">
-        <tr>
-            <th class="table-head__item">Imagen</th>
-            <th class="table-head__item">Nombre</th>
-            <th class="table-head__item">Calificación</th>
-            <th class="table-head__item">Precio</th>
-        </tr>
-    </thead>
-    <tbody class="table-body">
-        {productos.map((producto) => (
+<div class="container">
+    <table class="table">
+        <thead class="table-head">
             <tr>
-                <td class="table-body__item --image">
-                    <img src={producto.imagen.link} alt={producto.imagen.alt} />
-                </td>
-                <td class="table-body__item --name">{producto.nombre}</td>
-                <td class="table-body__item --cal">{producto.calificacion}</td>
-                <td class="table-body__item --link">
-                    <AmazonButton text="Ver precio en Amazon" link={producto.link} />
-                </td>
+                <th class="table-head__item">Imagen</th>
+                <th class="table-head__item">Nombre</th>
+                <th class="table-head__item">Calificación</th>
+                <th class="table-head__item">Precio</th>
             </tr>
-        ))}
-    </tbody>
-</table>
+        </thead>
+        <tbody class="table-body">
+            {productos.map((producto) => (
+                <tr>
+                    <td class="table-body__item --image">
+                        <img src={producto.imagen.link} alt={producto.imagen.alt} />
+                    </td>
+                    <td class="table-body__item --name">{producto.nombre}</td>
+                    <td class="table-body__item --cal">{producto.calificacion}</td>
+                    <td class="table-body__item --link">
+                        <AmazonButton text="Ver precio en Amazon" link={producto.link} />
+                    </td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
+    
+</div>
 
 <style>
+
+    .container {
+        width: 100%;
+        overflow-x: auto;
+        padding: 10px 0;
+    }
 
     .table {
         padding: 10px 30px;

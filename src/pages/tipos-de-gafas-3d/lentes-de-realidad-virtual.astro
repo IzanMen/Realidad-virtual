@@ -1,0 +1,98 @@
+---
+
+import Layout from "../../layouts/Layout.astro";
+import Products from "../../data/products-list.json";
+import ProductAdvantages from "../../components/ProductAdvantages.astro";
+import DataSheet from "../../components/DataSheet.astro";
+import ProductElement from "../../components/ProductElement.astro";
+import ArticlesList from "../../components/ArticlesList.astro";
+
+const metaQuest3s = Products.find(product => product.id === 1);
+const htcVivePro = Products.find(product => product.id === 6);
+const playStationVR2 = Products.find(product => product.id === 7);
+
+---
+
+<Layout 
+    title="Lentes de realidad virtual | Gafas 3d para el metaverso"
+    description="🌟🔍 Descubre las mejores gafas de realidad virtual 🕶️ y lleva tus experiencias al siguiente nivel. Compara los últimos modelos de gafas VR y lentes para el metaverso, con opciones accesibles y de alta calidad. 🌐✨ ¡Sumérgete en el mundo de la realidad virtual 3D como nunca antes! 🚀"
+>
+
+
+<main class="main">
+    <header class="main-header">
+        <h1 class="main-header__title">La guía definitiva de las gafas de realidad virtual para el metaverso</h1>
+        <p class="main-header__text">Las <b>gafas de realidad virtual</b> son dispositivos que permiten al usuario experimentar un entorno digital tridimensional, haciendo que se sienta como si estuviera realmente dentro de ese espacio. A través de pantallas y auriculares especializados, estas gafas bloquean la visión del mundo real y sumergen al usuario en un entorno generado por ordenador. La experiencia es completamente diferente a la <b>realidad aumentada (AR)</b>, donde elementos digitales se sobreponen a la vista del mundo real.</p>
+    </header>
+    <section class="main-section">
+        <h2 class="main-section__title">Diferencias entre realidad virtual y realidad aumentada</h2>
+        <p class="main-section__text">Mientras que la <b>realidad virtual</b> te transporta a un mundo completamente digital, la <b>realidad aumentada</b> mezcla lo físico y lo digital, permitiendo que los usuarios vean elementos virtuales en el entorno real. Por ejemplo, con las <b>gafas de realidad aumentada</b> podrías ver un carácter animado interactuando en tu sala de estar, mientras que con las <b>gafas de realidad virtual</b>, sentirías que estás en un mundo de fantasía, jugando un videojuego o asistiendo a un evento virtual. Ambas tecnologías ofrecen experiencias únicas, pero las <b>gafas de realidad virtual</b> son fundamentales para quienes desean explorar el metaverso en su máxima expresión.</p>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Comparativa de gafas de realidad virtual: Meta Quest 3S, HTC Vive Pro y PlayStation VR2</h2>
+        <p class="main-section__text">A continuación, analizamos tres opciones líderes en el mercado de <b>gafas de realidad virtual</b>. Cada modelo tiene características distintivas que podrían atraer diferentes tipos de usuarios.</p>
+        <h3 class="main-section__subtitle">META QUEST 3S</h3>
+        <img class="main-section__product-img" src={metaQuest3s?.imagen.link} alt={metaQuest3s?.imagen.alt} />
+        <DataSheet id={1} />
+        <p class="main-section__text"><b>Meta Quest 3S</b> es una de las opciones más destacadas en el mercado de la <b>realidad virtual</b>, ofreciendo una experiencia inmersiva con un excelente equilibrio entre calidad y precio. Con su pantalla 4K y un procesador Qualcomm Snapdragon XR2 Gen 2, promete un rendimiento fluido y detalles visuales nítidos. Además, su autonomía de hasta 2,5 horas permite disfrutar de largos períodos de inmersión, aunque los usuarios deben tener en cuenta que la falta de seguimiento ocular y un tiempo de carga algo largo podrían ser factores limitantes. Aun así, con su precio competitivo de 329.99€, la <b>Meta Quest 3S</b> es ideal para aquellos que buscan una opción accesible sin sacrificar demasiada calidad en su experiencia de <b>realidad virtual</b>. Además, su versatilidad en cuanto a soporte para realidad mixta y virtual la convierte en una excelente opción para explorar el metaverso.</p>
+        <ProductAdvantages id={1} />
+        <h3 class="main-section__subtitle">HTC VIVE PRO</h3>
+        <img class="main-section__product-img" src={htcVivePro?.imagen.link} alt={htcVivePro?.imagen.alt} />
+        <DataSheet id={6} />
+        <p class="main-section__text">La <b>HTC Vive Pro</b> se posiciona como una de las mejores <b>gafas de realidad virtual</b> en términos de calidad visual, ofreciendo una impresionante resolución de 2880 x 1600 píxeles con pantallas Dual-OLED. Este modelo es ideal para usuarios que buscan la mejor experiencia gráfica y una inmersión profunda gracias a su seguimiento de movimiento preciso y sonido envolvente 3D. Sin embargo, su alto precio de 1251.66€ y la necesidad de un PC potente para funcionar pueden ser barreras para algunos usuarios. Además, el cable que conecta las gafas al sistema puede resultar incómodo durante sesiones prolongadas. A pesar de estos inconvenientes, la <b>HTC Vive Pro</b> es la opción de elección para aquellos que buscan la mejor calidad visual y la mayor cantidad de contenido compatible.</p>
+        <ProductAdvantages id={6} />
+        <h3 class="main-section__subtitle">PLAYSTATION VR2</h3>
+        <img class="main-section__product-img" src={playStationVR2?.imagen.link} alt={playStationVR2?.imagen.alt} />
+        <DataSheet id={7} />
+        <p class="main-section__text">El <b>PlayStation VR2</b> es una excelente opción para los usuarios de PlayStation 5, ofreciendo una experiencia inmersiva con pantallas OLED de alta resolución (2000 x 2040 píxeles por ojo) y seguimiento ocular que mejora la interacción en el <b>metaverso</b>. Su diseño ergonómico y ligero hace que sea cómodo para sesiones largas de juego, mientras que el audio 3D eleva la experiencia sensorial. Sin embargo, para aprovechar todas sus funciones, los usuarios deben tener una PS5, lo que limita su accesibilidad para quienes no tienen la consola. A pesar de este inconveniente, el precio de 749.90€ sigue siendo razonable dado su alto rendimiento y la integración perfecta con el ecosistema de PlayStation.</p>
+        <ProductAdvantages id={7} />
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">¿Qué gafas 3d de realidad virtual elegir para el metaverso?</h2>
+        <p class="main-section__text">La elección de las gafas dependerá principalmente de tus necesidades y presupuesto.</p>
+        <ul class="main-section__text">
+            <li>Si buscas una opción asequible con un gran rendimiento, <b>Meta Quest 3S</b> es ideal, especialmente para quienes quieren adentrarse en el <b>metaverso</b> sin gastar una fortuna.</li>
+            <li>Para aquellos que priorizan la calidad visual y están dispuestos a invertir, <b>HTC Vive Pro</b> ofrece una experiencia inigualable, aunque requiere un sistema potente.</li>
+            <li>Si eres fanático de PlayStation, el <b>PlayStation VR2</b> se presenta como una excelente opción, gracias a su integración con la consola y su tecnología de seguimiento ocular.</li>
+        </ul>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Conclusión</h2>
+        <p class="main-section__text">Las <b>gafas de realidad virtual</b> son una herramienta esencial para explorar el <b>metaverso</b> y disfrutar de experiencias inmersivas. Ya sea que elijas la <b>Meta Quest 3S</b>, <b>HTC Vive Pro</b> o <b>PlayStation VR2</b>, cada una ofrece características únicas que enriquecerán tu aventura digital. Antes de decidir, considera tus preferencias, el tipo de contenido que deseas explorar y tu presupuesto. ¡Sumérgete en el futuro de la tecnología y descubre todo lo que te espera en el mundo virtual!</p>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Aquí tienes más gafas 3d que te podrian interesar...</h2>
+        <div class="main-section__products">
+            <ProductElement id={1} />
+            <ProductElement id={2} />
+            <ProductElement id={3} />
+            <ProductElement id={4} />
+            <ProductElement id={5} />
+            <ProductElement id={6} />
+            <ProductElement id={7} />
+            <ProductElement id={8} />
+            <ProductElement id={9} />
+            <ProductElement id={10} />
+            <ProductElement id={11} />
+        </div>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Nuestros últimos artículos sobre gafas 3d</h2>
+        <ArticlesList />
+    </section>
+</main>
+
+</Layout>
+
+<style>
+
+    h1 {
+        font-weight: 400;
+    }
+
+    .main-section__product-img {
+        height: 400px;
+        max-width: 100%;
+    }
+
+</style>
