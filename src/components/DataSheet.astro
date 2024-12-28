@@ -12,7 +12,7 @@ const product = Products.find(product => product.id === id);
     <table>
         <thead>
             <tr>
-                <th>Ficha técnica de las {product?.nombre}</th>
+                <th>Ficha técnica de las <a href={product?.link}>{product?.nombre}</a></th>
             </tr>
         </thead>
         <tbody>
@@ -78,7 +78,6 @@ const product = Products.find(product => product.id === id);
         border: 3px solid #555;
         border-collapse: collapse;
         width: 100%;
-        margin-top: 20px;
         margin-bottom: 10px;
         min-width: 800px;
     }
@@ -94,6 +93,11 @@ const product = Products.find(product => product.id === id);
 
     .table-titles {
         width: 300px;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
     }
 
 </style>
