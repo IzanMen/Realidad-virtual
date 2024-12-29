@@ -26,7 +26,7 @@ const product = Products.find(product => product.id === id);
 <div class="product-element">
     <img class="product-element__image" src={product?.imagen.link} alt={product?.imagen.alt}>
     <h3 class="product-element__title">{product?.nombre}</h3>
-    <AmazonButton text="Comprar en Amazon" href={product?.link} />
+    <AmazonButton text="Comprar en Amazon" href={product?.link} class="product-element__button" />
 </div>
 
 <style>
@@ -36,6 +36,8 @@ const product = Products.find(product => product.id === id);
         padding: 20px;
         border: 1px solid #0002;
         margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 50px;
 
         display: flex;
         flex-direction: column;

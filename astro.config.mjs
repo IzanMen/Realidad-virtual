@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://gafasvr.vercel.app', 
+    site: 'https://gafasderealidadvirtual.com', 
     integrations: [sitemap()],
 });
