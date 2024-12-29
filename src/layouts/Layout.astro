@@ -170,24 +170,28 @@ const { title , description } = Astro.props as Props;
 
 	@font-face {
 		font-family: 'Orbitron';
-		src: url('../../public/fonts/Orbitron.ttf');
+		src: url('../../public/fonts/Orbitron.ttf') format('truetype');
+		font-display: swap;
 	}
 
 	@font-face {
 		font-family: 'Rajdhani';
-		src: url('../../public/fonts/Rajdhani-Bold.ttf');
+		src: url('../../public/fonts/Rajdhani-Bold.ttf') format('truetype');
 		font-weight: bold;
+		font-display: swap;
 	}
 
 	@font-face {
 		font-family: 'Rajdhani';
-		src: url('../../public/fonts/Rajdhani-Regular.ttf');
+		src: url('../../public/fonts/Rajdhani-Regular.ttf') format('truetype');
 		font-weight: normal;
+		font-display: swap;
 	}
 
 	@font-face {
 		font-family: 'Allerta Stencil';
-		src: url('../../public/fonts/Allerta.ttf');
+		src: url('../../public/fonts/Allerta.ttf') format('truetype');
+		font-display: swap;
 	}
 
 	* {
