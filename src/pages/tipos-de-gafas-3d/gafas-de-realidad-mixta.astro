@@ -5,6 +5,7 @@ import ProductAdvantages from "../../components/ProductAdvantages.astro";
 import DataSheet from "../../components/DataSheet.astro";
 import ProductElement from "../../components/ProductElement.astro";
 import ArticlesList from "../../components/ArticlesList.astro";
+import Products from '../../../public/data/products-list.json';
 
 ---
 
@@ -61,17 +62,9 @@ import ArticlesList from "../../components/ArticlesList.astro";
     <section class="main-section">
         <h2 class="main-section__title">Nuestro catálogo de gafas de realidad mixta</h2>
         <div class="main-section__products">
-            <ProductElement id={1} tipo="Realidad Mixta"/>
-            <ProductElement id={2} tipo="Realidad Mixta"/>
-            <ProductElement id={3} tipo="Realidad Mixta"/>
-            <ProductElement id={4} tipo="Realidad Mixta"/>
-            <ProductElement id={5} tipo="Realidad Mixta"/>
-            <ProductElement id={6} tipo="Realidad Mixta"/>
-            <ProductElement id={7} tipo="Realidad Mixta"/>
-            <ProductElement id={8} tipo="Realidad Mixta"/>
-            <ProductElement id={9} tipo="Realidad Mixta"/>
-            <ProductElement id={10} tipo="Realidad Mixta"/>
-            <ProductElement id={11} tipo="Realidad Mixta"/>
+            {Products.map((product) => (
+              <ProductElement id={product.id} tipo="Realidad Mixta"/>
+            ))}
         </div>
     </section>
     <section class="main-section">

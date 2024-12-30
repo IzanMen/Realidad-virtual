@@ -1,0 +1,93 @@
+---
+
+import Layout from "../../layouts/Layout.astro";
+import ProductElement from "../../components/ProductElement.astro";
+import DataSheet from "../../components/DataSheet.astro";
+import ProductAdvantages from "../../components/ProductAdvantages.astro";
+import AmazonButton from "../../components/AmazonButton.astro";
+import Products from '../../../public/data/products-list.json';
+import ArticlesList from "../../components/ArticlesList.astro";
+
+---
+
+<Layout 
+    title="Gafas de realidad virtual Oculus | Lentes VR 3D de Meta"
+    description="🔝 El mejor análisis sobre las gafas de realidad virtual Oculus y su potencial. Comparativa de los mejores lentes de Meta (Oculus)"
+>
+
+<main class="main">
+    <header class="main-header">
+        <h1 class="main-header__title">Análisis sobre las gafas de realidad virtual Oculus</h1>
+        <p class="main-header__text">El mercado de la <b>realidad virtual</b> (VR) ha evolucionado a pasos agigantados en los últimos años, y <b>Oculus</b> se ha posicionado como uno de los actores más relevantes de esta revolución. Desde su incursión con el <b>Oculus Rift</b> hasta su transición hacia dispositivos más accesibles y autónomos como las <b>gafas Oculus Quest 2</b>, la marca ha logrado capturar la atención de miles de usuarios. Pero, más allá del marketing y el nombre, ¿realmente cumplen las <b>gafas de realidad virtual Oculus</b> con las expectativas? Este artículo busca analizar y profundizar en las opciones disponibles dentro del ecosistema de <b>Oculus</b>, evaluando sus fortalezas, debilidades y su impacto en la experiencia del usuario.</p>
+    </header>
+    <section class="main-section">
+        <h2 class="main-section__title">Principales modelos de gafas virtuales Oculus</h2>
+
+        <h3 class="main-section__subtitle">OCULUS QUEST 3 (META QUEST 3)</h3>
+        <p class="main-section__subtitle">: LA EVOLUCIÓN DE LA REALIDAD VIRTUAL AUTÓNOMA</p>
+        <ProductElement id={11} />
+        <p class="main-section__text"> Las <b>gafas Meta Quest 3</b> (anteriormente conocidas como <b>Oculus Quest 3</b>) han sido un hito en el mundo de la <b>realidad virtual</b>. Este dispositivo, al igual que sus predecesores, es completamente autónomo, es decir, no requiere un PC de alto rendimiento ni cables para funcionar. A diferencia de las <b>gafas Oculus Quest 2</b>, el <b>Oculus Quest 3</b> lleva la experiencia de la <b>realidad virtual</b> a un nuevo nivel gracias a sus mejoras tanto en potencia como en funcionalidades.</p>
+        <DataSheet id={11} />
+        <ProductAdvantages id={11} />
+        <AmazonButton text="Ver en Amazon" href={Products[10].link} />
+
+        <br><h3 class="main-section__subtitle --margin-top">OCULUS QUEST 3S (META QUEST 3S)</h3>
+        <p class="main-section__subtitle">: LA OPCIÓN ECONÓMICA DE OCULUS</p>
+        <ProductElement id={1} />
+        <p class="main-section__text">Las <b>gafas Meta Quest 3S</b> (anteriormente conocidas como <b>Oculus Quest 3S</b>) son una versión más asequible de las <b>Meta Quest 3</b>, ofreciendo una experiencia de <b>realidad virtual</b> autónoma sin necesidad de un PC ni cables, pero con algunas diferencias en cuanto a rendimiento. Aunque no cuentan con las mismas mejoras gráficas y de rendimiento que las <b>Oculus Quest 3</b>, las <b>Oculus Quest 3S</b> representan una opción más accesible para aquellos que buscan entrar en el mundo de la <b>realidad virtual</b> sin gastar tanto. Son ideales para quienes desean disfrutar de experiencias inmersivas a un precio más bajo, pero sin las prestaciones avanzadas de su modelo superior.</p>
+        <DataSheet id={1} />
+        <ProductAdvantages id={1} />
+        <AmazonButton text="Ver en Amazon" href={Products[0].link} />
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Aspectos importantes antes de comprar las gafas de realidad virtual Oculus</h2>
+
+        <h3 class="main-section__subtitle">TIPO DE USO</h3>
+        <p class="main-section__text">Si buscas portabilidad y una experiencia sencilla, las <b>gafas Oculus Quest 3</b> son la elección ideal. Si, en cambio, buscas una experiencia gráfica de alto nivel y una mayor precisión en el seguimiento de movimientos, las <b>gafas Oculus Quest 3S</b> podrían ser la mejor opción.</p>
+
+        <h3 class="main-section__subtitle">COMPATIBILIDAD</h3>
+        <p class="main-section__text">Las gafas <b>Oculus Quest 3</b> y <b>Oculus Quest 3S</b> son extremadamente versátiles. Pueden usarse de manera independiente o conectadas a un PC para acceder a juegos más potentes, lo que las hace perfectas tanto para usuarios casuales como para los más exigentes.</p>
+
+        <h3 class="main-section__subtitle">ACCESORIOS ADICIONALES</h3>
+        <p class="main-section__text">Al igual que con sus predecesores, los accesorios pueden mejorar la experiencia de uso. Los usuarios de gafas graduadas pueden recurrir al adaptador para <b>gafas Oculus Quest 3</b> para mantener la comodidad sin comprometer la calidad visual. Además, si buscas extender la duración de las sesiones, puedes optar por una batería externa o un kit de accesorios <b>Meta Quest 3</b> para optimizar la experiencia.</p>
+
+        <h3 class="main-section__subtitle">DURABILIDAD Y SOPORTE</h3>
+        <p class="main-section__text">Aunque <b>Meta</b> ha mejorado el soporte y la durabilidad de los dispositivos, siempre es importante tener en cuenta la vida útil de los modelos más antiguos. Las <b>gafas Meta Quest 3S</b> ofrecen una mayor resistencia, pero es recomendable siempre considerar los futuros lanzamientos de la marca.</p>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Conclusión: ¿Son las gafas de realidad virtual Oculus una buena inversión?
+        </h2>
+        <p class="main-section__text">Las <b>gafas Meta</b> (antes <b>Oculus</b>) siguen siendo una de las mejores opciones para quienes buscan una entrada a la <b>realidad virtual</b>. Dependiendo de tus necesidades, puedes optar por las <b>gafas Oculus Quest 3</b> si prefieres un dispositivo autónomo con un buen equilibrio de calidad y precio, o las <b>gafas Oculus Quest 3S</b> si deseas lo último en gráficos y precisión. La <b>realidad virtual Meta</b> es una experiencia increíblemente inmersiva, pero siempre es importante gestionar las expectativas y entender las limitaciones de la tecnología, especialmente en lo que respecta a la duración de la batería y las necesidades gráficas.</p>
+        <p class="main-section__text">Antes de tomar una decisión, evalúa tus necesidades, tu presupuesto y qué tanto planeas usar las <b>gafas VR Meta</b> para asegurarte de que eliges el modelo más adecuado para ti. Sin duda, las <b>gafas Meta Quest 3</b> y <b>Meta Quest 3S</b> son el futuro cercano de la <b>realidad virtual</b>, pero solo tú puedes decidir si este futuro se adapta a tus expectativas.</p>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">
+          Catálogo de las mejores opciones de gafas de realidad virtual
+        </h2>
+        <div class="main-section__products">
+          {Products.map((product) => (
+            <ProductElement id={product.id} />
+          ))}
+        </div>
+      </section>
+    <section class="main-section">
+        <h2 class="main-section__title">🟥 ¡ACTUALIZACIÓN! Nuestro último artículo sobre las gafas de realidad virtual Oculus Quest 2</h2>
+        <ArticlesList>
+    </section>
+</main>
+
+</Layout>
+
+<style>
+    .main-header__title {
+        font-weight: 400;
+    }
+
+    .main-section__subtitle {
+        display: inline-block;
+    }
+
+    .--margin-top {
+        margin-top: 30px;
+    }
+</style>

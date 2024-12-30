@@ -6,6 +6,7 @@ import ProductAdvantages from "../../components/ProductAdvantages.astro"
 import AmazonButton from "../../components/AmazonButton.astro"
 import ProductElement from "../../components/ProductElement.astro"
 import ArticlesList from "../../components/ArticlesList.astro"
+import Products from '../../../public/data/products-list.json';
 
 ---
 
@@ -100,17 +101,9 @@ import ArticlesList from "../../components/ArticlesList.astro"
     <section class="main-section">
         <h2 class="main-section__title">Catlálogo de los mejores cascos de realidad virtual</h2>
         <div class="main-section__products">
-            <ProductElement id={1} />
-            <ProductElement id={2} />
-            <ProductElement id={3} />
-            <ProductElement id={4} />
-            <ProductElement id={5} />
-            <ProductElement id={6} />
-            <ProductElement id={7} />
-            <ProductElement id={8} />
-            <ProductElement id={9} />
-            <ProductElement id={10} />
-            <ProductElement id={11} />
+            {Products.map((product) => (
+              <ProductElement id={product.id}/>
+            ))}
         </div>
     </section>
 

@@ -3,6 +3,7 @@
 import Layout from "../../layouts/Layout.astro"
 import ProductElement from "../../components/ProductElement.astro"
 import ArticlesList from "../../components/ArticlesList.astro"
+import Products from '../../../public/data/products-list.json';
 
 ---
 
@@ -22,9 +23,9 @@ import ArticlesList from "../../components/ArticlesList.astro"
         <p class="main-section__text">Las <b>gafas de realidad virtual</b> (VR) te sumergen en entornos simulados que parecen tangibles. Estas <b>gafas VR</b> se utilizan en una amplia gama de escenarios: desde videojuegos hasta simulaciones profesionales y experiencias educativas avanzadas. Su capacidad para crear mundos inmersivos las hace ideales para el entretenimiento y la capacitación.</p>
         <p class="main-section__text">Modelos destacados como las <b>Meta Quest 3</b>, las <b>HTC Vive Pro</b> y las <b>PlayStation VR 2</b> ilustran el progreso en accesibilidad y rendimiento de las <b>gafas VR</b>. Si quieres profundizar, consulta nuestra guía sobre las <a href="https://gafasderealidadvirtual.com/tipos-de-gafas-3d/gafas-de-realidad-virtual">mejores gafas de realidad virtual</a>.</p>
         <div class="main-section__products">
-            <ProductElement id={1} />
-            <ProductElement id={6} />
-            <ProductElement id={7} />
+            <ProductElement id={1} tipo="Realidad Virtual"/>
+            <ProductElement id={2} tipo="Realidad Virtual"/>
+            <ProductElement id={3} tipo="Realidad Virtual"/>
         </div>
     </section>
 
@@ -33,9 +34,9 @@ import ArticlesList from "../../components/ArticlesList.astro"
         <p class="main-section__text">Las <b>gafas de realidad aumentada</b> (AR) combinan el mundo físico con elementos digitales interactivos. Unas <b>gafas para realidad aumentada</b> pueden superponer indicaciones en tiempo real mientras caminas o mostrar guías de reparación mientras trabajas. Esto las convierte en herramientas esenciales para sectores como la educación, la salud y la industria.</p>
         <p class="main-section__text">Entre los modelos más innovadores se encuentran las <b>XREAL Air AR Glasses</b>, las <b>Rokid Joy Max</b> y las <b>VITURE Gafas Pro XR/AR</b>. Estas <b>lentes para realidad aumentada</b> destacan por su comodidad y funcionalidad. Más información en nuestro artículo sobre las <a href="https://gafasderealidadvirtual.com/tipos-de-gafas-3d/gafas-de-realidad-aumentada">mejores gafas de realidad aumentada</a>.</p>
         <div class="main-section__products">
-            <ProductElement id={8} />
-            <ProductElement id={9} />
-            <ProductElement id={10} />
+            <ProductElement id={1} tipo="Realidad Aumentada"/>
+            <ProductElement id={2} tipo="Realidad Aumentada"/>
+            <ProductElement id={3} tipo="Realidad Aumentada"/>
         </div>
     </section>
 
@@ -44,9 +45,9 @@ import ArticlesList from "../../components/ArticlesList.astro"
         <p class="main-section__text">La <b>realidad mixta</b> (MR) combina la realidad virtual y aumentada para permitir la interacción simultánea con objetos virtuales y el entorno real. Por ejemplo, unas <b>gafas de realidad mixta</b> pueden proyectar hologramas interactivos en espacios físicos, facilitando colaboraciones en diseño o aprendizaje.</p>
         <p class="main-section__text">Algunos dispositivos de <b>gafas para el metaverso</b> incluyen capacidades de realidad mixta. Modelos como las <b>Meta Quest 3S</b>, las <b>VITURE Gafas Pro XR/AR</b> y las <b>Meta Quest 3</b> representan esta innovadora convergencia tecnológica. Explora más detalles en nuestro análisis de las <a href="https://gafasderealidadvirtual.com/tipos-de-gafas-3d/gafas-de-realidad-mixta">mejores lentes de realidad mixta</a>.</p>
         <div class="main-section__products">
-            <ProductElement id={1} />
-            <ProductElement id={8} />
-            <ProductElement id={11} />
+            <ProductElement id={1} tipo="Realidad Mixta"/>
+            <ProductElement id={2} tipo="Realidad Mixta"/>
+            <ProductElement id={3} tipo="Realidad Mixta"/>
         </div>
     </section>
 
@@ -59,18 +60,10 @@ import ArticlesList from "../../components/ArticlesList.astro"
     <section class="main-section">
         <h2 class="main-section__title">Explora más opciones de lentes 3D</h2>
         <div class="main-section__products">
-            <ProductElement id={1} />
-            <ProductElement id={2} />
-            <ProductElement id={3} />
-            <ProductElement id={4} />
-            <ProductElement id={5} />
-            <ProductElement id={6} />
-            <ProductElement id={7} />
-            <ProductElement id={8} />
-            <ProductElement id={9} />
-            <ProductElement id={10} />
-            <ProductElement id={11} />
-        </div>
+            {Products.map((product) => (
+              <ProductElement id={product.id} />
+            ))}
+          </div>
     </section>
 
     <section class="main-section">
