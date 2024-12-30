@@ -17,6 +17,7 @@ const productos = Products.filter(product => ids.includes(product.id));
                 <th class="table-head__item">Nombre</th>
                 <th class="table-head__item">Calificación</th>
                 <th class="table-head__item">Precio</th>
+                <th class="table-head__item">Amazon</th>
             </tr>
         </thead>
         <tbody class="table-body">
@@ -27,6 +28,9 @@ const productos = Products.filter(product => ids.includes(product.id));
                     </td>
                     <td class="table-body__item --name">{producto.nombre}</td>
                     <td class="table-body__item --cal">{producto.calificacion}</td>
+                    <td class="table-body__item --price">
+                        <p>{producto.precio}€</p>
+                    </td>
                     <td class="table-body__item --link">
                         <AmazonButton text="Ver precio en Amazon" link={producto.link} />
                     </td>
@@ -52,7 +56,7 @@ const productos = Products.filter(product => ids.includes(product.id));
         font-family: 'Rajdhani';
         font-weight: 200;
         font-size: 1.3rem;
-        width: 850px;
+        width: 950px;
     }
 
     table, th, td {
@@ -83,6 +87,11 @@ const productos = Products.filter(product => ids.includes(product.id));
     .--cal {
         text-align: center;
         font-size: 2rem;
+    }
+
+    .--price {
+        font-size: 1.7rem;
+        text-align: center;
     }
 
     .--link {
