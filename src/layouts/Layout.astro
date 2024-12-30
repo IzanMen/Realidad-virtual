@@ -56,8 +56,8 @@ const { title , description } = Astro.props as Props;
 				<li class="layout-header__nav-ul__li--white"><a href="">Box</a></li>
 			</ul>
 			<span class="layout-header__nav-menu">
-				<svg class="layout-header__nav-menu-svg" width="256" height="256" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width=".5"><path d="M1 12a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm0-8a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm0 16a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Z" fill="#fff" stroke="1"/></svg>			
-				<svg class="layout-header__nav-menu-svg none" width="256" height="256" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M20.746 3.329a1 1 0 0 0-1.415 0l-7.294 7.294-7.294-7.294a1 1 0 1 0-1.414 1.414l7.294 7.294-7.294 7.294a1 1 0 0 0 1.414 1.415l7.294-7.295 7.294 7.295a1 1 0 0 0 1.415-1.415l-7.295-7.294 7.295-7.294a1 1 0 0 0 0-1.414Z"/></svg>			
+				<svg class="layout-header__nav-menu-svg" width="256" height="256" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="1.5"><path d="M1 12a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm0-8a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm0 16a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Z" fill="#fff" stroke="1"/></svg>			
+				<svg class="layout-header__nav-menu-svg none" width="256" height="256" viewBox="0 0 24 24" fill="#fff" stroke="#fff" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path d="M20.746 3.329a1 1 0 0 0-1.415 0l-7.294 7.294-7.294-7.294a1 1 0 1 0-1.414 1.414l7.294 7.294-7.294 7.294a1 1 0 0 0 1.414 1.415l7.294-7.295 7.294 7.295a1 1 0 0 0 1.415-1.415l-7.295-7.294 7.295-7.294a1 1 0 0 0 0-1.414Z" stroke="1"/></svg>			
 			</span>
 		</nav>
 	</header>
@@ -278,7 +278,7 @@ const { title , description } = Astro.props as Props;
 
 		.layout-header__nav {
 			position: absolute;
-			top: calc(100vh - 170px);
+			top: calc(90vh);
 			right: 20px;
 		}
 
@@ -330,7 +330,7 @@ const { title , description } = Astro.props as Props;
 			align-items: center;
 			position: absolute;
 			padding: 20px;
-			background-color: #000;
+			background-color: #011936;
 			box-shadow: 0 0 20px 2px #fff;
 			border-radius: 50%;
 			bottom: 0;
@@ -339,8 +339,8 @@ const { title , description } = Astro.props as Props;
 		}
 
 		.layout-header__nav-menu svg {
-			width: 50px;
-			height: 50px;
+			width: 35px;
+			height: 35px;
 		}
 	}
 

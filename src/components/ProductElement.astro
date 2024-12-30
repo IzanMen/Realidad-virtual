@@ -24,7 +24,7 @@ const product = Products.find(product => product.id === id);
 ---
 
 <div class="product-element">
-    <img height="250px" class="product-element__image" src={product?.imagen.link} alt={product?.imagen.alt}>
+    <img height="250px" width="calc(100% / 4 - 55px)" class="product-element__image" src={product?.imagen.link} alt={product?.imagen.alt}>
     <h3 class="product-element__title">{product?.nombre}</h3>
     <AmazonButton text="Comprar en Amazon" href={product?.link} class="product-element__button" />
 </div>
