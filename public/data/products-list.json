@@ -3,12 +3,12 @@
     "id": 1,
     "nombre": "Meta Quest 3S",
     "marca": "Meta",
-    "link": "",
+    "link": "https://amzn.to/4gx8l9C",
     "calificacion": 9.8,
     "tipo": ["Realidad Mixta", "Realidad Virtual"],
     "precio": 329.99,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/51ELPPChMfL._AC_SX466_.jpg",
+      "link": "../images/products/metaquest3s.avif",
       "alt": "Meta Quest 3S"
     },
     "caracteristicas": {
@@ -40,12 +40,12 @@
     "id": 2,
     "nombre": "Gafas VR 3D con controlador Bluetooth",
     "marca": "LuBanSir",
-    "link": "",
+    "link": "https://amzn.to/4iYq1wa",
     "calificacion": 9.4,
     "tipo": ["Realidad Virtual"],
     "precio": 37.99,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/51UEPNERmPL._AC_SX569_.jpg",
+      "link": "../images/products/gafasvr3dconcontroladorbluetooth.avif",
       "alt": "3D VR Gafas de realidad virtual"
     },
     "caracteristicas": {
@@ -77,12 +77,12 @@
     "id": 3,
     "nombre": "FIYAPOO Gafas 3D VR",
     "marca": "FIYAPOO",
-    "link": "",
+    "link": "https://amzn.to/3DBKbMr",
     "calificacion": 9.6,
     "tipo": ["Realidad Virtual"],
     "precio": 59.98,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/61l9QysbYVL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "link": "../images/products/fiyapoogafas3dvr.avif",
       "alt": "FIYAPOO Gafas VR 3D"
     },
     "caracteristicas": {
@@ -114,12 +114,12 @@
     "id": 4,
     "nombre": "Heromask Gafas VR con juego educativo de idiomas",
     "marca": "Heromask",
-    "link": "",
+    "link": "https://amzn.to/4iOZmSJ",
     "calificacion": 9.5,
     "tipo": ["Realidad Virtual"],
-    "precio": 54.95,
+    "precio": 59.95,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/71dEt8e+NvL._AC_SX569_.jpg",
+      "link": "../images/products/heromaskgafasvrconjuegoeducativodeidiomas.avif",
       "alt": "Gafas realidad virtual niños HEROMASK"
     },
     "caracteristicas": {
@@ -151,12 +151,12 @@
     "id": 5,
     "nombre": "FIYAPOO gafas 3D VR realidad virtual",
     "marca": "FIYAPOO",
-    "link": "",
+    "link": "https://amzn.to/3BXPJjN",
     "calificacion": 9.3,
     "tipo": ["Realidad Virtual"],
     "precio": 39.98,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/61+vi087P-S._AC_SX569_.jpg",
+      "link": "../images/products/fiyapoogafas3dvrrealidadvirtual.avif",
       "alt": "FIYAPOO gafas 3D VR realidad virtual"
     },
     "caracteristicas": {
@@ -188,12 +188,12 @@
     "id": 6,
     "nombre": "HTC Vive Pro",
     "marca": "HTC",
-    "link": "",
+    "link": "https://amzn.to/40di5Qo",
     "calificacion": 9.8,
     "tipo": ["Realidad Virtual"],
     "precio": 1251.66,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/51J4ySO+C6L._AC_SX679_.jpg",
+      "link": "../images/products/htcvivepro.avif",
       "alt": "HTC Vive Pro"
     },
     "caracteristicas": {
@@ -225,12 +225,12 @@
     "id": 7,
     "nombre": "PlayStation VR2",
     "marca": "PlayStation",
-    "link": "",
+    "link": "https://amzn.to/3DMioc7",
     "calificacion": 9.7,
     "tipo": ["Realidad Virtual"],
-    "precio": 749.90,
+    "precio": 599.99,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/614KJZb9-IL._AC_SX679_.jpg",
+      "link": "../images/products/playstationvr2.avif",
       "alt": "PlayStation VR2"
     },
     "caracteristicas": {
@@ -262,12 +262,12 @@
     "id": 8,
     "nombre": "VITURE Gafas Pro XR/AR",
     "marca": "VITURE",
-    "link": "",
+    "link": "https://amzn.to/3ZUmy9w",
     "calificacion": 9.8,
     "tipo": ["Realidad Aumentada", "Realidad Mixta"],
-    "precio": 599,
+    "precio": 569,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/61z7PcVX-JL._AC_SX679_.jpg",
+      "link": "../images/products/vituregafasproxrar.avif",
       "alt": "VITURE Gafas Pro XR/AR"
     },
     "caracteristicas": {
@@ -299,12 +299,12 @@
     "id": 9,
     "nombre": "Rokid Joy Max",
     "marca": "Rokid",
-    "link": "",
+    "link": "https://amzn.to/40cNpyP",
     "calificacion": 9.5,
     "tipo": ["Realidad Aumentada"],
     "precio": 559,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/413IlKO2ZUL._AC_.jpg",
+      "link": "../images/products/rokidjoymax.avif",
       "alt": "Gafas AR Rokid Joy Max"
     },
     "caracteristicas": {
@@ -336,12 +336,12 @@
     "id": 10,
     "nombre": "XREAL Air AR Glasses",
     "marca": "XREAL",
-    "link": "",
+    "link": "https://amzn.to/4gXm35w",
     "calificacion": 9.4,
     "tipo": ["Realidad Aumentada"],
     "precio": 337,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/61c6LKpxCLL._AC_SX679_.jpg",
+      "link": "../images/products/xrealairarglasses.avif",
       "alt": "XREAL Air AR Glasses"
     },
     "caracteristicas": {
@@ -373,12 +373,12 @@
     "id": 11,
     "nombre": "Meta Quest 3",
     "marca": "Meta",
-    "link": "",
+    "link": "https://amzn.to/3ZTtrb3",
     "calificacion": 9.8,
     "tipo": ["Realidad Mixta", "Realidad Virtual"],
     "precio": 699.99,
     "imagen": {
-      "link": "https://m.media-amazon.com/images/I/611PjWsGFRL._AC_SX466_.jpg",
+      "link": "../images/products/metaquest3.avif",
       "alt": "Meta Quest 3"
     },
     "caracteristicas": {

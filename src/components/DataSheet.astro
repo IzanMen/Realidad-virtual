@@ -1,6 +1,6 @@
 ---
 
-import Products from '../data/products-list.json';
+import Products from '../../public/data/products-list.json';
 
 const { id } = Astro.props;
 
@@ -16,6 +16,14 @@ const product = Products.find(product => product.id === id);
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td class="table-titles">Precio</td>
+                <td>{product?.precio}€</td>
+            </tr>
+            <tr>
+                <td class="table-titles">Marca</td>
+                <td>{product?.marca}</td>
+            </tr>
             <tr>
                 <td class="table-titles">Pantalla</td>
                 <td>{product?.caracteristicas.pantalla}</td>
