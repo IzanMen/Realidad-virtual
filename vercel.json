@@ -1,6 +1,5 @@
 {
-    "redirects": [
-      { "source": "https://gafasderealidadvirtual.com/:path*", "destination": "https://www.gafasderealidadvirtual.com/:path*", "permanent": true }
-    ]
+    "source": "https://gafasderealidadvirtual.com/:path*",
+    "destination": "https://www.gafasderealidadvirtual.com/:path*",
+    "permanent": true
 }
-  
