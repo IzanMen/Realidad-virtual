@@ -1,27 +1,96 @@
 ---
 
 import Layout from "../../layouts/Layout.astro"
+import ProductElement from "../../components/ProductElement.astro"
+import Products from '../../../public/data/products-list.json';
+import ArticlesList from "../../components/ArticlesList.astro"
 
 ---
 
 <Layout 
-    title="🔴  ÚLTIMAS NOTICIAS: Se dejan de fabricas las Oculus Quest 2"
-    description=" Las gafas Oculus Quest 2 han sido descontinuadas por Meta. Descubre las razones detrás de esta decisión, el impacto en el mercado de la realidad virtual, las especificaciones técnicas y qué esperar con las nuevas Meta Quest 3.."
+    title="🔴 Oculus Quest 2: ¿Por qué Meta dejó de fabricarlas? Todo lo que debes saber."
+    description=" Las gafas Oculus Quest 2 han sido descontinuadas por Meta. Descubre las razones detrás de esta decisión, el impacto en el mercado de la realidad virtual, las especificaciones técnicas y qué esperar con las nuevas Meta Quest 3."
 >
 
 <main class="main">
     <header class="main-header">
-        <h1 class="main-header__title">La descontinuación de las gafas de realidad virtual Oculus Quest 2: Qué significa esto para el futuro de la realidad virtual</h1>
+        <h1 class="main-header__title">La descontinuación de las gafas de realidad virtual Oculus Quest 2</h1>
+        <img src="../../../images/articles/article-2.avif" alt="Meta" class="main-header__image" />
         <p class="main-header__text">Las <b>gafas Oculus Quest 2</b>, uno de los dispositivos de <b>realidad virtual</b> más populares de la última década, han sido descontinuadas oficialmente por <b>Meta</b>. Tras su lanzamiento en 2020, estas <b>gafas de realidad virtual</b> revolucionaron el mercado por su accesibilidad y sus impresionantes especificaciones. Sin embargo, el 2023 marcó el fin de su producción, con el foco ahora en las <b>gafas Oculus Quest 3</b>.</p>
         <p class="main-header__text">En este artículo, exploramos el impacto de la descontinuación de las <b>Oculus Quest 2</b>, sus características técnicas, cómo afecta a los usuarios y qué podemos esperar de las <b>gafas VR Oculus</b> en el futuro.</p>
     </header>
     <section class="main-section">
-        <h2 class="main-section__title">¿Por qué se dejaron de fabricar ñas gafas Oculus Quest 2?   </h2>
+        <h2 class="main-section__title">¿Por qué se dejaron de fabricar las gafas Oculus Quest 2?   </h2>
+        <img src="../../../images/products/oculusquest2.avif" alt="Oculus Quest 2" class="main-header__image" />
         <p class="main-section__text">El principal motivo detrás de la descontinuación de las <b>gafas Oculus Quest 2</b> fue el lanzamiento de las <b>Meta Quest 3</b> en octubre de 2023. Estos nuevos <b>cascos de realidad virtual Oculus</b> ofrecen mejoras significativas en comparación con las versiones anteriores, incluyendo un procesador más potente, mejor resolución de pantalla y la integración de funciones de <b>realidad mixta</b>.</p>
         <p class="main-section__text">Las <b>gafas Oculus Quest 3</b> incorporan nuevas características que hacen que las <b>gafas VR Oculus</b> de generaciones anteriores, como las <b>Oculus Quest 2</b>, queden atrás en términos de especificaciones. La introducción de la <b>realidad aumentada</b> (AR) en las nuevas gafas también fue un factor determinante para dejar de fabricar las <b>Oculus Quest 2</b>.</p>
         <ul class="main-section__text">
-            
+            <li><b>Pantalla mejorada</b>: Las <b>gafas Oculus Quest 3</b> ofrecen una resolución más alta y mejor calidad de imagen.</li>
+            <li><b>Realidad mixta</b>: A diferencia de las <b>gafas Oculus Quest 2</b>, las <b>Quest 3</b> permiten una integración más fluida de AR y VR, mejorando la experiencia de usuario.</li>
         </ul>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">¿Que pasa con los usuarios de las Oculus Quest 2?</h2>
+        <h3 class="main-section__subtitle">Continuidad en el soporte y las actualizaciones de software</h3>
+        <p class="main-section__text">Aunque las <b>gafas Oculus Quest 2</b> han sido descontinuadas, los usuarios que ya poseen este dispositivo seguirán recibiendo soporte por parte de <b>Meta</b>, incluyendo actualizaciones de software y parches de seguridad. Además, las <b>gafas de realidad virtual Oculus Quest 2</b> seguirán siendo una opción viable para quienes ya están familiarizados con el dispositivo, pero es probable que los desarrolladores de software centren su atención en las <b>Meta Quest 3</b> a medida que pasa el tiempo.</p>
+        <h3 class="main-section__subtitle">Mercado de segunda mano de las Oculus Quest 2</h3>
+        <p class="main-section__text">Las <b>gafas Oculus Quest 2</b> de segunda mano se han convertido en una opción popular entre los compradores que buscan un dispositivo de <b>realidad virtual</b> de calidad a un precio más bajo. Sin embargo, con la descontinuación <b>Oculus Quest 2</b>, se espera que la demanda de estos dispositivos aumente, lo que podría hacer que los precios de segunda mano suban.</p>
+    </section>
+    <img src="../../../images/articles/meta.avif" alt="Meta" class="main-header__image" />
+    <section class="main-section">
+        <h2 class="main-section__title">Especificaciones de las gafas Oculus Quest 2</h2>
+        <p class="main-section__text">Las <b>Oculus Quest 2</b> fueron un avance importante en la <b>realidad virtual</b> debido a su excelente relación calidad-precio. Aquí te dejamos algunas de las especificaciones de las <b>gafas de realidad virtual Oculus Quest 2</b>:</p>
+        <ul class="main-section__text">
+            <li><b>Pantalla</b>: 1832 x 1920 píxeles por ojo, con una tasa de refresco de hasta 120 Hz.</li>
+            <li><b>Procesador</b>: Qualcomm Snapdragon XR2, optimizado específicamente para <b>realidad virtual Oculus</b>.</li>
+            <li><b>Almacenamiento</b>: Modelos de 64 GB, 128 GB y 256 GB.</li>
+            <li><b>Batería</b>: Aproximadamente 2 a 3 horas de uso continuado.</li>
+            <li><b>Conectividad</b>: Sin necesidad de PC ni cables, aunque también se puede usar con PC a través de Oculus Link.</li>
+        </ul>
+        <p class="main-section__text">Estas características ayudaron a que las <b>Oculus Quest 2</b> fueran unas de las <b>gafas virtuales Oculus</b> más accesibles y populares, tanto para los jugadores casuales como para los entusiastas de la <b>realidad virtual</b> más avanzados.</p>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Impacto de la descontinuación de las Oculus Quest 2 en el mercado de VR</h2>
+        <img src="../../../images/articles/realidad-aumentada.avif" alt="Realidad aumentada" class="main-header__image" />
+        <p class="main-section__text">Las <b>gafas Oculus Quest 2</b> dejaron un legado duradero en la industria, pero la <b>realidad mixta</b> (integrando AR y VR) está tomando la delantera en la evolución de la tecnología de <b>realidad virtual</b>. Con el enfoque de Meta en las <b>gafas Oculus Quest 3</b>, la <b>realidad aumentada Oculus</b> y la <b>realidad virtual Oculus</b> se están fusionando para ofrecer experiencias más inmersivas y prácticas en sectores más allá del entretenimiento, como la educación, la formación profesional y la medicina.</p>
+        <p class="main-section__text">Las <b>gafas VR Oculus</b> de generaciones anteriores, como las <b>Oculus Rift</b> o las <b>Oculus Quest 2</b>, pueden quedarse atrás en términos de estas nuevas capacidades.</p>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">El legado de las Oculus Quest 2</h2>
+        <p class="main-section__text">Para poner en perspectiva el impacto de la descontinuación de las <b>Oculus Quest 2</b>, aquí algunas cifras clave:</p>
+        <ul class="main-section__text">
+            <li><b>Ventas estimadas</b>: Se calcula que se vendieron más de 15 millones de unidades de las <b>gafas de realidad virtual Oculus Quest 2</b> hasta 2023, convirtiéndolas en el dispositivo de <b>realidad virtual</b> más vendido de Meta.</li>
+            <li><b>Precios de las gafas Oculus Quest 2</b>: En su lanzamiento, el modelo de 64 GB tenía un precio de 299 USD, mientras que el modelo de 256 GB alcanzaba los 399 USD.</li>
+        </ul>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">¿Qué pasará con las gafas de realidad virtual Oculus en el futuro?</h2>
+        <p class="main-section__text">El futuro de las <b>gafas Oculus de realidad virtual</b> parece estar centrado en la <b>Meta Quest 3</b> y más allá. El avance hacia la <b>realidad mixta</b> promete hacer que las <b>gafas Oculus VR</b> de generaciones anteriores queden obsoletas rápidamente, pero al mismo tiempo, la <b>realidad virtual Oculus</b> continuará siendo una parte fundamental del desarrollo tecnológico.</p>
+        <p class="main-section__text">Si bien las <b>Oculus Quest 2</b> ya no estarán disponibles para compra nueva, los dispositivos de segunda mano seguirán circulando, y los usuarios seguirán teniendo acceso a una experiencia de <b>realidad virtual</b> de calidad con las <b>gafas Oculus Quest 2</b>.</p>
+    </section>
+    <section class="main-section">
+        <h2 class="main-section__title">Conclusión</h2>
+        <p class="main-section__text">La descontinuación de las <b>gafas Oculus Quest 2</b> es un paso hacia el futuro de la <b>realidad virtual Oculus</b>, centrado en las <b>Meta Quest 3</b> y la <b>realidad mixta</b>. Aunque las <b>gafas VR Oculus Quest 2</b> ya no estarán disponibles en el mercado, su impacto en la industria de la <b>realidad virtual</b> será recordado como uno de los momentos más importantes en la evolución de la tecnología.</p>
+        <p class="main-section__text">Con la llegada de las <b>Meta Quest 3</b>, el futuro de la <b>realidad virtual Oculus</b> parece brillante, y los desarrollos en <b>realidad aumentada Oculus</b> prometen cambiar para siempre la forma en que interactuamos con el mundo digital.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Catlálogo de los mejores cascos de realidad virtual</h2>
+        <div class="main-section__products">
+            {Products.map((product) => (
+              <ProductElement id={product.id}/>
+            ))}
+        </div>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Análisis de las mejores gafas de realidad virtual 2025</h2>
+        <ArticlesList />
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Artículos relacionados</h2>
+        <ArticlesList />
     </section>
 </main>
 
@@ -30,5 +99,9 @@ import Layout from "../../layouts/Layout.astro"
 <style>
     .main-header__title {
         font-weight: 400;
+    }
+
+    .main-header__image {
+        width: 100%;
     }
 </style>
