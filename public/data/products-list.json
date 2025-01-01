@@ -405,5 +405,79 @@
       "No incluye seguimiento ocular.",
       "Tienen un precio elevado, y puede no ser asequible para muchas personas."
     ]
-  }
+  },
+  {
+    "id": 12,
+    "nombre": "Pico 4 Ultra",
+    "marca": "Pico",
+    "link": "https://amzn.to/4gEjaqk",
+    "calificacion": 9.6,
+    "tipo": ["Realidad Virtual", "Realidad Mixta"],
+    "precio": 599.99,
+    "imagen": {
+      "link": "../images/products/pico4.avif",
+      "alt": "Pico 4"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantalla OLED de 2160 x 2160 píxeles por ojo, con 90 Hz de frecuencia de actualización.",
+      "seguimiento ocular": "No",
+      "procesador": "Qualcomm Snapdragon XR2",
+      "memoria ram": "12 GB",
+      "almacenamiento": "128 GB / 256 GB",
+      "audio": "Altavoces estéreo duales con sonido espacial 3D.",
+      "camaras": "2 cámaras principales de 32 MP cada una diseñadas para capturar video espacial en 3D",
+      "controlador": "Controladores con retroalimentación háptica y seguimiento de movimiento. Motor de vibración HyperSense",
+      "autonomia": "De 2 a 3 horas",
+      "tiempo de carga": "2 horas",
+      "conectividad": "USB-C, WI-FI y Bluetooth"
+    },
+    "ventajas": [
+      "Pantalla de alta calidad ideal para experiencias de realidad aumentada.",
+      "Potente rendimiento para experiencias de realidad virtual.",
+      "Cámaras avanzadas con sensor de profundidad y alta resolución.",
+      "Ligeras y con un diseño ergonómico."
+    ],
+    "desventajas": [
+      "Falta de seguimiento ocular.",
+      "Autonomía limitada a unas 2 o 3 horas.",
+      "Precio más elevado que otros modelos similares."
+    ]
+  },
+  {
+    "id": 13,
+    "nombre": "Pico Neo 3",
+    "marca": "Pico",
+    "link": "https://amzn.to/40hHI2L",
+    "calificacion": 9.6,
+    "tipo": ["Realidad Virtual"],
+    "precio": 449,
+    "imagen": {
+      "link": "../images/products/piconeo3.avif",
+      "alt": "Pico Neo 3"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantalla LCD de 5,5 pulgadas, 3664 x 1920 píxeles por ojo con una frecuencia de refresco de 120 Hz.",
+      "seguimiento ocular": "No",
+      "procesador": "Qualcomm Snapdragon XR2",
+      "memoria ram": "6 GB",
+      "almacenamiento": "256 GB",
+      "audio": "Altavoces estéreo integrados con surround 360°, sonido espacial 3D.",
+      "camaras": "4 cámaras ambientales",
+      "controlador": "2 controladores somatosensoriales de 6DoF, anillo de seguimiento, posicionamiento a nivel milimétrico, latencia ultrabaja.",
+      "autonomia": "De 2'5 a 3 horas",
+      "tiempo de carga": "De 2 a 3 horas",
+      "conectividad": "USB-C, WI-FI y Bluetooth"
+    },
+    "ventajas": [
+      "Alta resolución y calidad de pantalla.",
+      "Equipadas con el mismo procesador que gafas de gama alta, como las Oculus Quest 2.",
+      "Precio competitivo en comparación con otras gafas de realidad virtual.",
+      "Diseño cómodo."
+    ],
+    "desventajas": [
+      "Disponibilidad limitada.",
+      "la versión normal no incluye seguimiento ocular.",
+      "No incluye realidad aumentada, solo realidad virtual."
+    ]
+  }    
 ]
