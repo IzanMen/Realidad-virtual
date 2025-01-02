@@ -476,8 +476,82 @@
     ],
     "desventajas": [
       "Disponibilidad limitada.",
-      "la versión normal no incluye seguimiento ocular.",
+      "La versión normal no incluye seguimiento ocular.",
       "No incluye realidad aumentada, solo realidad virtual."
     ]
-  }    
+  },
+  {
+    "id": 14,
+    "nombre": "ThinkReality A3",
+    "marca": "Lenovo",
+    "link": "https://amzn.to/4gE3wuX",
+    "calificacion": 9.7,
+    "tipo": ["Realidad Aumentada"],
+    "precio": 1421.99,
+    "imagen": {
+      "link": "../images/products/thinkrealitya3.avif",
+      "alt": "ThinkReality A3"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantallas duales de alta resolución con soporte para visualización en 2D y 3D, ofreciendo una experiencia de realidad aumentada nítida y detallada.",
+      "seguimiento ocular": "No",
+      "procesador": "Qualcomm Snapdragon XR1",
+      "memoria ram": "6 GB",
+      "almacenamiento": "128 GB",
+      "audio": "Altavoces integrados y micrófono de matriz",
+      "camaras": "Cámaras integradas de 8 MP",
+      "controlador": "No",
+      "autonomia": "3 horas",
+      "tiempo de carga": "2 horas",
+      "conectividad": "USB-C, WI-FI y Bluetooth"
+    },
+    "ventajas": [
+      "Alta resolución y pantallas duales.",
+      "Conectividad con dispositivos cercanos.",
+      "Optimizada para ámbitos profesionales.",
+      "Diseño ligero para uso prolongado."
+    ],
+    "desventajas": [
+      "Falta de seguimiento ocular.",
+      "No están diseñadas para realidad virtual.",
+      "Autonomía limitada a 3 horas."
+    ]
+  },
+  {
+    "id": 15,
+    "nombre": "Legion Glasses",
+    "marca": "Lenovo",
+    "link": "https://amzn.to/403at1C",
+    "calificacion": 9.7,
+    "tipo": ["Realidad Aumentada"],
+    "precio": 499.99,
+    "imagen": {
+      "link": "../images/products/legionglasses.avif",
+      "alt": "Legion Glasses"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantallas micro OLED de alta resolución",
+      "seguimiento ocular": "No",
+      "procesador": "No cuentan con procesador propio",
+      "memoria ram": "No",
+      "almacenamiento": "No",
+      "audio": "Sonido a través de altavoces integrados",
+      "camaras": "NO",
+      "controlador": "No",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "USB-C"
+    },
+    "ventajas": [
+      "Fáciles de llevar a cualquier lugar.",
+      "Concetividad universal a través de USB-C.",
+      "Diseño ligero y cómodo.",
+      "Perfectas para ver películas, series o jugar videojuegos con una experiencia similar a una pantalla grande."
+    ],
+    "desventajas": [
+      "Dependencia de dispositivos externos.",
+      "Sin cámaras o sensores avanzados.",
+      "Limitadas a experiencias de realidad aumentada, no pueden ser utilizadas para realidad virtual."
+    ]
+  }           
 ]
