@@ -4,6 +4,7 @@ const { questions, responses } = Astro.props as { questions: string[], responses
 ---
 
 <section class="main-section">
+  <h2 class="main-section__title">Preguntas frecuentes</h2>
   {questions.map((question, index) => (
       <details>
         <summary>{question}</summary>
