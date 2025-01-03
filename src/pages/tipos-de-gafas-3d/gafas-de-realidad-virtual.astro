@@ -7,18 +7,19 @@ import ProductElement from "../../components/ProductElement.astro";
 import ArticlesList from "../../components/ArticlesList.astro";
 import Products from '../../../public/data/products-list.json';
 import TableOfContents from "../../components/TableOfContents.astro"
+import FAQ from "../../components/FAQ.astro";
 
 ---
 
 <Layout 
-    title="Gafas de realidad virtual para el metaverso | comparativas de lentes VR"
-    description="🟢 Descubre las mejores gafas virtuales y lentes 3D VR para el metaverso. Encuentra comparativas y análisis detallados para tomar una decisión informada."
+    title="Gafas para el metaverso: Las mejores lentes VR 3D"
+    description="Compara las mejores gafas y lentes para el metaverso. Descubre opciones de realidad virtual y aumentada con análisis detallados."
 >
 
 
 <main class="main">
     <header class="main-header">
-        <h1 class="main-header__title">Explorando las gafas de realidad virtual para el metaverso</h1>
+        <h1 class="main-header__title">Gafas para el metaverso: Explora las mejores opciones en lentes VR</h1>
         <p class="main-header__text">Las <b>gafas de realidad virtual</b> han transformado la manera en que interactuamos con el mundo digital. Diseñadas para sumergir al usuario en entornos completamente virtuales, estos dispositivos ofrecen experiencias inmersivas, ya sea para juegos, aprendizaje o trabajo colaborativo en el <b>metaverso</b>. En contraste, las <b>gafas de realidad aumentada</b> superponen elementos digitales al entorno real, ofreciendo una integración única de lo físico y lo virtual.</p>
         <TableOfContents />
     </header>
@@ -63,6 +64,31 @@ import TableOfContents from "../../components/TableOfContents.astro"
         <h2 class="main-section__title">¿Realidad virtual o aumentada? Las diferencias clave</h2>
         <p class="main-section__text">Mientras que las <b>gafas de realidad virtual</b> crean una desconexión completa del entorno físico para transportarte a mundos generados por computadora, las <b>gafas de realidad aumentada</b> añaden capas de información digital a la realidad que ves a través de sus lentes. Ambas tecnologías son revolucionarias, pero cumplen objetivos diferentes. Por ejemplo, las <b>gafas virtuales</b> son ideales para juegos y entretenimiento inmersivo en el <b>metaverso</b>, mientras que las gafas para realidad aumentada son más útiles en contextos como diseño, navegación o capacitación en el mundo real.</p>
     </section>
+    <FAQ 
+    questions={[
+        "¿Cuáles son las mejores gafas para el metaverso en 2025?", 
+        "¿Qué características buscar en lentes de realidad virtual para el metaverso?", 
+        "¿Qué gafas de realidad virtual ofrecen la mejor experiencia en el metaverso?", 
+        "¿Cuáles son las diferencias entre gafas de realidad virtual y lentes de realidad aumentada para el metaverso?", 
+        "¿Dónde comprar gafas para el metaverso al mejor precio?", 
+        "¿Son compatibles las lentes metaverso con cualquier dispositivo?", 
+        "¿Qué marcas lideran en gafas metaverso en 2025?", 
+        "¿Cómo elegir lentes para el metaverso ideales para principiantes?", 
+        "¿Qué beneficios ofrecen las gafas de realidad mixta en el metaverso?"
+    ]} 
+    responses={[
+        "Las mejores gafas VR para el metaverso en 2025 incluyen modelos como Meta Quest 3S, HTC Vive Pro, y PlayStation VR2, cada una con características destacadas según tus necesidades.", 
+        "Al buscar lentes de realidad virtual para el metaverso, considera la resolución, el campo de visión, la compatibilidad con dispositivos, y funciones avanzadas como el seguimiento ocular y la realidad mixta.", 
+        "Para la mejor experiencia en el metaverso, las gafas como las HTC Vive Pro destacan por su calidad visual, mientras que las Meta Quest 3S son ideales por su accesibilidad y precio competitivo.", 
+        "Las gafas de realidad virtual crean entornos inmersivos y totalmente digitales, mientras que las lentes de realidad aumentada superponen elementos virtuales sobre el mundo real, ambas útiles para el metaverso pero con aplicaciones distintas.", 
+        "Puedes comprar gafas para el metaverso en tiendas especializadas y plataformas en línea. Compara precios y revisa análisis detallados para encontrar las mejores opciones.", 
+        "La compatibilidad depende del modelo. Algunas gafas son independientes, mientras que otras requieren dispositivos específicos como PCs, consolas o smartphones.", 
+        "Marcas como Meta, HTC, y Sony lideran el mercado de gafas para el metaverso en 2025, ofreciendo opciones para diferentes presupuestos y necesidades.", 
+        "Para principiantes en el metaverso, lentes como las Meta Quest 3S son ideales por su facilidad de uso, configuración sencilla y precio razonable.", 
+        "Las gafas de realidad mixta permiten experiencias híbridas entre lo físico y lo virtual, siendo herramientas clave para juegos, trabajo y aprendizaje en el metaverso."
+    ]} 
+/>
+
     <section class="main-section">
         <h2 class="main-section__title">Nuestros mejores análisis sobre lentes de realidad virtual</h2>
         <ArticlesList>
