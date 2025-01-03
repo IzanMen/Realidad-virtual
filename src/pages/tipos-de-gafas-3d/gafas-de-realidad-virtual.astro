@@ -6,6 +6,7 @@ import DataSheet from "../../components/DataSheet.astro";
 import ProductElement from "../../components/ProductElement.astro";
 import ArticlesList from "../../components/ArticlesList.astro";
 import Products from '../../../public/data/products-list.json';
+import TableOfContents from "../../components/TableOfContents.astro"
 
 ---
 
@@ -19,6 +20,7 @@ import Products from '../../../public/data/products-list.json';
     <header class="main-header">
         <h1 class="main-header__title">Explorando las gafas de realidad virtual para el metaverso</h1>
         <p class="main-header__text">Las <b>gafas de realidad virtual</b> han transformado la manera en que interactuamos con el mundo digital. Diseñadas para sumergir al usuario en entornos completamente virtuales, estos dispositivos ofrecen experiencias inmersivas, ya sea para juegos, aprendizaje o trabajo colaborativo en el <b>metaverso</b>. En contraste, las <b>gafas de realidad aumentada</b> superponen elementos digitales al entorno real, ofreciendo una integración única de lo físico y lo virtual.</p>
+        <TableOfContents client:load />
     </header>
     <section class="main-section">
         <h2 class="main-section__title">Comparativa de gafas de realidad virtual: ¿Cuál es la mejor opción?</h2>

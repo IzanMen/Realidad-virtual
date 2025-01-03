@@ -7,6 +7,7 @@ import ProductAdvantages from "../../components/ProductAdvantages.astro";
 import AmazonButton from "../../components/AmazonButton.astro";
 import Products from '../../../public/data/products-list.json';
 import ArticlesList from "../../components/ArticlesList.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
 
 ---
 
@@ -18,6 +19,7 @@ import ArticlesList from "../../components/ArticlesList.astro";
     <header class="main-header">
         <h1 class="main-header__title">Análisis y comparativa de las gafas de realidad virtual y aumentada Lenovo</h1>
         <p class="main-header__text">Lenovo ha presentado varias opciones de <b>gafas de realidad virtual Lenovo</b> y <b>gafas de realidad aumentada Lenovo</b>, como las <b>ThinkReality A3</b> y las <b>Legion Glasses</b>. Estas gafas VR Lenovo están diseñadas para mejorar la productividad empresarial o proporcionar una experiencia inmersiva de entretenimiento. En este artículo, exploramos los modelos de <b>gafas Lenovo VR</b> más populares, sus características y los usos que puedes darles en diferentes entornos.</p>
+        <TableOfContents client:load />
     </header>
     <section class="main-section">
         <h2 class="main-section__title">Principales modelos de gafas VR Lenovo</h2>

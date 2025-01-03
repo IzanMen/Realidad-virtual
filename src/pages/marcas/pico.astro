@@ -7,6 +7,7 @@ import ProductAdvantages from "../../components/ProductAdvantages.astro";
 import AmazonButton from "../../components/AmazonButton.astro";
 import Products from '../../../public/data/products-list.json';
 import ArticlesList from "../../components/ArticlesList.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
 
 ---
 
@@ -19,6 +20,7 @@ import ArticlesList from "../../components/ArticlesList.astro";
     <header class="main-header">
         <h1 class="main-header__title">Análisis de las gafas de realidad virtual Pico: ¿Cuál comprar?</h1>
         <p class="main-header__text">El universo de la <b>realidad virtual</b> ha avanzado considerablemente en los últimos años, y <b>Pico</b> ha logrado posicionarse como una de las principales marcas que desafían el dominio de otras gigantes del mercado. Con su modelo más reciente, las <b>gafas Pico 4</b>, la marca ha llevado la experiencia inmersiva a un nuevo nivel, con mejoras en potencia, diseño y comodidad. ¿Son las <b>gafas de realidad virtual Pico 4</b> la elección ideal para quienes buscan una experiencia VR avanzada sin necesidad de un PC? En este artículo exploramos todo lo que necesitas saber sobre este innovador dispositivo.</p>
+        <TableOfContents client:load />
     </header>
 
     <section class="main-section">

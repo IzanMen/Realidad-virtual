@@ -6,6 +6,7 @@ import DataSheet from "../../components/DataSheet.astro";
 import ProductElement from "../../components/ProductElement.astro";
 import ArticlesList from "../../components/ArticlesList.astro";
 import Products from '../../../public/data/products-list.json';
+import TableOfContents from "../../components/TableOfContents.astro";
 
 ---
 
@@ -18,6 +19,7 @@ import Products from '../../../public/data/products-list.json';
     <header class="main-header">
         <h1 class="main-header__title">Guía detallada sobre gafas y lentes de realidad mixta</h1>
         <p class="main-header__text">Las <b>gafas de realidad mixta</b> combinan lo mejor de la <b>realidad aumentada</b> y la <b>realidad virtual</b>. Este tipo de tecnología permite interactuar con elementos digitales en el mundo real o sumergirse completamente en entornos virtuales. En esta guía, exploraremos cómo estas <b>lentes de realidad mixta</b> están transformando nuestra forma de conectar con el <b>metaverso</b> y qué opciones lideran el mercado.</p>
+        <TableOfContents client:load />
     </header>
     <section class="main-section">
         <h2 class="main-section__title">Comparativa de las mejores gafas de realidad mixta: Meta Quest 3, Meta Quest 3S y VITURE Gafas Pro XR/AR</h2>

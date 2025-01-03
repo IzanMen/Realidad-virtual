@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro"
 import ProductElement from "../../components/ProductElement.astro"
 import ArticlesList from "../../components/ArticlesList.astro"
 import Products from '../../../public/data/products-list.json';
+import TableOfContents from "../../components/TableOfContents.astro"
 
 ---
 
@@ -15,6 +16,7 @@ import Products from '../../../public/data/products-list.json';
     <header class="main-header">
         <h1 class="main-header__subtitle">Tipos de gafas 3D: lentes de realidad virtual, realidad aumentada y realidad mixta</h1>
         <p class="main-header__title">Descubre el potencial de las gafas 3D: realidad virtual, aumentada y mixta</p>
+        <TableOfContents client:load />
         <p class="main-header__text">En los últimos años, las <b>gafas 3D</b> han evolucionado de ser una curiosidad a convertirse en una herramienta clave para diversas aplicaciones. Desde las <b>gafas de realidad virtual</b> que te transportan a mundos completamente digitales, hasta las <b>lentes de realidad aumentada</b> que integran datos en el mundo real, estas tecnologías están redefiniendo cómo experimentamos y nos relacionamos con la realidad.</p>
     </header>
 

@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro"
 import ProductElement from "../../components/ProductElement.astro"
 import Products from '../../../public/data/products-list.json';
 import ArticlesList from "../../components/ArticlesList.astro"
+import TableOfContents from "../../components/TableOfContents.astro"
 
 ---
 
@@ -18,6 +19,7 @@ import ArticlesList from "../../components/ArticlesList.astro"
         <img src="../../../images/articles/article-2.avif" alt="Meta" class="main-header__image" />
         <p class="main-header__text">Las <b>gafas Oculus Quest 2</b>, uno de los dispositivos de <b>realidad virtual</b> más populares de la última década, han sido descontinuadas oficialmente por <a href="https://www.meta.com/es/quest/products/quest-2/" target="_blank">Meta</a>. Tras su lanzamiento en 2020, estas <b>gafas de realidad virtual</b> revolucionaron el mercado por su accesibilidad y sus impresionantes especificaciones. Sin embargo, el 2023 marcó el fin de su producción, con el foco ahora en las <b>gafas Oculus Quest 3</b>.</p>
         <p class="main-header__text">En este artículo, exploramos el impacto de la descontinuación de las <b>Oculus Quest 2</b>, sus características técnicas, cómo afecta a los usuarios y qué podemos esperar de las <b>gafas VR Oculus</b> en el futuro.</p>
+        <TableOfContents client:load />
     </header>
     <section class="main-section">
         <h2 class="main-section__title">¿Por qué se dejaron de fabricar las gafas Oculus Quest 2?   </h2>

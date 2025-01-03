@@ -7,6 +7,7 @@ import AmazonButton from "../../components/AmazonButton.astro"
 import ProductElement from "../../components/ProductElement.astro"
 import ArticlesList from "../../components/ArticlesList.astro"
 import Products from '../../../public/data/products-list.json';
+import TableOfContents from "../../components/TableOfContents.astro"
 
 ---
 
@@ -20,6 +21,7 @@ import Products from '../../../public/data/products-list.json';
         <h1 class="main-header__subtitle">Descubre las mejores gafas vr buenas y baratas</h1>
         <p class="main-header__title">Una guía para elegir las gafas que mejor se adapten a tu presupuesto</p>
         <p class="main-header__text">La <b>realidad virtual</b> ha dejado de ser una tecnología exclusiva para convertirse en una experiencia accesible para más personas. Desde <b>gafas de realidad virtual</b> hasta <b>visores 3D</b> y <b>cascos VR</b>, hoy puedes encontrar dispositivos que combinan un precio razonable con una experiencia inmersiva de alta calidad. En esta guía, exploraremos las <b>mejores gafas de realidad virtual</b> disponibles, analizando sus pros y contras, para ayudarte a encontrar el modelo que mejor se adapte a tus necesidades.</p>
+        <TableOfContents client:load />
     </header>
 
     <section class="main-section">

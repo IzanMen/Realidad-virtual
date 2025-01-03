@@ -1,0 +1,71 @@
+<nav class="toc" aria-label="Tabla de contenidos">
+    <h2>Tabla de contenidos</h2>
+    <ul id="toc-list"></ul>
+  </nav>
+  
+  <script>
+    if (typeof window !== 'undefined') {
+      const tocList = document.getElementById('toc-list');
+      if (tocList) {
+        const headers = Array.from(document.querySelectorAll('.main-section__title, .main-section__subtitle')).map(
+          (header) => {
+            let id = header.id;
+            if (!id) {
+              // Generar un ID único si no existe
+              id = header.textContent?.trim().toLowerCase().replace(/[^\w\-]+/g, '').replace(/\s+/g, '-') || '';
+              header.id = id;
+            }
+            return { text: header.textContent?.trim() || '', id, isSubtitle: header.classList.contains('main-section__subtitle') };
+          }
+        );
+  
+        tocList.innerHTML = headers
+          .map(
+            (header) =>
+              header.isSubtitle
+                ? `<ul><li><a href="#${header.id}">${header.text}</a></li></ul>`
+                : `<li><a href="#${header.id}">${header.text}</a></li>`
+          )
+          .join('');
+      }
+    }
+  </script>
+  
+  <style>
+    .toc {
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: 'Rajdhani', sans-serif;
+    }
+  
+    .toc h2 {
+      font-size: 1.5em;
+      margin-bottom: -10px;
+    }
+  
+    .toc ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  
+    .toc li {
+      margin: 5px 0;
+    }
+  
+    .toc a {
+      text-decoration: none;
+      color: #0077cc;
+    }
+  
+    .toc a:hover {
+      text-decoration: underline;
+    }
+  
+    .toc li ul {
+      margin-left: 20px;
+    }
+  </style>
+  
