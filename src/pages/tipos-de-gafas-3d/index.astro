@@ -5,19 +5,21 @@ import ProductElement from "../../components/ProductElement.astro"
 import ArticlesList from "../../components/ArticlesList.astro"
 import Products from '../../../public/data/products-list.json';
 import TableOfContents from "../../components/TableOfContents.astro"
+import FAQ from "../../components/FAQ.astro"
 
 ---
 
 <Layout 
-	title="Descubre AQUÍ los tipos de gafas 3D que existen en el mercado."
-	description="🕶️✨ Antes de comprar unas gafas 3d, es importante conocer los diferentes tipos que existen en el mercado. Aquí encontrarás información sobre las lentes de realidad virtual, realidad aumentada y realidad mixta."
+	title="Tipos de gafas 3D: Descubre cuál es el mejor para ti"
+	description="🕶️✨ Antes de comprar unas gafas 3D, descubre los diferentes tipos de lentes 3d disponibles: realidad virtual, aumentada y mixta. Encuentra la mejor opción para ti."
 >
 <main class="main">
     <header class="main-header">
         <h1 class="main-header__subtitle">Tipos de gafas 3D: lentes de realidad virtual, realidad aumentada y realidad mixta</h1>
-        <p class="main-header__title">Descubre el potencial de las gafas 3D: realidad virtual, aumentada y mixta</p>
+        <p class="main-header__title">Guía completa para elegir las mejores lentes 3D</p>
         <TableOfContents />
         <p class="main-header__text">En los últimos años, las <b>gafas 3D</b> han evolucionado de ser una curiosidad a convertirse en una herramienta clave para diversas aplicaciones. Desde las <b>gafas de realidad virtual</b> que te transportan a mundos completamente digitales, hasta las <b>lentes de realidad aumentada</b> que integran datos en el mundo real, estas tecnologías están redefiniendo cómo experimentamos y nos relacionamos con la realidad.</p>
+        <p class="main-header__text">Existen tres <b>tipos de gafas 3D</b>, y en este artículo te explicamos en detalle cada uno de ellos para que elijas el que mejor se adapte a tus necesidades.</p>
     </header>
 
     <section class="main-section">
@@ -53,9 +55,42 @@ import TableOfContents from "../../components/TableOfContents.astro"
         </div>
     </section>
 
+    <FAQ 
+        questions={[
+            "¿Cuáles son los diferentes tipos de gafas 3D?", 
+
+            "¿Qué gafas 3D son mejores para jugar videojuegos?",
+
+            "¿Puedo usar gafas de realidad aumentada para trabajar?",
+
+            "¿Qué son las gafas de realidad mixta y cómo se diferencian de la realidad virtual?",
+
+            "¿Cuáles son las mejores gafas 3D para trabajar en el metaverso?",
+
+            "¿Las gafas 3D pueden causar mareos o fatiga visual?",
+
+            "¿Puedo usar gafas 3D si ya llevo gafas graduadas?"
+        ]} 
+        responses={[
+            "Existen tres tipos principales de gafas 3D: gafas de realidad virtual (VR), gafas de realidad aumentada (AR) y gafas de realidad mixta (MR). Cada tipo tiene un enfoque y propósito diferente, por lo que la elección depende de tus necesidades y preferencias.", 
+
+            "Si estás buscando gafas para videojuegos, las gafas de realidad virtual (VR) son la mejor opción, ya que te sumergen completamente en un entorno digital. Modelos como las Meta Quest 3 o PlayStation VR 2 ofrecen una experiencia inmersiva ideal para los videojuegos.",
+
+            "Sí, las gafas de realidad aumentada (AR) son ideales para tareas profesionales, como asistencia en el campo, diagnóstico médico, y trabajos de diseño. Estas gafas superponen información digital sobre el mundo real, lo que las hace útiles en diversas industrias.",
+            
+            "Las gafas de realidad mixta (MR) combinan lo mejor de la realidad virtual y aumentada, permitiendo que interactúes tanto con objetos virtuales como con el mundo real. Esto las hace perfectas para aplicaciones profesionales y colaborativas, como el diseño o la educación.",
+
+            "Para el metaverso, las gafas de realidad mixta son muy recomendables, ya que te permiten interactuar con entornos tanto físicos como digitales. Modelos como las Meta Quest 3 o las VITURE Gafas Pro XR/AR son perfectas para esta experiencia.",
+
+            "Es posible experimentar mareos o fatiga visual al usar gafas 3D, especialmente con las de realidad virtual. Esto ocurre debido a la inmersión total y el movimiento dentro de los entornos virtuales. Se recomienda hacer pausas regulares para evitar molestias.",
+
+            "Sí, muchas gafas 3D tienen ajustes de distancia interpupilar o incluso ofrecen accesorios para personas que usan gafas graduadas. También existen modelos de gafas 3D diseñados para adaptarse cómodamente sobre tus gafas regulares."
+        ]} 
+    />
+
     <section class="main-section">
         <h2 class="main-section__title">Análisis de las mejores gafas 3D 2025</h2>
-        <p class="main-section__text">La tecnología detrás de las <b>gafas 3D</b> está en constante evolución. Las futuras generaciones de <b>gafas de realidad virtual</b>, <b>gafas de realidad aumentada</b> y <b>gafas de realidad mixta</b> serán más ligeras, potentes y accesibles. Estas innovaciones no solo mejorarán la inmersión, sino que ampliarán su utilidad en educación, diseño, salud y más áreas.</p>
+        <p class="main-section__text">La tecnología detrás de las <b>gafas 3D</b> está en constante evolución. Las futuras generaciones de los 3 <b>tipos de gafas 3d</b>: gafas de realidad virtual, gafas de realidad aumentada y gafas de realidad mixta serán más ligeras, potentes y accesibles. Estas innovaciones no solo mejorarán la inmersión, sino que ampliarán su utilidad en educación, diseño, salud y más áreas.</p>
         <ArticlesList />
     </section>
 

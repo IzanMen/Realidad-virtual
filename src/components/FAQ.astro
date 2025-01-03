@@ -1,0 +1,36 @@
+---
+// Aquí puedes pasar las preguntas y respuestas como propiedades a tu componente Astro
+const { questions, responses } = Astro.props as { questions: string[], responses: string[] };
+---
+
+<section class="main-section">
+  {questions.map((question, index) => (
+      <details>
+        <summary>{question}</summary>
+        <p>{responses[index]}</p>
+      </details>
+  ))}
+</section>
+
+<style>
+
+details {
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 10px;
+}
+
+summary {
+    font-size: 1.3rem;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+p {
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-top: 0;
+    border: 2px solid #ddd;
+    border-top: 0;
+}
+
+</style>
