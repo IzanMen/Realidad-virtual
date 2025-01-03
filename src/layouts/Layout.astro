@@ -355,18 +355,17 @@ const { title , description } = Astro.props as Props;
 
 			z-index: 999;
 			
-			height: 0;
-			padding: 0;
+			height: 200px;
+			padding: 50px 0;
+			padding-bottom: 270px;
 			opacity: 0;
-			overflow: hidden;
-			transition: height 0.3s ease, padding 0.3s ease;
+			transform: translateY(500px);
+			transition: transform .5s ease;
 		}
 
 		.layout-header__nav-ul.active {
-			height: 200px;
-			padding: 50px 0;
 			opacity: 1;
-			padding-bottom: 270px;
+			transform: translateY(0);
 		}
 
 		.layout-header__nav-ul li {
@@ -400,10 +399,16 @@ const { title , description } = Astro.props as Props;
 		}
 
 		.dropdown-menu {
-			left: 0;
-			width: 100%;
-			border: none;
+			left: -100px;
+			top: 40px;
 			padding: 0;
+			border: none;
+			box-shadow: 0 0 20px 3px #aaa;
+			padding: 20px 10px;
+		}
+
+		.dropdown-menu li {
+			background-color: #fff;
 		}
 	}
 
