@@ -26,16 +26,18 @@ import TableOfContents from "../../components/TableOfContents.astro";
         <h2 class="main-section__title">Principales modelos de gafas virtuales Oculus</h2>
 
         <h3 class="main-section__subtitle">OCULUS QUEST 3 (META QUEST 3)</h3>
-        <p class="main-section__subtitle">: LA EVOLUCIÓN DE LA REALIDAD VIRTUAL AUTÓNOMA</p>
-        <ProductElement id={11} />
+        <div class="main-section__products">
+            <ProductElement id={11} />
+        </div>  
         <p class="main-section__text"> Las <b>gafas Meta Quest 3</b> (anteriormente conocidas como <b>Oculus Quest 3</b>) han sido un hito en el mundo de la <b>realidad virtual</b>. Este dispositivo, al igual que sus predecesores, es completamente autónomo, es decir, no requiere un PC de alto rendimiento ni cables para funcionar. A diferencia de las <b>gafas Oculus Quest 2</b>, el <b>Oculus Quest 3</b> lleva la experiencia de la <b>realidad virtual</b> a un nuevo nivel gracias a sus mejoras tanto en potencia como en funcionalidades.</p>
         <DataSheet id={11} />
         <ProductAdvantages id={11} />
         <AmazonButton text="Ver en Amazon" href={Products[10].link} />
 
-        <br><h3 class="main-section__subtitle --margin-top">OCULUS QUEST 3S (META QUEST 3S)</h3>
-        <p class="main-section__subtitle">: LA OPCIÓN ECONÓMICA DE OCULUS</p>
-        <ProductElement id={1} />
+        <h3 class="main-section__subtitle --margin-top">OCULUS QUEST 3S (META QUEST 3S)</h3>
+        <div class="main-section__products">    
+            <ProductElement id={1} />
+        </div>
         <p class="main-section__text">Las <b>gafas Meta Quest 3S</b> (anteriormente conocidas como <b>Oculus Quest 3S</b>) son una versión más asequible de las <b>Meta Quest 3</b>, ofreciendo una experiencia de <b>realidad virtual</b> autónoma sin necesidad de un PC ni cables, pero con algunas diferencias en cuanto a rendimiento. Aunque no cuentan con las mismas mejoras gráficas y de rendimiento que las <b>Oculus Quest 3</b>, las <b>Oculus Quest 3S</b> representan una opción más accesible para aquellos que buscan entrar en el mundo de la <b>realidad virtual</b> sin gastar tanto. Son ideales para quienes desean disfrutar de experiencias inmersivas a un precio más bajo, pero sin las prestaciones avanzadas de su modelo superior.</p>
         <DataSheet id={1} />
         <ProductAdvantages id={1} />
@@ -83,10 +85,6 @@ import TableOfContents from "../../components/TableOfContents.astro";
 <style>
     .main-header__title {
         font-weight: 400;
-    }
-
-    .main-section__subtitle {
-        display: inline-block;
     }
 
     .--margin-top {

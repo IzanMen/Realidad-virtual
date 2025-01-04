@@ -27,16 +27,18 @@ import TableOfContents from "../../components/TableOfContents.astro";
         <h2 class="main-section__title">Comparación de las gafas Pico 4 y Pico Neo 3</h2>
 
         <h3 class="main-section__subtitle">PICO 4</h3>
-        <p class="main-section__subtitle">: UNA EXPERIENCIA VR MÁS AVANZADA Y AUTÓNOMA</p>
-        <ProductElement id={12} />
+        <div class="main-section__products">
+            <ProductElement id={12} />
+        </div>
         <p class="main-section__text">Las <b>Pico 4</b> son el modelo más avanzado de la marca, diseñadas para ofrecer una experiencia de realidad virtual autónoma sin necesidad de un PC. Con su potente hardware y resolución superior, las Pico 4 brindan gráficos impresionantes, una ergonomía mejorada y un diseño más ligero. Son perfectas para usuarios que buscan una experiencia inmersiva de alta calidad en un dispositivo portátil.</p>
         <DataSheet id={12} />
         <ProductAdvantages id={12} />
         <AmazonButton text="Ver en Amazon" href={Products[11].link} />
 
-        <br><h3 class="main-section__subtitle --margin-top">PICO NEO 3</h3>
-        <p class="main-section__subtitle">: EL PREDECESOR CON UNA BUENA RELACIÓN CALIDAD-PRECIO</p>
-        <ProductElement id={13} />
+        <h3 class="main-section__subtitle --margin-top">PICO NEO 3</h3>
+        <div class="main-section__products">
+            <ProductElement id={13} />
+        </div>
         <p class="main-section__text">Las <b>Pico Neo 3</b>, aunque más antiguas, siguen siendo una opción excelente para quienes buscan un dispositivo VR sólido pero más económico. Este modelo aún proporciona un rendimiento impresionante y es ideal para quienes no requieren lo último en gráficos o diseño, pero quieren una experiencia inmersiva confiable sin necesidad de un PC.</p>
         <DataSheet id={13} />
         <ProductAdvantages id={13} />
@@ -102,10 +104,6 @@ import TableOfContents from "../../components/TableOfContents.astro";
 <style>
     .main-header__title {
         font-weight: 400;
-    }
-
-    .main-section__subtitle {
-        display: inline-block;
     }
 
     .--margin-top {

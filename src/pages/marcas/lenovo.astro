@@ -24,15 +24,19 @@ import TableOfContents from "../../components/TableOfContents.astro";
     <section class="main-section">
         <h2 class="main-section__title">Principales modelos de gafas VR Lenovo</h2>
 
-        <h3 class="main-section__subtitle">LENOVO THINKREALITY A3: GAFAS DE REALIDAD AUMENTADA PARA EL ENTORNO LABORAL</h3>
-        <ProductElement id={14} />
+        <h3 class="main-section__subtitle">LENOVO THINKREALITY A3</h3>
+        <div class="main-section__products">
+            <ProductElement id={14} />
+        </div>
         <p class="main-section__text">Las <b>Lenovo ThinkReality A3</b> son <b>gafas de realidad aumentada Lenovo</b> diseñadas para entornos empresariales. Estas <b>gafas VR Lenovo</b> permiten proyectar hasta cinco pantallas virtuales de alta definición, conectándose fácilmente a PCs o smartphones Motorola. Este dispositivo ofrece una experiencia inmersiva orientada a la productividad, con aplicaciones ideales para multitarea, diseño y colaboración remota.</p>
         <DataSheet id={14} />
         <ProductAdvantages id={14} />
         <AmazonButton text="Ver en Amazon" href={Products[13].link} />
 
-        <br><h3 class="main-section__subtitle --margin-top">LEGION GLASSES: GAFAS VR LENOVO PARA UNA EXPERIENCIA VISUAL EXTENDIDA</h3>
-        <ProductElement id={15} />
+        <h3 class="main-section__subtitle --margin-top">LEGION GLASSES</h3>
+        <div class="main-section__products">
+            <ProductElement id={15} />
+        </div>
         <p class="main-section__text">Las <b>Lenovo Legion Glasses</b> están diseñadas para los entusiastas del entretenimiento y la productividad, pero en un formato de <b>realidad aumentada</b> en lugar de <b>realidad virtual</b>. Estas gafas AR permiten proyectar pantallas virtuales en el entorno real, lo que las hace ideales para el trabajo de productividad y disfrutar de contenido multimedia sin sumergirse completamente en un entorno virtual.</p>
         <DataSheet id={15} />
         <ProductAdvantages id={15} />
@@ -72,7 +76,7 @@ import TableOfContents from "../../components/TableOfContents.astro";
         </div>
       </section>
     <section class="main-section">
-        <h2 class="main-section__title">Nuestros Últimos Artículos sobre Lentes de Realidad Virtual y Aumentada</h2>
+        <h2 class="main-section__title">Nuestros últimos artículos sobre lentes de realidad virtula y aumentada</h2>
         <ArticlesList />
     </section>
 </main>
@@ -83,11 +87,7 @@ import TableOfContents from "../../components/TableOfContents.astro";
     .main-header__title {
         font-weight: 400;
     }
-
-    .main-section__subtitle {
-        display: inline-block;
-    }
-
+    
     .--margin-top {
         margin-top: 30px;
     }
