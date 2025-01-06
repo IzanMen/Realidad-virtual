@@ -1,5 +1,8 @@
 ---
 
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
 export interface Props {
 	title: string;
 	description: string;
@@ -46,53 +49,42 @@ const { title , description } = Astro.props as Props;
 </head>
 
 <body>
-	<header class="layout-header">
-		<svg class="layout-header__image" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="25" cy="31.5" rx="25" ry="25.5" fill="#011936"/><circle cx="17.5" cy="17.5" r="17" fill="#68000A" stroke="#fff"/><path d="m60.968 25-2.82-3.36h1.272l2.832 3.348V25h-1.284Zm-7.296 0v-8.628h7.2c.264 0 .504.068.72.204.224.128.4.3.528.516.128.216.192.456.192.72v2.532c0 .264-.064.504-.192.72a1.517 1.517 0 0 1-.528.528 1.386 1.386 0 0 1-.72.192h-6.228V25h-.972Zm1.44-4.2h5.76a.44.44 0 0 0 .324-.132.423.423 0 0 0 .144-.324v-2.532a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-5.76a.46.46 0 0 0-.336.144.44.44 0 0 0-.132.324v2.532a.44.44 0 0 0 .132.324.482.482 0 0 0 .336.132Zm9.854 4.2a1.45 1.45 0 0 1-.732-.192 1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-4.056c0-.264.064-.504.192-.72.136-.224.312-.4.528-.528.224-.136.468-.204.732-.204h4.176c.272 0 .516.068.732.204.224.128.4.304.528.528.136.216.204.456.204.72v2.52h-6.108v1.536c0 .128.044.24.132.336a.482.482 0 0 0 .336.132h5.64V25h-5.64Zm-.468-3.972h5.112v-1.536a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-4.176a.46.46 0 0 0-.336.144.44.44 0 0 0-.132.324v1.536ZM73.287 25a1.45 1.45 0 0 1-.732-.192 1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-2.52h6.096v-1.536a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-5.628v-.984h5.628c.272 0 .516.068.732.204.224.128.4.304.528.528.136.216.204.456.204.72V25h-5.64Zm0-.984h4.644v-2.004h-5.112v1.536c0 .128.044.24.132.336a.482.482 0 0 0 .336.132Zm8.215.984a1.45 1.45 0 0 1-.732-.192 1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732V15.76h.984v7.788c0 .128.044.24.132.336a.482.482 0 0 0 .336.132h1.176V25h-1.176Zm2.169 0v-6.96h.984V25h-.984Zm0-8.256v-.984h.984v.984h-.984ZM87.283 25c-.272 0-.52-.064-.744-.192a1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-4.056c0-.264.064-.504.192-.72.136-.224.312-.4.528-.528.224-.136.472-.204.744-.204h4.644v-2.28h.984V25h-5.628Zm0-.984h4.176a.44.44 0 0 0 .324-.132.46.46 0 0 0 .144-.336v-4.056a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-4.176a.46.46 0 0 0-.336.144.44.44 0 0 0-.132.324v4.056c0 .128.044.24.132.336a.482.482 0 0 0 .336.132Zm8.34.984a1.45 1.45 0 0 1-.732-.192 1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-2.52h6.096v-1.536a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144H94.17v-.984h5.628c.272 0 .516.068.732.204.224.128.4.304.528.528.136.216.204.456.204.72V25h-5.64Zm0-.984h4.644v-2.004h-5.112v1.536c0 .128.044.24.132.336a.482.482 0 0 0 .336.132Zm7.996.984c-.272 0-.52-.064-.744-.192a1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-4.056c0-.264.064-.504.192-.72.136-.224.312-.4.528-.528.224-.136.472-.204.744-.204h4.644v-2.28h.984V25h-5.628Zm0-.984h4.176a.44.44 0 0 0 .324-.132.46.46 0 0 0 .144-.336v-4.056a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-4.176a.46.46 0 0 0-.336.144.44.44 0 0 0-.132.324v4.056c0 .128.044.24.132.336a.482.482 0 0 0 .336.132ZM68.04 44 59.7 29.6h1.9l7.38 12.82 7.36-12.82h1.9L69.92 44h-1.88Zm12.059 0V32.4h1.64V44h-1.64Zm0-13.76V28.6h1.64v1.64h-1.64ZM84.259 44v-9.18c0-.44.106-.84.32-1.2.226-.373.52-.667.88-.88.373-.227.78-.34 1.22-.34h6.52v1.64h-6.52c-.214 0-.4.08-.56.24a.734.734 0 0 0-.22.54V44h-1.64Zm12.674 0c-.453 0-.867-.107-1.24-.32a2.586 2.586 0 0 1-.86-.88 2.417 2.417 0 0 1-.32-1.22V28.6h1.64v3.8h5.02v1.64h-5.02v7.54c0 .213.073.4.22.56.16.147.347.22.56.22h4.24V44h-4.24Zm8.203 0c-.44 0-.846-.107-1.22-.32a2.777 2.777 0 0 1-.88-.88 2.42 2.42 0 0 1-.32-1.22V32.4h1.64v9.18c0 .213.074.4.22.56.16.147.347.22.56.22h6.96c.214 0 .4-.073.56-.22.16-.16.24-.347.24-.56V32.4h1.64v9.18c0 .44-.113.847-.34 1.22a2.52 2.52 0 0 1-.88.88c-.36.213-.766.32-1.22.32h-6.96Zm13.887 0c-.44 0-.847-.107-1.22-.32a2.767 2.767 0 0 1-.88-.88 2.41 2.41 0 0 1-.32-1.22v-4.2h10.16v-2.56a.704.704 0 0 0-.24-.54.705.705 0 0 0-.54-.24h-9.38V32.4h9.38c.453 0 .86.113 1.22.34.373.213.666.507.88.88.226.36.34.76.34 1.2V44h-9.4Zm0-1.64h7.74v-3.34h-8.52v2.56c0 .213.073.4.22.56.16.147.346.22.56.22ZM132.714 44c-.44 0-.847-.107-1.22-.32a2.777 2.777 0 0 1-.88-.88 2.42 2.42 0 0 1-.32-1.22V28.6h1.64v12.98c0 .213.073.4.22.56.16.147.347.22.56.22h1.96V44h-1.96Z" fill="#000"/></svg>
-		<nav class="layout-header__nav">
-			<ul class="layout-header__nav-ul">
-				<li><a href="https://gafasderealidadvirtual.com">Inicio</a></li>
-				<li class="layout-header__nav-ul__li--white dropdown">
-					<a href="#">Tipos</a>
-					<ul class="dropdown-menu">
-						<li><a href="https://gafasderealidadvirtual.com/tipos-de-gafas-3d/gafas-de-realidad-virtual">Realidad Virtual</a></li>
-						<li><a href="https://gafasderealidadvirtual.com/tipos-de-gafas-3d/gafas-de-realidad-aumentada">Realidad Aumentada</a></li>
-						<li><a href="https://gafasderealidadvirtual.com/tipos-de-gafas-3d/gafas-de-realidad-mixta">Realidad Mixta</a></li>
-					</ul>
-				</li>
-				<li class="layout-header__nav-ul__li dropdown">
-					<a href="#">Marcas</a>
-					<ul class="dropdown-menu">
-						<li><a href="https://gafasderealidadvirtual.com/marcas/oculus">Oculus</a></li>
-						<li><a href="https://gafasderealidadvirtual.com/marcas/lenovo">Lenovo</a></li>
-						<li><a href="https://gafasderealidadvirtual.com/marcas/pico">Pico</a></li>
-						<li><a href="https://gafasderealidadvirtual.com/marcas/pico">Vive</a></li>
-					</ul>
-				</li>
-				<li class="layout-header__nav-ul__li--white"><a href="">Box</a></li>
-			</ul>
-			<span class="layout-header__nav-menu">
-				<svg class="layout-header__nav-menu-svg" width="256" height="256" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="1.5"><path d="M1 12a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm0-8a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm0 16a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Z" fill="#fff" stroke="1"/></svg>
-				<svg class="layout-header__nav-menu-svg none" width="256" height="256" viewBox="0 0 24 24" fill="#fff" stroke="#fff" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path d="M20.746 3.329a1 1 0 0 0-1.415 0l-7.294 7.294-7.294-7.294a1 1 0 1 0-1.414 1.414l7.294 7.294-7.294 7.294a1 1 0 0 0 1.414 1.415l7.294-7.295 7.294 7.295a1 1 0 0 0 1.415-1.415l-7.295-7.294 7.295-7.294a1 1 0 0 0 0-1.414Z" stroke="1"/></svg>
-			</span>
-		</nav>
-	</header>
+	<Header />
 	<slot />
-	<footer class="layout-footer">
-		<svg class="layout-footer__image" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="25" cy="31.5" rx="25" ry="25.5" fill="#011936"/><circle cx="17.5" cy="17.5" r="17" fill="#68000A" stroke="#000"/><path d="m60.968 25-2.82-3.36h1.272l2.832 3.348V25h-1.284Zm-7.296 0v-8.628h7.2c.264 0 .504.068.72.204.224.128.4.3.528.516.128.216.192.456.192.72v2.532c0 .264-.064.504-.192.72a1.517 1.517 0 0 1-.528.528 1.386 1.386 0 0 1-.72.192h-6.228V25h-.972Zm1.44-4.2h5.76a.44.44 0 0 0 .324-.132.423.423 0 0 0 .144-.324v-2.532a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-5.76a.46.46 0 0 0-.336.144.44.44 0 0 0-.132.324v2.532a.44.44 0 0 0 .132.324.482.482 0 0 0 .336.132Zm9.854 4.2a1.45 1.45 0 0 1-.732-.192 1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-4.056c0-.264.064-.504.192-.72.136-.224.312-.4.528-.528.224-.136.468-.204.732-.204h4.176c.272 0 .516.068.732.204.224.128.4.304.528.528.136.216.204.456.204.72v2.52h-6.108v1.536c0 .128.044.24.132.336a.482.482 0 0 0 .336.132h5.64V25h-5.64Zm-.468-3.972h5.112v-1.536a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-4.176a.46.46 0 0 0-.336.144.44.44 0 0 0-.132.324v1.536ZM73.287 25a1.45 1.45 0 0 1-.732-.192 1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-2.52h6.096v-1.536a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-5.628v-.984h5.628c.272 0 .516.068.732.204.224.128.4.304.528.528.136.216.204.456.204.72V25h-5.64Zm0-.984h4.644v-2.004h-5.112v1.536c0 .128.044.24.132.336a.482.482 0 0 0 .336.132Zm8.215.984a1.45 1.45 0 0 1-.732-.192 1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732V15.76h.984v7.788c0 .128.044.24.132.336a.482.482 0 0 0 .336.132h1.176V25h-1.176Zm2.169 0v-6.96h.984V25h-.984Zm0-8.256v-.984h.984v.984h-.984ZM87.283 25c-.272 0-.52-.064-.744-.192a1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-4.056c0-.264.064-.504.192-.72.136-.224.312-.4.528-.528.224-.136.472-.204.744-.204h4.644v-2.28h.984V25h-5.628Zm0-.984h4.176a.44.44 0 0 0 .324-.132.46.46 0 0 0 .144-.336v-4.056a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-4.176a.46.46 0 0 0-.336.144.44.44 0 0 0-.132.324v4.056c0 .128.044.24.132.336a.482.482 0 0 0 .336.132Zm8.34.984a1.45 1.45 0 0 1-.732-.192 1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-2.52h6.096v-1.536a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144H94.17v-.984h5.628c.272 0 .516.068.732.204.224.128.4.304.528.528.136.216.204.456.204.72V25h-5.64Zm0-.984h4.644v-2.004h-5.112v1.536c0 .128.044.24.132.336a.482.482 0 0 0 .336.132Zm7.996.984c-.272 0-.52-.064-.744-.192a1.664 1.664 0 0 1-.528-.528 1.45 1.45 0 0 1-.192-.732v-4.056c0-.264.064-.504.192-.72.136-.224.312-.4.528-.528.224-.136.472-.204.744-.204h4.644v-2.28h.984V25h-5.628Zm0-.984h4.176a.44.44 0 0 0 .324-.132.46.46 0 0 0 .144-.336v-4.056a.423.423 0 0 0-.144-.324.423.423 0 0 0-.324-.144h-4.176a.46.46 0 0 0-.336.144.44.44 0 0 0-.132.324v4.056c0 .128.044.24.132.336a.482.482 0 0 0 .336.132ZM68.04 44 59.7 29.6h1.9l7.38 12.82 7.36-12.82h1.9L69.92 44h-1.88Zm12.059 0V32.4h1.64V44h-1.64Zm0-13.76V28.6h1.64v1.64h-1.64ZM84.259 44v-9.18c0-.44.106-.84.32-1.2.226-.373.52-.667.88-.88.373-.227.78-.34 1.22-.34h6.52v1.64h-6.52c-.214 0-.4.08-.56.24a.734.734 0 0 0-.22.54V44h-1.64Zm12.674 0c-.453 0-.867-.107-1.24-.32a2.586 2.586 0 0 1-.86-.88 2.417 2.417 0 0 1-.32-1.22V28.6h1.64v3.8h5.02v1.64h-5.02v7.54c0 .213.073.4.22.56.16.147.347.22.56.22h4.24V44h-4.24Zm8.203 0c-.44 0-.846-.107-1.22-.32a2.777 2.777 0 0 1-.88-.88 2.42 2.42 0 0 1-.32-1.22V32.4h1.64v9.18c0 .213.074.4.22.56.16.147.347.22.56.22h6.96c.214 0 .4-.073.56-.22.16-.16.24-.347.24-.56V32.4h1.64v9.18c0 .44-.113.847-.34 1.22a2.52 2.52 0 0 1-.88.88c-.36.213-.766.32-1.22.32h-6.96Zm13.887 0c-.44 0-.847-.107-1.22-.32a2.767 2.767 0 0 1-.88-.88 2.41 2.41 0 0 1-.32-1.22v-4.2h10.16v-2.56a.704.704 0 0 0-.24-.54.705.705 0 0 0-.54-.24h-9.38V32.4h9.38c.453 0 .86.113 1.22.34.373.213.666.507.88.88.226.36.34.76.34 1.2V44h-9.4Zm0-1.64h7.74v-3.34h-8.52v2.56c0 .213.073.4.22.56.16.147.346.22.56.22ZM132.714 44c-.44 0-.847-.107-1.22-.32a2.777 2.777 0 0 1-.88-.88 2.42 2.42 0 0 1-.32-1.22V28.6h1.64v12.98c0 .213.073.4.22.56.16.147.347.22.56.22h1.96V44h-1.96Z" fill="#fff"/></svg>
-		<nav>
-			<ul class="layout-footer__nav">
-				<li><a href="https://gafasderealidadvirtual.com/">Inicio</a></li>
-				<li><a href="https://gafasderealidadvirtual.com/tipos-de-gafas-3d/">Tipos</a></li>
-				<li><a href="">Marcas</a></li>
-				<li><a href="">Box</a></li>
-			</ul>
-		</nav>
-	</footer>
+	<Footer />
 </body>
 
 </html>
 
 <style is:global>
+
+
+@font-face {
+		font-family: 'Orbitron';
+		src: url('../../public/fonts/Orbitron.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Rajdhani';
+		src: url('../../public/fonts/Rajdhani-Bold.ttf') format('truetype');
+		font-weight: bold;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Rajdhani';
+		src: url('../../public/fonts/Rajdhani-Regular.ttf') format('truetype');
+		font-weight: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Allerta Stencil';
+		src: url('../../public/fonts/Allerta.ttf') format('truetype');
+		font-display: swap;
+	}
+
 
 	.main {
 		max-width: 1500px;
@@ -182,323 +174,11 @@ const { title , description } = Astro.props as Props;
 
 </style>
 
+
 <style>
-
-	@font-face {
-		font-family: 'Orbitron';
-		src: url('../../public/fonts/Orbitron.ttf') format('truetype');
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'Rajdhani';
-		src: url('../../public/fonts/Rajdhani-Bold.ttf') format('truetype');
-		font-weight: bold;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'Rajdhani';
-		src: url('../../public/fonts/Rajdhani-Regular.ttf') format('truetype');
-		font-weight: normal;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'Allerta Stencil';
-		src: url('../../public/fonts/Allerta.ttf') format('truetype');
-		font-display: swap;
-	}
-
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 	}
-
-	.layout-header {
-		width: 100%;
-		height: 100px;
-		background-color: #ddd;
-		box-shadow: 0 0 20px 10px #aaa;
-		padding: 0 100px;
-		display: flex;
-		justify-content: space-between;
-		position: fixed;
-		top: 0;
-		z-index: 1000;
-		transition: height 0.3s ease, padding 0.3s ease;
-	}
-
-	@media screen and (max-width: 1200px) {
-		.layout-header {
-			padding: 0 50px;
-		}
-	}
-
-	@media screen and (max-width: 900px) {
-		.layout-header {
-			padding: 0 30px;
-		}
-	}
-
-	.layout-header.shrink {
-		height: 65px;
-		padding: 0 80px;
-	}
-
-
-	.layout-header__image {
-		width: 150px;
-		transition: transform 0.3s ease;
-
-		align-self: center;
-	}
-
-	.layout-header__image.shrink {
-		transform: translateY(-100px);
-	}
-
-	.layout-header__nav-ul, .layout-footer__nav {
-		width: 300px;
-		height: 100%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		list-style: none;
-	}
-
-	.layout-header__nav-ul a, .layout-footer__nav a {
-		color: #000;
-		text-decoration: none;
-		font-family: 'Orbitron';
-	}
-
-	.layout-header__nav-menu {
-		display: none;
-	}
-
-	.layout-header__nav-menu-svg.none {
-		display: none;
-	}
-
-	.layout-header__nav-ul {
-		display: flex;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.layout-header__nav-ul__li--white {
-		position: relative;
-	}
-
-	.dropdown-menu {
-		display: none;
-		flex-direction: column;
-		gap: 0;
-
-		position: absolute;
-		left: -80px;
-		width: 220px;
-		background-color: white;
-		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-		padding: 10px 0;
-		border-top: 30px solid #ddd;
-		list-style: none;
-		z-index: 10000;
-	}
-
-	.dropdown:hover .dropdown-menu {
-		display: flex;
-	}
-
-	.dropdown-menu li a {
-		color: black;
-		text-decoration: none;
-		display: inline-block;
-		width: 100%;
-		padding: 10px 15px;
-	}
-
-	.dropdown-menu li a:hover {
-		background-color: #eee;
-	}
-
-
-	@media screen and (max-width: 750px) {
-		.layout-header {
-			justify-content: center;
-		}
-
-		.layout-header__image {
-			width: 170px;
-		}
-
-		.layout-header__nav {
-			position: absolute;
-			top: 85vh;
-			right: 20px;
-		}
-
-		.layout-header__nav-ul {
-			box-sizing: border-box;
-			flex-direction: column;
-			gap: 0;
-			width: fit-content;
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			background-color: #fff;
-			padding: 50px 0;
-			padding-bottom: 270px;
-			border: 1px solid #000;
-			border-radius: 10px;
-			border-end-end-radius: 45px;
-
-			z-index: 999;
-			
-			height: 200px;
-			padding: 50px 0;
-			padding-bottom: 270px;
-			opacity: 0;
-			transform: translateY(500px);
-			transition: transform .5s ease;
-		}
-
-		.layout-header__nav-ul.active {
-			opacity: 1;
-			transform: translateY(0);
-		}
-
-		.layout-header__nav-ul li {
-			width: 200px;
-			padding: 10px;
-			text-align: center;
-			background-color: #eee;
-		}
-
-		.layout-header__nav-ul__li--white{
-			background-color: #fff !important;
-		}
-
-		.layout-header__nav-menu {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			position: absolute;
-			padding: 20px;
-			background-color: #011936;
-			box-shadow: 0 0 20px 2px #fff;
-			border-radius: 50%;
-			bottom: 0;
-			right: 0;
-			z-index: 1000;
-		}
-
-		.layout-header__nav-menu svg {
-			width: 35px;
-			height: 35px;
-		}
-
-		.dropdown-menu {
-			left: -100px;
-			top: 40px;
-			padding: 0;
-			border: none;
-			box-shadow: 0 0 20px 3px #aaa;
-			padding: 20px 10px;
-		}
-
-		.dropdown-menu li {
-			background-color: #fff;
-		}
-
-		.dropdown-menu li a {
-			padding: 5px 20px;
-		}
-	}
-
-	.layout-footer__nav a {
-		color: #fff;
-	}
-
-	.layout-footer {
-		height: 200px;
-		padding: 0 80px;
-		background-color: #000;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-
-		border-radius: 50px 50px 0 0 ;
-		margin-top: 100px;
-	}
-
-	.layout-footer__image {
-		width: 150px;
-	}
-
-	@media screen and (max-width: 1200px) {
-		.layout-footer {
-			padding: 0 50px;
-		}
-	}
-
-	@media screen and (max-width: 785px) {
-		.layout-footer {
-			height: 500px;
-			flex-direction: column-reverse;
-			justify-content: center;
-		}
-
-		.layout-footer__nav {
-			width: 100vw;
-			flex-direction: column;
-			gap: 30px;
-			padding-bottom: 50px;
-			border-bottom: 1px solid #aaa;
-			font-size: 1rem;
-		}
-
-		.layout-footer__image {
-			padding-top: 50px;
-		}
-	}
-
 </style>
-
-<script>
-	window.addEventListener('scroll', function () {
-		const header = document.querySelector('.layout-header') as HTMLElement;
-		const logo = document.querySelector('.layout-header__image') as HTMLElement;
-
-		if (header && logo) {
-			if (window.scrollY > 100) {
-				header.classList.add('shrink');
-				logo.classList.add('shrink');
-			} else {
-				header.classList.remove('shrink');
-				logo.classList.remove('shrink');
-			}
-		}
-	});
-
-	const menu = document.querySelector('.layout-header__nav-menu') as HTMLElement;
-	const nav = document.querySelector('.layout-header__nav-ul') as HTMLElement;
-	const svg = document.querySelectorAll('.layout-header__nav-menu-svg');
-
-	if (menu && nav) {
-		menu.addEventListener('click', function () {
-			nav.classList.toggle('active');
-		});
-
-		if (svg) {
-			menu.addEventListener('click', function () {
-				svg.forEach((element) => {
-					element.classList.toggle('none');
-				});
-			});
-		}
-	}
-</script>
