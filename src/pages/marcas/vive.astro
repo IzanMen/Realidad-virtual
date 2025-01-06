@@ -1,0 +1,113 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProductElement from "../../components/ProductElement.astro";
+import DataSheet from "../../components/DataSheet.astro";
+import ProductAdvantages from "../../components/ProductAdvantages.astro";
+import AmazonButton from "../../components/AmazonButton.astro";
+import Products from '../../../public/data/products-list.json';
+import ArticlesList from "../../components/ArticlesList.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
+import FAQ from "../../components/FAQ.astro";
+
+---
+
+<Layout 
+    title="Guía de compra de gafas HTC Vive | Información y opiniones sobre realidad virtual de alta calidad"
+    description="Explora las gafas HTC Vive más avanzadas, como el HTC Vive Pro 2 y Vive XR Elite, y disfruta de la mejor experiencia en realidad virtual a precios competitivos."
+>
+
+<main class="main">
+    <header class="main-header">
+        <h1 class="main-header__title">Gafas HTC Vive: Tu guía para la mejor experiencia en realidad virtual</h1>
+        <p class="main-header__text">
+            Las <b>gafas de realidad virtual HTC Vive</b> destacan por su tecnología inmersiva y versatilidad. Modelos como el <b>HTC Vive Pro 2</b> y el <b>HTC Vive XR Elite</b> ofrecen especificaciones avanzadas para usuarios exigentes, mientras que su ecosistema incluye accesorios como estaciones base y mandos que optimizan la interacción en entornos virtuales. Estas opciones están diseñadas para adaptarse a diferentes necesidades en experiencias de <b>realidad virtual</b>, desde aplicaciones profesionales hasta entretenimiento.
+        </p>
+        <TableOfContents />
+    </header>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Gafas HTC Vive destacadas</h2>
+
+        <h3 class="main-section__subtitle">HTC Vive Pro 2 - Gafas VR de alta gama</h3>
+        <div class="main-section__products">
+            <ProductElement id={16} />
+        </div>
+        <p class="main-section__text">
+            Las <b>HTC Vive Pro 2</b> son ideales para quienes buscan la mejor calidad en gafas de realidad virtual. Con resolución 5K, seguimiento preciso mediante <b>estaciones base HTC Vive</b> y un diseño ergonómico, ofrecen una experiencia premium. 
+        </p>
+        <DataSheet id={16} />
+        <ProductAdvantages id={16} />
+        <AmazonButton text="Comprar HTC Vive Pro 2 en Amazon" href={Products[15].link} />
+
+        <h3 class="main-section__subtitle --margin-top">HTC Vive XR Elite - Innovación en realidad virtual</h3>
+        <div class="main-section__products">
+            <ProductElement id={17} />
+        </div>
+        <p class="main-section__text">
+            Las <b>HTC Vive XR Elite</b> combinan realidad virtual y mixta con un diseño compacto y ligero. Su resolución 4K y capacidad inalámbrica la convierten en una opción destacada para juegos y aplicaciones profesionales. 
+        </p>
+        <DataSheet id={17} />
+        <ProductAdvantages id={17} />
+        <AmazonButton text="Comprar HTC Vive XR Elite en Amazon" href={Products[16].link} />
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">¿Por qué Elegir Gafas VR HTC Vive?</h2>
+        <p class="main-section__text">
+            Desde gafas de alta calidad como el <b>HTC Vive Pro Full Kit</b> hasta opciones más asequibles como <b>HTC Vive segunda mano</b>, HTC ofrece una solución para cada necesidad. Su compromiso con la innovación garantiza experiencias inmersivas únicas.
+        </p>
+    </section>
+
+    <FAQ 
+    questions={[
+        "¿Qué es HTC Vive?",
+        "¿Qué modelos de gafas de realidad virtual ofrece HTC Vive?",
+        "¿Qué diferencias existen entre las gafas HTC Vive Pro 2 y HTC Vive XR Elite?",
+        "¿Qué son las estaciones base de HTC Vive y para qué sirven?",
+        "¿Cuántas estaciones base necesita un sistema HTC Vive?",
+        "¿Dónde puedo comprar estaciones base para HTC Vive?",
+        "¿Qué funciones tienen los mandos de HTC Vive?",
+        "¿HTC Vive es inalámbrico?",
+    ]} 
+    responses={[
+        "HTC Vive es un sistema de realidad virtual desarrollado por HTC que incluye gafas VR y accesorios, diseñados para ofrecer experiencias inmersivas en videojuegos, simulaciones y aplicaciones profesionales.",
+        
+        "HTC Vive ofrece modelos como el <b>HTC Vive Pro</b>, <b>HTC Vive Pro 2</b> y <b>HTC Vive XR Elite</b>, cada uno con características específicas que mejoran la experiencia inmersiva según el tipo de uso.",
+        
+        "Las <b>HTC Vive Pro 2</b> tienen una mayor resolución de pantalla y mejores características de seguimiento, ideales para entornos profesionales. El <b>HTC Vive XR Elite</b> incluye funcionalidades inalámbricas y de seguimiento extendido para una experiencia más avanzada.",
+        
+        "Las estaciones base de HTC Vive son dispositivos que permiten el seguimiento preciso del movimiento y la localización del usuario en el espacio, mejorando la interacción en la realidad virtual.",
+        
+        "El número de estaciones base necesarias depende del espacio de juego y del modelo, pero en general, se recomiendan al menos dos para un seguimiento adecuado en áreas pequeñas o medianas.",
+        
+        "Las estaciones base para HTC Vive están disponibles en tiendas especializadas en VR o en línea a través de plataformas como Amazon, eBay o directamente en el sitio de HTC Vive.",
+    ]}
+    
+    />
+
+    <section class="main-section">
+        <h2 class="main-section__title">Explora nuestro catálogo de gafas de realidad virtual</h2>
+        <div class="main-section__products">
+            {Products.map((product) => (
+                <ProductElement id={product.id} />
+            ))}
+        </div>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Artículos relacionados con realidad virtual</h2>
+        <ArticlesList />
+    </section>
+</main>
+
+</Layout>
+
+<style>
+    .main-header__title {
+        font-weight: 400;
+    }
+
+    .--margin-top {
+        margin-top: 30px;
+    }
+</style>

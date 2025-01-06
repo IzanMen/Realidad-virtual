@@ -553,5 +553,79 @@
       "Sin cámaras o sensores avanzados.",
       "Limitadas a experiencias de realidad aumentada, no pueden ser utilizadas para realidad virtual."
     ]
-  }           
+  },
+  {
+    "id": 16,
+    "nombre": "HTC Vive Pro 2",
+    "marca": "HTC",
+    "link": "https://amzn.to/3C5231K",
+    "calificacion": 9.9,
+    "tipo": ["Realidad Virtual"],
+    "precio": 849,
+    "imagen": {
+      "link": "../images/products/htcvivepro2.avif",
+      "alt": "HTC Vive Pro 2"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantalla Dual LCD con una resolución de 2448 x 2448 píxeles por ojo y una frecuencia de refresco de 120Hz.",
+      "seguimiento ocular": "No",
+      "procesador": "No tiene procesador propio, requiere un PC.",
+      "memoria ram": "No tiene memoria RAM propia.",
+      "almacenamiento": "No tiene almacenamiento interno.",
+      "audio": "Auriculares integrados con sonido espacial 3D de alta calidad.",
+      "camaras": "Cámaras frontales para seguimiento y funcionalidad passthrough.",
+      "controlador": "Controladores Vive con retroalimentación háptica y sensores de movimiento precisos.",
+      "autonomia": "N/A",
+      "tiempo de carga": "N/A",
+      "conectividad": "USB-C, DisplayPort 1.2"
+    },
+    "ventajas": [
+      "Resolución 5K para una calidad visual excepcional.",
+      "Altísima frecuencia de actualización, ideal para juegos intensivos.",
+      "Compatible con una amplia gama de accesorios y contenido.",
+      "Diseño ergonómico para comodidad durante sesiones largas."
+    ],
+    "desventajas": [
+      "Requiere un PC potente para funcionar.",
+      "Precio elevado.",
+      "El cable puede limitar el movimiento."
+    ]
+  },
+  {
+    "id": 17,
+    "nombre": "HTC Vive XR Elite",
+    "marca": "HTC",
+    "link": "https://amzn.to/3BX2NpG",
+    "calificacion": 9.7,
+    "tipo": ["Realidad Mixta", "Realidad Virtual"],
+    "precio": 999,
+    "imagen": {
+      "link": "../images/products/htcvivexrelite.avif",
+      "alt": "HTC Vive XR Elite"
+    },
+    "caracteristicas": {
+      "pantalla": "Pantallas LCD con una resolución de 1920 x 1920 píxeles por ojo y una frecuencia de refresco de 90Hz.",
+      "seguimiento ocular": "Sí",
+      "procesador": "Qualcomm Snapdragon XR2",
+      "memoria ram": "12 GB",
+      "almacenamiento": "128 GB",
+      "audio": "Altavoces integrados en las patillas.",
+      "camaras": "Cámaras de paso y de seguimiento.",
+      "controlador": "Controladores hápticos con seguimiento de movimiento.",
+      "autonomia": "Hasta 2 horas.",
+      "tiempo de carga": "Aproximadamente 2 horas.",
+      "conectividad": "USB-C, WI-FI 6, Bluetooth"
+    },
+    "ventajas": [
+      "Diseño compacto y ligero, ideal para portabilidad.",
+      "Seguimiento ocular integrado para una experiencia más inmersiva.",
+      "Compatible con realidad mixta y realidad virtual.",
+      "Buena duración de batería considerando el tamaño compacto."
+    ],
+    "desventajas": [
+      "Autonomía limitada.",
+      "Precio elevado comparado con alternativas portátiles.",
+      "El campo de visión podría ser más amplio."
+    ]
+  } 
 ]
