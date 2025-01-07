@@ -1,30 +1,57 @@
 [
-    {
-      "id": 1,
-      "name": "Descubre las mejores gafas de realidad virtual buenas y baratas.",
-      "link": "https://gafasderealidadvirtual.com/articulos/gafas-vr-buenas-baratas",
-      "image" : {
-        "src": "/images/articles/article-1.webp",
-        "alt": "Mejores gafas de realidad virtual buenas y baratas"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Por qué Meta dejó de fabricarlas? Todo lo que debes saber.",
-      "link": "https://gafasderealidadvirtual.com/articulos/oculus-quest-2",
-      "image" : {
-        "src": "/images/articles/article-2.avif",
-        "alt": "Meta"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Gafas VR para VRChat, ¿Cuáles son las mejores?.",
-      "link": "https://gafasderealidadvirtual.com/articulos/gafas-vr-para-vrchat",
-      "image" : {
-        "src": "/images/articles/vrchat.avif",
-        "alt": "Mejores gafas de realidad virtual para VRChat"
-      }
+  {
+    "id": 1,
+    "name": "Descubre las mejores gafas de realidad virtual buenas y baratas.",
+    "link": "https://gafasderealidadvirtual.com/articulos/gafas-vr-buenas-baratas",
+    "image" : {
+      "src": "/images/articles/article-1.webp",
+      "alt": "Mejores gafas de realidad virtual buenas y baratas"
     }
-  ]
+  },
+  {
+    "id": 2,
+    "name": "Por qué Meta dejó de fabricarlas? Todo lo que debes saber.",
+    "link": "https://gafasderealidadvirtual.com/articulos/oculus-quest-2",
+    "image" : {
+      "src": "/images/articles/article-2.avif",
+      "alt": "Meta"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Gafas VR para VRChat, ¿Cuáles son las mejores?.",
+    "link": "https://gafasderealidadvirtual.com/articulos/gafas-vr-para-vrchat",
+    "image" : {
+      "src": "/images/articles/vrchat.avif",
+      "alt": "Mejores gafas de realidad virtual para VRChat"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Ray-Ban Meta: Las gafas inteligentes del futuro que cambiarán tu vida en 2025",
+    "link": "https://gafasderealidadvirtual.com/articulos/ray-ban-meta",
+    "image" : {
+      "src": "/images/products/ray-ban.avif",
+      "alt": "Ray-Ban Meta"
+    }
+  },
+  {
+    "id": 5,
+    "name": "¡Google y Samsung se ponen las pilas! ¿Qué están tramando ahora?",
+    "link": "https://gafasderealidadvirtual.com/articulos/android-xr",
+    "image" : {
+      "src": "/images/articles/android-xr.avif",
+      "alt": "Android XR"
+    }
+  },
+  {
+    "id": 6,
+    "name": "¡Ahora puedes jugar a pádel desde el sofá!",
+    "link": "https://gafasderealidadvirtual.com/articulos/padel-vr",
+    "image" : {
+      "src": "/images/articles/padel-vr-juego.avif",
+      "alt": "Android XR"
+    }
+  }
+]
   

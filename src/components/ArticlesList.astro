@@ -21,6 +21,23 @@ import Articles from '../../public/data/articles-list.json';
         <p>{Articles[2].name}</p>
     </a>
 </div>
+<div class="articles-list">
+    <a href={Articles[3].link} class="articles-list__item">
+        <img height="315px" src={Articles[3].image.src} alt={Articles[3].image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Articles[3].name}</p>
+    </a>
+    <a href={Articles[4]?.link} class="articles-list__item">
+        <img height="315px" src={Articles[4]?.image.src} alt={Articles[4]?.image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Articles[4]?.name}</p>
+    </a>
+    <a href={Articles[5]?.link} class="articles-list__item">
+        <img height="315px" src={Articles[5]?.image.src} alt={Articles[5]?.image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Articles[5]?.name}</p>
+    </a>
+</div>
 
 <style>
 

@@ -1,0 +1,89 @@
+---
+
+import Layout from "../../layouts/Layout.astro"
+import ProductAdvantages from "../../components/ProductAdvantages.astro"
+import AmazonButton from "../../components/AmazonButton.astro"
+import ArticlesList from "../../components/ArticlesList.astro"
+import TableOfContents from "../../components/TableOfContents.astro"
+import Products from '../../../public/data/products-list.json';
+import ProductElement from "../../components/ProductElement.astro"
+
+---
+
+<Layout 
+  title="Google y Samsung impulsan el ecosistema de tecnologías inmersivas con Android XR y Project Moohan"
+  description="Explora cómo Android XR, Project Moohan, y otros avances en realidad aumentada, virtual y mixta están transformando la interacción digital con dispositivos de próxima generación.">
+
+<main class="main">
+    <header class="main-header">
+        <h1 class="main-header__subtitle">El futuro de la interacción digital: Android XR y Project Moohan</h1>
+        <p class="main-header__title">Google y Samsung establecen las bases para un ecosistema tecnológico integrado y accesible</p>
+        <img src="../../../public/images/articles/android-xr.avif" alt="Android XR" class="main-header__image">
+        <p class="main-header__text">Este artículo examina cómo las iniciativas de Google y Samsung, centradas en <b>Android XR</b> y las <b>gafas Project Moohan</b>, están liderando la evolución de la <b>realidad aumentada</b> (AR), <b>realidad virtual</b> (VR) y <b>realidad mixta</b> (MR), cambiando la manera en que interactuamos con los mundos digital y físico.</p>
+        <TableOfContents />
+    </header>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Android XR: El sistema operativo para experiencias inmersivas</h2>
+        <p class="main-section__text"><b>Android XR</b> no es solo una actualización de <b>Android</b>. Es un sistema operativo diseñado para facilitar las experiencias de <b>realidad aumentada</b>, permitiendo la interacción entre entornos digitales y físicos. Gracias a su arquitectura avanzada, se adapta a una variedad de dispositivos como <b>gafas inteligentes</b>, cascos y dispositivos portátiles.</p>
+        <p class="main-section__text">Con la evolución de estas tecnologías, Google busca posicionarse como líder, ofreciendo un sistema operativo flexible y accesible que potencia la creación de experiencias inmersivas en múltiples plataformas, desde dispositivos AR hasta soluciones VR.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Project Moohan: El futuro de las gafas inteligentes</h2>
+        <img src="../../../public/images/articles/project-moohan.avif" alt="Project Moohan" class="main-header__image">
+        <p class="main-section__text">A la par con el desarrollo de <b>Android XR</b>, Samsung ha presentado el proyecto <b>Moohan</b>, unas <b>gafas inteligentes</b> que buscan revolucionar el campo de la <b>realidad mixta</b> (MR). Estas gafas combinan lo mejor de la <b>realidad aumentada</b> (AR) y la <b>realidad virtual</b> (VR), permitiendo una integración fluida de objetos virtuales y el mundo real.</p>
+        <p class="main-section__text">Equipadas con <b>Android XR</b>, las gafas <b>Moohan</b> prometen facilitar una experiencia de usuario más accesible, con un diseño ergonómico y una interfaz intuitiva que abrirá nuevas posibilidades para los consumidores, sin la barrera de precios que imponen otros dispositivos de gama alta.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Gemini: La inteligencia artificial que potencia la experiencia inmersiva</h2>
+        <img src="../../../public/images/articles/gemini.avif" alt="Gemini" class="main-header__image">
+        <p class="main-section__text">Un elemento clave de <b>Android XR</b> es su integración con la IA de última generación de Google, <b>Gemini</b>. Esta inteligencia artificial está diseñada para optimizar la interacción del usuario con los entornos inmersivos, mejorando la experiencia a través de traducción automática, navegación asistida y recomendaciones contextualizadas, todo proyectado directamente sobre las lentes de las gafas.</p>
+        <p class="main-section__text">Gracias al uso de <b>machine learning</b>, <b>Gemini</b> personaliza las respuestas y servicios según las preferencias del usuario, creando una experiencia inmersiva adaptativa que evoluciona con el tiempo y las interacciones.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Competencia y accesibilidad en el mercado de tecnologías inmersivas</h2>
+        <p class="main-section__text">Aunque Samsung no ha revelado el precio exacto de las <b>gafas Project Moohan</b>, se espera que se encuentren en un rango competitivo, similar a dispositivos de gamas medias como las <b>Meta Quest 3</b>, lo que posicionaría estas gafas como una opción accesible dentro del mercado. Al igual que sucedió con <b>Android</b> en los smartphones, la competencia variada impulsará la innovación y la diversidad de opciones disponibles para los consumidores.</p>
+        <p class="main-section__text">Este enfoque en precios accesibles permitirá a Samsung competir con grandes nombres en el mercado de XR, como Meta y Apple, y contribuirá al crecimiento de un ecosistema más inclusivo y diverso de dispositivos inmersivos.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">El futuro de la tecnología inmersiva: ¿Una nueva era digital?</h2>
+        <p class="main-section__text">El lanzamiento de <b>Android XR</b> y las <b>gafas Project Moohan</b> marca un hito en la transformación de la interacción digital. Con el respaldo de gigantes tecnológicos como Google y Samsung, este ecosistema de <b>realidad aumentada</b> (AR) y <b>realidad mixta</b> (MR) está configurado para cambiar nuestra forma de trabajar, aprender y divertirnos en el futuro cercano.</p>
+        <p class="main-section__text">Además de los dispositivos de consumo, esta tecnología también atraerá a desarrolladores, creadores de contenido y profesionales de sectores como la educación, la salud y el entretenimiento, ofreciendo nuevas oportunidades para innovar en la creación de experiencias digitales inmersivas.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Explora nuestro catálogo de gafas de realidad virtual más vendidas</h2>
+        <div class="main-section__products">
+            {Products.map((product) => (
+              <ProductElement id={product.id}/>
+            ))}
+        </div>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Artículos relacionados</h2>
+        <ArticlesList />
+    </section>
+</main>
+
+</Layout>
+
+<style>
+
+    .main-section__text li {
+        margin-bottom: 10px;
+    }
+
+    .--margin-0 {
+        margin: 0;
+    }
+
+    .main-header__image {
+        width: 100%;
+        height: auto;
+    }
+</style>

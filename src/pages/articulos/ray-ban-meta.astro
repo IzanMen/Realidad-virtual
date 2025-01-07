@@ -1,0 +1,91 @@
+---
+
+import Layout from "../../layouts/Layout.astro"
+import AmazonButton from "../../components/AmazonButton.astro"
+import ProductElement from "../../components/ProductElement.astro"
+import ArticlesList from "../../components/ArticlesList.astro"
+import TableOfContents from "../../components/TableOfContents.astro"
+import Products from '../../../public/data/products-list.json'
+
+---
+
+<Layout 
+    title="Ray-Ban Meta: Las gafas inteligentes del futuro que cambiarán tu vida en 2025"
+    description="Explora las Ray-Ban Meta, las gafas inteligentes más avanzadas de 2025. Conoce cómo Meta está revolucionando el mundo de la tecnología portátil con estas innovadoras gafas inteligentes y su pantalla incorporada." >
+
+<main class="main">
+    <header class="main-header">
+        <h1 class="main-header__subtitle">Las Ray-Ban Meta: El futuro de las gafas inteligentes está aquí</h1>
+        <p class="main-header__title">Meta planea añadir una pantalla a las gafas Ray-Ban para mejorar la experiencia.</p>
+        <img src="../../../public/images/products/ray-ban.avif" alt="Ray-Ban Meta" class="main-header__image">
+        <p class="main-header__text">En este artículo, exploramos las novedades de las Ray-Ban Meta, las gafas inteligentes de Meta, y cómo la incorporación de una pantalla cambiará por completo la experiencia del usuario. ¿Serán estas gafas el reemplazo definitivo de los smartphones? Descúbrelo a continuación.</p>
+        <TableOfContents />
+    </header>
+
+    <section class="main-section">
+        <h2 class="main-section__title">El futuro de las gafas inteligentes: Ray-Ban Meta como pioneras del mercado</h2>
+        <p class="main-section__text">Las gafas inteligentes han sido un concepto que ha intrigado a los usuarios durante años, pero hasta ahora no han logrado despegar como el dispositivo del futuro. Las nuevas Ray-Ban Meta de Meta podrían cambiar esto para siempre. La integración de una pantalla en estas gafas es un avance significativo, combinando diseño elegante y tecnología avanzada en un solo dispositivo.</p>
+        <p class="main-section__text">Desde la clásica estética de Ray-Ban, que ha sido un referente de estilo durante décadas, hasta las características innovadoras como cámaras integradas, micrófonos y altavoces, estas gafas están preparadas para ofrecer más que solo una mejora estética. La nueva pantalla que Meta planea integrar no solo mejorará la funcionalidad, sino que también podría cambiar por completo la interacción entre el usuario y el dispositivo.</p>
+        <AmazonButton text="Ver las Ray-Ban Meta en Amazon" link="https://amzn.to/4gFJ6SD" />
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">¿Qué ventajas traerá la pantalla incorporada en las Ray-Ban Meta?</h2>
+        <p class="main-section__text">Según fuentes cercanas a Meta, la incorporación de una pantalla en las Ray-Ban Meta permitirá al usuario disfrutar de una experiencia mucho más inmersiva. Aunque los detalles técnicos aún no se han revelado por completo, se espera que la pantalla permita visualizar notificaciones, interactuar con aplicaciones, y utilizar un asistente virtual en tiempo real sin necesidad de sacar el teléfono del bolsillo.</p>
+        <p class="main-section__text">Lo más destacado es que Meta se enfoca en mantener el diseño compacto y liviano, lo que hace que estas gafas sean cómodas y no pesen más que unas gafas tradicionales. Este diseño no solo mejora la usabilidad, sino que también facilita la aceptación por parte de usuarios que buscan integrar la tecnología de manera discreta en su vida diaria.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">¿Cómo se comparan las Ray-Ban Meta con otras gafas inteligentes del mercado?</h2>
+        <p class="main-section__text">Aunque Meta no es la primera empresa en lanzar gafas inteligentes, las Ray-Ban Meta presentan una combinación única de diseño clásico y tecnología puntera. Compañías como Google, Apple y Bose también han incursionado en este mercado, pero sus dispositivos a menudo sacrifican el estilo o la comodidad por la funcionalidad.</p>
+        <p class="main-section__text">Por ejemplo, las Google Glass han sido criticadas por su diseño futurista y poco atractivo, mientras que los dispositivos de Apple aún están en fase de desarrollo. En comparación, las Ray-Ban Meta prometen integrar todo lo que los usuarios esperan en un dispositivo portátil, manteniendo el estilo que ha hecho famosa a la marca Ray-Ban durante años.</p>
+        <div class="main-section__products">
+            {Products.map((product) => (
+              <ProductElement tipo="Realidad Aumentada" id={product.id}/>
+            ))}
+        </div>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Impacto en la vida cotidiana: ¿Qué cambiará con las gafas inteligentes?</h2>
+        <p class="main-section__text">Mark Zuckerberg ha mencionado que las gafas inteligentes serán la próxima plataforma de computación, desplazando a los smartphones para 2030. Con la integración de tecnologías como la realidad aumentada (RA), las Ray-Ban Meta no solo serán un dispositivo para ver notificaciones, sino que permitirán al usuario interactuar con su entorno de una forma completamente nueva.</p>
+        <p class="main-section__text">La posibilidad de acceder a información instantánea, navegar por internet, e incluso participar en experiencias de realidad aumentada, podría transformar nuestra forma de trabajar, socializar y divertirnos. Imagina tener a tu asistente virtual integrado directamente en tu campo de visión mientras caminas por la calle, o recibir alertas importantes de forma discreta y sin la necesidad de sacar el teléfono.</p>
+        <AmazonButton text="Ver las Ray-Ban Meta en Amazon" link="https://amzn.to/4gFJ6SD" />
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Próximos pasos y expectativas para las Ray-Ban Meta</h2>
+        <p class="main-section__text">El próximo año será clave para el desarrollo de las gafas inteligentes. Se espera que Meta haga avances significativos no solo en la integración de pantallas, sino también en la mejora de las capacidades de realidad aumentada y la conectividad con otros dispositivos de Meta. Estos avances podrían ser fundamentales para determinar el éxito de las Ray-Ban Meta en el mercado.</p>
+        <p class="main-section__text">Sin embargo, aún existe incertidumbre sobre cómo reaccionará el público ante este nuevo tipo de dispositivo. Si las gafas Meta logran combinar la funcionalidad de un smartphone con la discreción y comodidad de unas gafas tradicionales, podrían marcar el comienzo de una nueva era en la tecnología portátil.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Artículos relacionados</h2>
+        <ArticlesList />
+    </section>
+</main>
+
+</Layout>
+
+<style>
+    .main-section__title {
+        display: inline-block;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .main-section__text li {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #555;
+    }
+
+    .--margin-0 {
+        margin: 0;
+    }
+
+
+    .main-header__image {
+        width: 100%;
+    }
+</style>
