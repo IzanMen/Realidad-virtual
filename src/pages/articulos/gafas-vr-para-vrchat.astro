@@ -1,0 +1,98 @@
+---
+
+import Layout from "../../layouts/Layout.astro"
+import ProductElement from "../../components/ProductElement.astro"
+import Products from '../../../public/data/products-list.json';
+import ArticlesList from "../../components/ArticlesList.astro"
+import TableOfContents from "../../components/TableOfContents.astro"
+
+---
+
+<Layout 
+    title="¿cuáles son las mejores gafas VR para VRChat?"
+    description="Descubre qué es VRChat, por qué es tan popular y cómo elegir las mejores gafas VR de realidad virtual para disfrutar al máximo de esta experiencia inmersiva."
+>
+
+<main class="main">
+    <header class="main-header">
+        <h1 class="main-header__title">Cuáles son las mejores gafas VR para VRChat?</h1>
+        <img src="../../../images/articles/vrchat.avif" alt="VRChat" class="main-header__image" />
+        <p class="main-header__text">¿Te imaginas explorar mundos fantásticos, interactuar con personas de todo el mundo y ser quien quieras ser? Todo esto es posible con <b>VRChat</b>. Pero para vivirlo al máximo, necesitas las <b>mejores gafas de realidad virtual para VRChat</b>. Aquí te contamos todo lo que necesitas saber.</p>
+        <TableOfContents />
+    </header>
+
+    <section class="main-section">
+        <h2 class="main-section__title">¿Qué es VRChat y por qué está revolucionando la realidad virtual?</h2>
+        <p class="main-section__text"><b>VRChat</b> es una plataforma social inmersiva que permite a los usuarios crear avatares personalizados, explorar mundos diseñados por la comunidad y comunicarse en tiempo real con personas de todo el mundo. Lo que lo hace único es su enfoque en la creatividad y la interacción social.</p>
+        <p class="main-section__text">Desde recreaciones de paisajes increíbles hasta discotecas virtuales y juegos colaborativos, <b>VRChat</b> ofrece experiencias ilimitadas. Sin embargo, para aprovechar al máximo este universo, necesitas las mejores <b>lentes vr para VRChat</b>, que te permitan sumergirte por completo en la acción.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Beneficios de usar gafas de realidad virtual en VRChat</h2>
+        <p class="main-section__text">Aunque puedes acceder a <b>VRChat</b> desde un PC convencional, usar <b>gafas VR para VRChat</b> transforma la experiencia por completo. Aquí te dejamos algunos beneficios:</p>
+        <ul class="main-section__text">
+            <li><b>Inmersión total:</b> Te sentirás dentro del mundo virtual, olvidando el entorno físico.</li>
+            <li><b>Interacción natural:</b> Las gafas y sus controladores permiten movimientos y gestos más reales.</li>
+            <li><b>Conexión social mejorada:</b> Leer los gestos corporales y movimientos de otros usuarios hace que las interacciones sean más auténticas.</li>
+            <li><b>Mayor diversión:</b> Explorar mundos o jugar se convierte en una experiencia mucho más emocionante.</li>
+        </ul>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Las mejores gafas de realidad virtual para VRChat</h2>
+        <p class="main-section__text">El mercado de gafas VR está lleno de opciones, pero no todas son ideales para <b>VRChat</b>. Aquí están nuestras recomendaciones:</p>
+        <ul class="main-section__text">
+            <li><b>Meta Quest 3S:</b> Versátiles, inalámbricas y perfectas para principiantes. Una opción equilibrada entre calidad y precio.</li>
+            <ProductElement id={1}/>
+            <li><b>Pico 4 Ultra:</b> Una alternativa con buen rendimiento para explorar mundos de VRChat.</li>
+            <ProductElement id={12}/>
+            <li><b>HTC Vive Pro 2:</b> Para usuarios avanzados, estas gafas ofrecen una calidad premium y comodidad para largas sesiones.</li>
+            <ProductElement id={6}/>
+            <li><b>Pico Neo 3:</b> Gafas de VR capaces de ofrecer una experiencia inmersiva en VRChat, con un diseño cómodo y buena calidad.</li>
+            <ProductElement id={13}/>
+        </ul>        
+        <p class="main-section__text">Cualquiera de estas <b>gafas VR para VRChat</b> puede transformar tu experiencia, pero asegúrate de elegir el modelo que mejor se ajuste a tus necesidades y presupuesto.</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Consejos para disfrutar al máximo de VRChat</h2>
+        <ul class="main-section__text">
+            <li><b>Espacio adecuado:</b> Asegúrate de tener suficiente espacio libre para moverte sin riesgos.</li>
+            <li><b>Actualiza tu equipo:</b> Verifica que tu PC cumpla con los requisitos recomendados para una experiencia fluida.</li>
+            <li><b>Explora mundos populares:</b> Desde discotecas hasta paisajes surrealistas, hay algo para todos.</li>
+            <li><b>Únete a la comunidad:</b> Participa en eventos y grupos dentro de VRChat para descubrir nuevas experiencias.</li>
+        </ul>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Conclusión</h2>
+        <p class="main-section__text"><b>VRChat</b> es mucho más que un simple juego; es una puerta al metaverso. Con las <b>gafas de realidad virtual para VRChat</b> adecuadas, puedes sumergirte completamente en este universo, experimentar aventuras únicas y conectarte con personas de todo el mundo.</p>
+        <p class="main-section__text">Ya sea que elijas unas <b>lentes VR para VRChat</b> económicas o un modelo premium, lo importante es disfrutar y aprovechar al máximo esta increíble plataforma. ¿Listo para explorar? ¡Nos vemos en el mundo virtual!</p>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Explora nuestro catálogo de gafas de realidad virtual más vendidas</h2>
+        <div class="main-section__products">
+            {Products.map((product) => (
+              <ProductElement id={product.id}/>
+            ))}
+        </div>
+    </section>
+
+    <section class="main-section">
+        <h2 class="main-section__title">Artículos relacionados</h2>
+        <ArticlesList />
+    </section>
+</main>
+
+</Layout>
+
+<style>
+    .main-header__title {
+        font-weight: 400;
+    }
+
+    .main-header__image {
+        width: 100%;
+    }
+</style>

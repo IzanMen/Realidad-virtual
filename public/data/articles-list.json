@@ -19,11 +19,11 @@
     },
     {
       "id": 3,
-      "name": "Descubre las mejores gafas de realidad virtual buenas y baratas.",
-      "link": "https://gafasderealidadvirtual.com/articulos/gafas-vr-buenas-baratas",
+      "name": "Gafas VR para VRChat, ¿Cuáles son las mejores?.",
+      "link": "https://gafasderealidadvirtual.com/articulos/gafas-vr-para-vrchat",
       "image" : {
-        "src": "/images/articles/article-1.webp",
-        "alt": "Mejores gafas de realidad virtual buenas y baratas"
+        "src": "/images/articles/vrchat.avif",
+        "alt": "Mejores gafas de realidad virtual para VRChat"
       }
     }
   ]
