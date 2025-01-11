@@ -1,0 +1,64 @@
+---
+
+import Layout from '../../layouts/Layout.astro';
+import ArticlesList from '../../components/ArticlesList.astro';
+import ProductElement from '../../components/ProductElement.astro';
+import Products from '../../../public/data/products-list.json';  
+import DataSheet from '../../components/DataSheet.astro';
+import ProductAdvantages from '../../components/ProductAdvantages.astro';
+import AmazonButton from '../../components/AmazonButton.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+
+---
+
+<Layout 
+  title="Meta Quest 3 | Gafas de realidad virtual y mixta"
+  description="Análisis detallado de las gafas Meta Quest 3. Características, ventajas, desventajas y mi opinión personal sobre estas gafas de realidad virtual y mixta."
+>
+  <main class="main">
+    <header class="main-header">
+      <h1 class="main-header__subtitle">Meta Quest 3: Unas gafas de realidad virtual y mixta perfectas para el metaverso</h1>
+      <p class="main-header__title">Aquí te cuento todo sobre las Meta Quest 3, desde lo más técnico hasta mi opinión personal</p>
+      <p class="main-header__text">Las <strong>Meta Quest 3</strong> ofrecen una experiencia inmersiva de <strong>realidad virtual</strong> (VR) y <strong>realidad mixta</strong> (MR) que redefine cómo interactuamos con el mundo digital. A continuación, te presento un análisis detallado de sus características, ventajas y desventajas, junto con mi opinión sobre estas innovadoras gafas.</p>
+      <ProductElement id={11} />
+      <TableOfContents />
+    </header>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Características técnicas de las Meta Quest 3</h2>
+      <DataSheet id={11} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Ventajas y desventajas de las Meta Quest 3</h2>
+      <ProductAdvantages id={11} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi experiencia con las Meta Quest 3</h2>
+      <div class="main-section__text">
+        <p>Tuve la oportunidad de probar las <strong>Meta Quest 3</strong> y, honestamente, me sorprendieron mucho. Desde el primer momento, la calidad de la pantalla 4K es increíble; es como sumergirse directamente en otro mundo. Los colores son brillantes y los detalles son tan nítidos que la experiencia se siente casi real. El procesador <strong>Snapdragon XR2 Gen 2</strong> realmente hace su trabajo, ya que las transiciones entre aplicaciones y mundos virtuales son súper rápidas y suaves.</p>
+
+        <p>Uno de los puntos que más me impresionó fue el <strong>audio espacial 3D</strong>. Esto no es solo un añadido, realmente marca la diferencia al interactuar con el entorno virtual. Las voces y sonidos se perciben con una dirección muy precisa, lo que mejora la sensación de inmersión. Mientras jugaba, podía sentir como si los sonidos llegaran de diferentes direcciones, lo que hacía que la experiencia fuera aún más envolvente.</p>
+
+        <p>El uso de la <strong>realidad mixta</strong> también es destacable. Hacer una transición entre el entorno real y el virtual es algo que no había experimentado de manera tan fluida antes. No solo es práctico para jugar, sino que abren oportunidades en áreas como la educación y el trabajo colaborativo remoto. Imagina poder revisar documentos en 3D o hacer una simulación interactiva, todo mientras sigues viendo tu entorno físico. Es algo que me dejó bastante impresionado.</p>
+
+        <p>Sin embargo, no todo es perfecto. La autonomía, aunque aceptable, no es impresionante. Tras una hora de uso continuo, las gafas requieren una carga, lo cual es un pequeño inconveniente para sesiones largas. Además, el precio puede ser un freno para muchos. Entiendo que la tecnología detrás de las Meta Quest 3 es avanzada, pero es una inversión considerable. A pesar de esto, quienes busquen una experiencia de VR y MR premium, sin duda encontrarán que el valor que ofrecen justifica el costo.</p>
+      </div>
+
+      <AmazonButton text="Compra Meta Quest 3 en Amazon" link="https://amzn.to/3ZTtrb3" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi Opinión sobre las Meta Quest 3</h2>
+      <div class="main-section__text">
+        <p>Después de mi experiencia personal, las <strong>Meta Quest 3</strong> me parecen una opción espectacular para aquellos que buscan adentrarse en la realidad extendida. Su calidad visual, audio envolvente y las capacidades de realidad mixta hacen que se destaquen entre otras opciones del mercado. Aunque la duración de la batería podría mejorarse y el precio es alto, la tecnología que ofrecen compensa estos puntos negativos.</p>
+        <p>Como usuario frecuente de dispositivos VR, las <strong>Meta Quest 3</strong> han cambiado por completo mi percepción de lo que es posible con la realidad virtual y mixta. No solo son perfectas para jugar, sino también para explorar nuevas formas de interacción en el trabajo y la educación. Si tienes el presupuesto para ello, no lo dudes: estas gafas ofrecen lo mejor de ambos mundos, realidad virtual y mixta, y están a la vanguardia de la tecnología.</p>
+      </div>
+
+      <AmazonButton text="Compra Meta Quest 3 en Amazon" link="https://amzn.to/3ZTtrb3" />
+    </section>
+
+  </main>
+
+</Layout>
