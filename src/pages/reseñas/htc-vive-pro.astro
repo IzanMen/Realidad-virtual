@@ -1,0 +1,91 @@
+---
+
+import Layout from '../../layouts/Layout.astro';
+import ArticlesList from '../../components/ArticlesList.astro';
+import ProductElement from '../../components/ProductElement.astro';
+import Products from '../../../public/data/products-list.json';  
+import DataSheet from '../../components/DataSheet.astro';
+import ProductAdvantages from '../../components/ProductAdvantages.astro';
+import AmazonButton from '../../components/AmazonButton.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import ReviewsList from '../../components/ReviewsList.astro';
+
+---
+
+<Layout 
+  title="HTC Vive Pro | Gafas de realidad virtual de alta gama"
+  description="Análisis detallado de las gafas HTC Vive Pro. Características, ventajas, desventajas y mi opinión personal sobre estas gafas de realidad virtual de alta gama."
+>
+  <main class="main">
+    <header class="main-header">
+      <h1 class="main-header__title">Análisis detallado de las HTC Vive Pro, características técnicas, ventajas, desventajas y mi opinión personal</h1>
+      <p class="main-header__text">Las <strong>HTC Vive Pro</strong> representan un estándar de calidad en el mundo de la <strong>realidad virtual</strong> (VR), diseñadas para ofrecer una experiencia inmersiva de alto nivel. A continuación, te presento un análisis detallado de estas gafas, desde sus características técnicas hasta mis impresiones personales.</p>
+      <ProductElement id={6} />
+      <TableOfContents />
+    </header>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Características técnicas de las HTC Vive Pro</h2>
+      <DataSheet id={6} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Ventajas y desventajas de las HTC Vive Pro</h2>
+      <ProductAdvantages id={6} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi experiencia con las HTC Vive Pro</h2>
+      <div class="main-section__text">
+        <p>Tuve la oportunidad de probar las <strong>HTC Vive Pro</strong>, y la experiencia superó mis expectativas en muchos aspectos. La resolución de sus pantallas Dual-OLED de 2880 x 1600 píxeles ofrece una calidad visual impresionante, con detalles nítidos y colores vibrantes. Esto, combinado con su frecuencia de refresco de 90Hz, garantiza transiciones fluidas y una inmersión total en los mundos virtuales.</p>
+
+        <p>El seguimiento de movimiento es otro punto destacable. Gracias a sus estaciones base y los controladores con sensores de precisión, cada movimiento se refleja de manera exacta en el entorno virtual. Esto hace que las <strong>HTC Vive Pro</strong> sean ideales para experiencias interactivas como juegos, simulaciones y aplicaciones de diseño en 3D.</p>
+
+        <p>Además, el audio integrado en sus auriculares over-ear con sonido envolvente 3D es un verdadero deleite. Los sonidos se perciben con una claridad y dirección precisas, aumentando significativamente la inmersión. Durante mis pruebas, la calidad del sonido hacía que los entornos virtuales se sintieran reales, desde los susurros hasta los efectos de explosiones.</p>
+
+        <p>Sin embargo, el uso de un cable para conectar las gafas al PC puede ser un inconveniente en términos de movilidad. Además, las <strong>HTC Vive Pro</strong> requieren un PC de alto rendimiento para aprovechar al máximo su potencial, lo que suma un costo adicional a la inversión inicial.</p>
+      </div>
+
+      <AmazonButton text="Compra HTC Vive Pro en Amazon" link="https://amzn.to/40di5Qo" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi Opinión sobre las HTC Vive Pro</h2>
+      <div class="main-section__text">
+        <p>En general, las <strong>HTC Vive Pro</strong> son una excelente opción para usuarios exigentes que buscan una experiencia de realidad virtual premium. Su calidad visual, precisión en el seguimiento de movimiento y audio envolvente hacen que se destaquen en el mercado.</p>
+
+        <p>Sin embargo, su dependencia de un PC potente y el precio elevado pueden ser un obstáculo para algunos. Dicho esto, si tienes el presupuesto y buscas un dispositivo de VR que ofrezca lo mejor en términos de calidad e inmersión, las <strong>HTC Vive Pro</strong> son una inversión que vale la pena.</p>
+
+        <p>En mi experiencia, estas gafas están perfectamente diseñadas para aplicaciones tanto de entretenimiento como profesionales, siendo ideales para juegos, simulaciones, formación y diseño en realidad virtual.</p>
+      </div>
+
+      <AmazonButton text="Compra HTC Vive Pro en Amazon" link="https://amzn.to/40di5Qo" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Explora más modelos de gafas 3D</h2>
+      <div class="main-section__products">
+        {Products.map((product) => (
+          <ProductElement id={product.id} />
+        ))}
+      </div>
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Análisis de las mejores gafas 3D para 2025</h2>
+      <ReviewsList />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Guías para elegir las mejores gafas 3D</h2>
+      <ArticlesList />
+    </section>
+  </main>
+
+</Layout>
+
+<style>
+    .main-header__title {
+        font-weight: 400;
+    }
+</style>

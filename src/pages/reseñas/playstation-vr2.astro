@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ArticlesList from '../../components/ArticlesList.astro';
+import ProductElement from '../../components/ProductElement.astro';
+import Products from '../../../public/data/products-list.json';  
+import DataSheet from '../../components/DataSheet.astro';
+import ProductAdvantages from '../../components/ProductAdvantages.astro';
+import AmazonButton from '../../components/AmazonButton.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import ReviewsList from '../../components/ReviewsList.astro';
+
+---
+
+<Layout 
+  title="PlayStation VR2 | Gafas de realidad virtual para PS5"
+  description="Análisis detallado de las gafas PlayStation VR2. Características, ventajas, desventajas y mi opinión personal sobre estas gafas de realidad virtual de última generación."
+>
+  <main class="main">
+    <header class="main-header">
+      <h1 class="main-header__title">Análisis detallado de las PlayStation VR2, explorando sus características, ventajas y desventajas</h1>
+      <p class="main-header__text">Las <strong>PlayStation VR2</strong> ofrecen una experiencia de <strong>realidad virtual</strong> (VR) mejorada y diseñada específicamente para la consola PS5. En esta reseña te detallo todo lo que necesitas saber sobre estas gafas, incluyendo sus especificaciones, puntos fuertes y aspectos a mejorar.</p>
+      <ProductElement id={7} />
+      <TableOfContents />
+    </header>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Características técnicas de las PlayStation VR2</h2>
+      <DataSheet id={7} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Ventajas y desventajas de las PlayStation VR2</h2>
+      <ProductAdvantages id={7} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi experiencia con las PlayStation VR2</h2>
+      <div class="main-section__text">
+        <p>Las <strong>PlayStation VR2</strong> son un avance impresionante respecto a su predecesor. Desde el momento en que las pruebas, la calidad de las pantallas OLED con resolución de 2000 x 2040 píxeles por ojo es evidente. Los colores son vivos y los detalles nítidos, lo que se traduce en una experiencia inmersiva inigualable.</p>
+
+        <p>El seguimiento ocular es, sin duda, una de las características más innovadoras. Esta tecnología permite que solo se renderice en alta resolución la parte del entorno donde estás mirando, optimizando el rendimiento y haciendo que la experiencia se sienta aún más realista.</p>
+
+        <p>Los <strong>Sense Controllers</strong> merecen una mención especial. Su retroalimentación háptica y los gatillos adaptativos añaden una capa adicional de inmersión. Cada interacción en los juegos, desde tensar un arco hasta sentir el impacto de una explosión, se percibe con gran detalle.</p>
+
+        <p>El audio espacial 3D también es un punto fuerte. La precisión en la dirección del sonido crea una atmósfera envolvente, haciendo que te sientas en el centro de la acción. Esto mejora tanto los juegos como las aplicaciones de entretenimiento en VR.</p>
+
+        <p>No obstante, las <strong>PS VR2</strong> tienen algunas limitaciones. Al depender completamente de la PS5, no son una opción independiente como otros dispositivos del mercado. Además, aunque son más cómodas que las originales, el cable de conexión puede limitar el movimiento y ser un poco incómodo en sesiones prolongadas.</p>
+      </div>
+
+      <AmazonButton text="Compra PlayStation VR2 en Amazon" link="https://amzn.to/3DMioc7" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi Opinión sobre las PlayStation VR2</h2>
+      <div class="main-section__text">
+        <p>En mi opinión, las <strong>PlayStation VR2</strong> son una excelente opción para quienes ya poseen una PS5 y buscan expandir su experiencia de juego. Su calidad visual, el seguimiento ocular y los Sense Controllers las posicionan como una de las mejores opciones para juegos de realidad virtual.</p>
+
+        <p>A pesar de las desventajas, como la dependencia de la consola y la limitación de movimiento por el cable, la experiencia general es sobresaliente. Si eres fanático de los juegos y buscas una experiencia inmersiva de última generación, las <strong>PlayStation VR2</strong> definitivamente valen la pena.</p>
+      </div>
+
+      <AmazonButton text="Compra PlayStation VR2 en Amazon" link="https://amzn.to/3DMioc7" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Explora más modelos de gafas 3D</h2>
+      <div class="main-section__products">
+        {Products.map((product) => (
+          <ProductElement id={product.id} />
+        ))}
+      </div>
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Análisis de las mejores gafas 3D para 2025</h2>
+      <ReviewsList />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Guías para elegir las mejores gafas 3D</h2>
+      <ArticlesList />
+    </section>
+  </main>
+
+</Layout>
+
+<style>
+    .main-header__title {
+        font-weight: 400;
+    }
+</style>

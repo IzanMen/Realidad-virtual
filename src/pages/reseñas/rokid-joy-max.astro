@@ -1,0 +1,91 @@
+---
+
+import Layout from '../../layouts/Layout.astro';
+import ArticlesList from '../../components/ArticlesList.astro';
+import ProductElement from '../../components/ProductElement.astro';
+import Products from '../../../public/data/products-list.json';  
+import DataSheet from '../../components/DataSheet.astro';
+import ProductAdvantages from '../../components/ProductAdvantages.astro';
+import AmazonButton from '../../components/AmazonButton.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import ReviewsList from '../../components/ReviewsList.astro';
+
+---
+
+<Layout 
+  title="Rokid Joy Max | Gafas de realidad aumentada de última generación"
+  description="Análisis detallado de las gafas Rokid Joy Max. Características, ventajas, desventajas y mi opinión personal sobre estas gafas de realidad aumentada."
+>
+  <main class="main">
+    <header class="main-header">
+      <h1 class="main-header__title">Análisis de las Rokid Joy Max, explorando sus características técnicas, ventajas, desventajas y mi experiencia personal</h1>
+      <p class="main-header__text">Las <strong>Rokid Joy Max</strong> son una opción avanzada en el mundo de la <strong>realidad aumentada</strong> (AR), diseñadas para combinar tecnología punta con una experiencia inmersiva. En este análisis, te detallo todas sus características, sus puntos fuertes y las áreas donde podrían mejorar.</p>
+      <ProductElement id={9} />
+      <TableOfContents />
+    </header>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Características técnicas de las Rokid Joy Max</h2>
+      <DataSheet id={9} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Ventajas y desventajas de las Rokid Joy Max</h2>
+      <ProductAdvantages id={9} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi experiencia con las Rokid Joy Max</h2>
+      <div class="main-section__text">
+        <p>Probé las <strong>Rokid Joy Max</strong> y quedé muy satisfecho con su rendimiento general. Las pantallas Micro-OLED ofrecen una resolución de 1080p que, combinada con su luminancia de 600 nits, proporciona una calidad visual excepcional, incluso en entornos bien iluminados. Además, el campo de visión de 50º es más que suficiente para sumergirte en experiencias AR.</p>
+
+        <p>El procesador Qualcomm Snapdragon XR2 y los 6 GB de RAM garantizan un rendimiento fluido en las aplicaciones de <strong>realidad aumentada</strong> más exigentes. Durante mi experiencia, las transiciones entre aplicaciones y la interacción con el entorno fueron rápidas y naturales, gracias también al seguimiento ocular integrado, que mejora considerablemente la precisión y la inmersión.</p>
+
+        <p>El audio espacial integrado es otro punto destacado. Los altavoces ofrecen un sonido claro y bien distribuido, eliminando la necesidad de auriculares externos. Esto es especialmente útil para experiencias largas, ya que proporciona comodidad y una inmersión auditiva impresionante.</p>
+
+        <p>Por otro lado, la autonomía de 4 a 6 horas es aceptable para la mayoría de los usos, pero puede quedarse corta en sesiones más largas. Asimismo, el almacenamiento de 128 GB, aunque generoso, no es ampliable, lo que puede ser una limitación para algunos usuarios.</p>
+      </div>
+
+      <AmazonButton text="Compra Rokid Joy Max en Amazon" link="https://amzn.to/40cNpyP" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi Opinión sobre las Rokid Joy Max</h2>
+      <div class="main-section__text">
+        <p>En general, las <strong>Rokid Joy Max</strong> son una excelente opción para quienes buscan adentrarse en la <strong>realidad aumentada</strong> con un dispositivo de alta gama. Su calidad visual, el rendimiento del procesador y las funcionalidades avanzadas, como el seguimiento ocular, las convierten en una propuesta muy atractiva.</p>
+
+        <p>Sin embargo, es importante tener en cuenta sus limitaciones, como la autonomía y la falta de expansión de almacenamiento. A pesar de ello, las <strong>Rokid Joy Max</strong> destacan como unas de las mejores <strong>gafas AR</strong> disponibles actualmente, ideales tanto para entretenimiento como para aplicaciones profesionales.</p>
+
+        <p>Si estás buscando unas <strong>gafas AR</strong> que combinen rendimiento, comodidad y calidad, las <strong>Rokid Joy Max</strong> no te decepcionarán.</p>
+      </div>
+
+      <AmazonButton text="Compra Rokid Joy Max en Amazon" link="https://amzn.to/40cNpyP" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Explora más modelos de gafas 3D</h2>
+      <div class="main-section__products">
+        {Products.map((product) => (
+          <ProductElement id={product.id} />
+        ))}
+      </div>
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Análisis de las mejores gafas 3D para 2025</h2>
+      <ReviewsList />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Guías para elegir las mejores gafas 3D</h2>
+      <ArticlesList />
+    </section>
+  </main>
+
+</Layout>
+
+<style>
+    .main-header__title {
+        font-weight: 400;
+    }
+</style>

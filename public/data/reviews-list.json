@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Meta Quest 3",
+        "link": "https://gafasderealidadvirtual.com/reseñas/meta-quest-3",
+        "image" : {
+            "src": "/images/products/metaquest3.avif",
+            "alt": "Meta Quest 3"
+        }
+    },
+    {
+        "id": 2,
+        "name": "HTC Vive Pro",
+        "link": "https://gafasderealidadvirtual.com/reseñas/htc-vive-pro",
+        "image" : {
+            "src": "/images/products/htcvivepro.avif",
+            "alt": "HTC Vive Pro"
+        }
+    },
+    {
+        "id": 3,
+        "name": "PlayStation VR2",
+        "link": "https://gafasderealidadvirtual.com/reseñas/playstation-vr2",
+        "image" : {
+            "src": "/images/products/playstationvr2.avif",
+            "alt": "PlayStation VR2"
+        }
+    },
+    {
+        "id": 4,
+        "name": "VITURE Gafas Pro XR/AR",
+        "link": "https://gafasderealidadvirtual.com/reseñas/viture-gafas-pro",
+        "image" : {
+            "src": "/images/products/vituregafasproxrar.avif",
+            "alt": "VITURE Gafas Pro XR/AR"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Rokid Joy Max",
+        "link": "https://gafasderealidadvirtual.com/reseñas/rokid-joy-max",
+        "image" : {
+            "src": "/images/products/rokidjoymax.avif",
+            "alt": "Rokid Joy Max"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Pico 4 Ultra",
+        "link": "https://gafasderealidadvirtual.com/reseñas/pico-4-ultra",
+        "image" : {
+            "src": "/images/products/pico4.avif",
+            "alt": "Pico 4 Ultra"
+        }
+    }
+]
+    

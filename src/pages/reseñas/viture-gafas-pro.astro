@@ -1,0 +1,84 @@
+---
+
+import Layout from '../../layouts/Layout.astro';
+import ArticlesList from '../../components/ArticlesList.astro';
+import ProductElement from '../../components/ProductElement.astro';
+import Products from '../../../public/data/products-list.json';  
+import DataSheet from '../../components/DataSheet.astro';
+import ProductAdvantages from '../../components/ProductAdvantages.astro';
+import AmazonButton from '../../components/AmazonButton.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import ReviewsList from '../../components/ReviewsList.astro';
+
+---
+
+<Layout 
+  title="VITURE Gafas Pro XR/AR | Gafas de realidad aumentada y mixta"
+  description="Análisis detallado de las VITURE Gafas Pro XR/AR. Características, ventajas, desventajas y mi opinión personal sobre estas gafas de realidad aumentada y mixta."
+>
+  <main class="main">
+    <header class="main-header">
+      <h1 class="main-header__subtitle">VITURE Gafas Pro XR/AR: Innovación en realidad aumentada y mixta</h1>
+      <p class="main-header__title">Gafas de realidad virtual VITURE Gafas Pro XR/AR: Análisis detallado</p>
+      <p class="main-header__text">Las <strong>VITURE Gafas Pro XR/AR</strong> son una revolución en el mundo de la <strong>realidad aumentada</strong> (AR) y la <strong>realidad mixta</strong> (MR). Diseñadas para ofrecer comodidad y compatibilidad con múltiples dispositivos, estas gafas son ideales tanto para el entretenimiento como para el trabajo. A continuación, exploramos sus características, ventajas y desventajas.</p>
+      <ProductElement id={8} />
+      <TableOfContents />
+    </header>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Características técnicas de las VITURE Gafas Pro XR/AR</h2>
+      <DataSheet id={8} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Ventajas y desventajas de las VITURE Gafas Pro XR/AR</h2>
+      <ProductAdvantages id={8} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi experiencia con las VITURE Gafas Pro XR/AR</h2>
+      <div class="main-section__text">
+        <p>Las <strong>VITURE Gafas Pro XR/AR</strong> son un dispositivo impresionante para quienes buscan combinar la tecnología con el diseño elegante y práctico. Su pantalla Micro-OLED, con una resolución de 1080p y un tamaño virtual de hasta 135 pulgadas, hace que la experiencia visual sea impresionante, incluso para contenido de alta calidad como películas o videojuegos.</p>
+
+        <p>El diseño es cómodo y ligero, lo que permite usarlas durante horas sin molestias. Además, cuentan con un ajuste de enfoque personalizado para cada ojo, algo esencial para personas con miopía. Aunque no tienen seguimiento ocular ni gestual, su procesador personalizado y su conectividad USB-C, Wi-Fi y Bluetooth aseguran un rendimiento fluido y una compatibilidad sobresaliente con smartphones, PCs y consolas.</p>
+
+        <p>En cuanto al audio, los altavoces Harman ubicados en las patillas ofrecen un sonido claro, aunque el volumen podría ser más potente. Por otro lado, el brillo de hasta 4000 nits las hace utilizables tanto en interiores como en exteriores, una característica que no es común en muchos dispositivos de este tipo.</p>
+
+        <p>El único inconveniente significativo que noté fue el campo de visión, que está limitado a 46 grados. Aunque esto no afecta demasiado al uso cotidiano, podría sentirse restrictivo para aplicaciones más inmersivas. En general, estas gafas destacan por su equilibrio entre funcionalidad y diseño.</p>
+      </div>
+
+      <AmazonButton text="Compra VITURE Gafas Pro XR/AR en Amazon" link="https://amzn.to/3ZUmy9w" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi Opinión sobre las VITURE Gafas Pro XR/AR</h2>
+      <div class="main-section__text">
+        <p>Las <strong>VITURE Gafas Pro XR/AR</strong> son una opción destacada para quienes buscan una experiencia de <strong>realidad aumentada</strong> o mixta sin comprometer el diseño ni la comodidad. Su alta compatibilidad y autonomía de 8 horas las hacen ideales para el uso diario. Si bien carecen de algunas funciones avanzadas como el seguimiento ocular, sus prestaciones y precio competitivo las convierten en una excelente alternativa para quienes valoran la versatilidad.</p>
+
+        <p>En conclusión, estas gafas son perfectas para quienes buscan disfrutar de contenido multimedia o explorar aplicaciones de <strong>realidad aumentada</strong> con estilo y comodidad. Si estás buscando una opción equilibrada entre precio, diseño y funcionalidad, las <strong>VITURE Gafas Pro XR/AR</strong> son una excelente elección.</p>
+      </div>
+
+      <AmazonButton text="Compra VITURE Gafas Pro XR/AR en Amazon" link="https://amzn.to/3ZUmy9w" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Explora más modelos de gafas XR/AR</h2>
+      <div class="main-section__products">
+        {Products.map((product) => (
+          <ProductElement id={product.id} />
+        ))}
+      </div>
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Análisis de las mejores gafas XR/AR para 2025</h2>
+      <ReviewsList />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Guías para elegir las mejores gafas XR/AR</h2>
+      <ArticlesList />
+    </section>
+  </main>
+
+</Layout>

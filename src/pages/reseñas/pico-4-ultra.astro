@@ -1,0 +1,91 @@
+---
+
+import Layout from '../../layouts/Layout.astro';
+import ArticlesList from '../../components/ArticlesList.astro';
+import ProductElement from '../../components/ProductElement.astro';
+import Products from '../../../public/data/products-list.json';  
+import DataSheet from '../../components/DataSheet.astro';
+import ProductAdvantages from '../../components/ProductAdvantages.astro';
+import AmazonButton from '../../components/AmazonButton.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import ReviewsList from '../../components/ReviewsList.astro';
+
+---
+
+<Layout 
+  title="Pico 4 Ultra | Gafas de realidad virtual y mixta"
+  description="Análisis detallado de las gafas Pico 4 Ultra. Características, ventajas, desventajas y mi opinión personal sobre estas gafas de realidad virtual y mixta."
+>
+  <main class="main">
+    <header class="main-header">
+      <h1 class="main-header__title">Gafas de realidad virtual Pico 4 Ultra: Análisis detallado</h1>
+      <p class="main-header__text">Las <strong>Pico 4 Ultra</strong> son unas gafas de <strong>realidad virtual</strong> y <strong>realidad mixta</strong> diseñadas para ofrecer una experiencia inmersiva con tecnología avanzada. A continuación, te presento un análisis exhaustivo de estas gafas, destacando sus características técnicas y mis impresiones tras probarlas.</p>
+      <ProductElement id={12} />
+      <TableOfContents />
+    </header>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Características técnicas de las Pico 4 Ultra</h2>
+      <DataSheet id={12} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Ventajas y desventajas de las Pico 4 Ultra</h2>
+      <ProductAdvantages id={12} />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi experiencia con las Pico 4 Ultra</h2>
+      <div class="main-section__text">
+        <p>Después de probar las <strong>Pico 4 Ultra</strong>, puedo decir que estas gafas ofrecen una experiencia de <strong>realidad virtual</strong> y mixta impresionante. La pantalla OLED de 2160 x 2160 píxeles por ojo proporciona una claridad y detalle excepcionales, mientras que la frecuencia de actualización de 90 Hz asegura una experiencia fluida y sin interrupciones.</p>
+
+        <p>Uno de los puntos fuertes de estas gafas es su diseño ligero y ergonómico, lo que las hace cómodas incluso durante sesiones prolongadas. Además, el procesador Qualcomm Snapdragon XR2 y los 12 GB de RAM garantizan un rendimiento rápido y eficiente, permitiendo disfrutar de aplicaciones y juegos exigentes sin problemas.</p>
+
+        <p>Las cámaras de 32 MP con sensores de profundidad son un añadido interesante, especialmente para capturar contenido en 3D. Aunque no cuentan con seguimiento ocular, los controladores con motores de vibración HyperSense proporcionan una experiencia táctil inmersiva que compensa esta carencia en gran medida.</p>
+
+        <p>La autonomía, aunque limitada a 2-3 horas, es suficiente para la mayoría de las sesiones, aunque aquellos que buscan jugar durante largos periodos pueden encontrar esto un inconveniente. Además, el tiempo de carga de 2 horas es razonable y permite volver a usar las gafas rápidamente.</p>
+      </div>
+
+      <AmazonButton text="Compra Pico 4 Ultra en Amazon" link="https://amzn.to/4gEjaqk" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Mi Opinión sobre las Pico 4 Ultra</h2>
+      <div class="main-section__text">
+        <p>En conclusión, las <strong>Pico 4 Ultra</strong> son una excelente opción para quienes buscan una experiencia de <strong>realidad virtual</strong> y mixta de alta calidad. Su pantalla de alta resolución, diseño ergonómico y potentes especificaciones técnicas las convierten en una alternativa sólida en el mercado actual.</p>
+
+        <p>Sin embargo, la falta de seguimiento ocular y la autonomía limitada pueden ser aspectos a considerar dependiendo de tus necesidades. Dicho esto, las ventajas, como su rendimiento y calidad visual, superan con creces estos inconvenientes, haciendo de las <strong>Pico 4 Ultra</strong> una inversión que vale la pena.</p>
+
+        <p>Recomiendo estas gafas tanto para usuarios casuales como para aquellos interesados en explorar aplicaciones de <strong>realidad virtual</strong> y mixta más avanzadas, ya que ofrecen un equilibrio ideal entre rendimiento y precio.</p>
+      </div>
+
+      <AmazonButton text="Compra Pico 4 Ultra en Amazon" link="https://amzn.to/4gEjaqk" />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Explora más modelos de gafas 3D</h2>
+      <div class="main-section__products">
+        {Products.map((product) => (
+          <ProductElement id={product.id} />
+        ))}
+      </div>
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Análisis de las mejores gafas 3D para 2025</h2>
+      <ReviewsList />
+    </section>
+
+    <section class="main-section">
+      <h2 class="main-section__title">Guías para elegir las mejores gafas 3D</h2>
+      <ArticlesList />
+    </section>
+  </main>
+
+</Layout>
+
+<style>
+    .main-header__title {
+        font-weight: 400;
+    }
+</style>

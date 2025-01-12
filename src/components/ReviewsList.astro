@@ -1,0 +1,92 @@
+---
+
+import Reviews from '../../public/data/reviews-list.json';
+
+---
+
+<div class="articles-list">
+    <a href={Reviews[0]?.link} class="articles-list__item">
+        <img height="315px" src={Reviews[0]?.image.src} alt={Reviews[0]?.image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Reviews[0]?.name}</p>
+    </a>
+    <a href={Reviews[1]?.link} class="articles-list__item">
+        <img height="315px" src={Reviews[1]?.image.src} alt={Reviews[1]?.image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Reviews[1]?.name}</p>
+    </a>
+    <a href={Reviews[2]?.link} class="articles-list__item">
+        <img height="315px" src={Reviews[2]?.image.src} alt={Reviews[2]?.image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Reviews[2]?.name}</p>
+    </a>
+</div>
+<div class="articles-list">
+    <a href={Reviews[3]?.link} class="articles-list__item">
+        <img height="315px" src={Reviews[3]?.image.src} alt={Reviews[3]?.image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Reviews[3]?.name}</p>
+    </a>
+    <a href={Reviews[4]?.link} class="articles-list__item">
+        <img height="315px" src={Reviews[4]?.image.src} alt={Reviews[4]?.image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Reviews[4]?.name}</p>
+    </a>
+    <a href={Reviews[5]?.link} class="articles-list__item">
+        <img height="315px" src={Reviews[5]?.image.src} alt={Reviews[5]?.image.alt}>
+        <span class="articles-list__item-shadow"></span>
+        <p>{Reviews[5]?.name}</p>
+    </a>
+</div>
+
+<style>
+
+    .articles-list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .articles-list__item {
+        flex-grow: 1;
+        flex-basis: 330px;
+        position: relative;
+        padding: 0;
+    }
+
+    .articles-list__item:hover {
+        cursor: pointer;
+    }
+
+    .articles-list__item img {
+        width: 100%;
+        transition: all .2s;
+        z-index: 10;
+    }
+
+    .articles-list__item-shadow {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+
+    .articles-list__item:hover .articles-list__item-shadow {
+        background: none; 
+    }
+
+    .articles-list__item p {
+        color: #fff;
+        position: absolute;
+        bottom: 20px;
+        margin: 0 15px;
+        font-size: 1.5rem;
+
+        font-family: "Allerta Stencil";
+        font-weight: 100;
+        z-index: 20;
+    }
+</style>
